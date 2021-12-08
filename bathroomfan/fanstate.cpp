@@ -19,3 +19,29 @@ void FanState::Handle2()
 {
     std::cout << " fan state function" << std::endl;
 }
+
+void FanState::E_START()
+{
+    std::cout << "Fan states e_start function" << std::endl;
+}
+
+void FanState::E_RUN()
+{
+    std::cout << "Fan states e_run function" << std::endl;
+}
+
+void FanState::E_STOP()
+{
+    std::cout << "Fan states e_stop function" << std::endl;
+}
+
+void FanState::E_ERROR()
+{
+    std::cout << "Fan states e_error function" << std::endl;
+}
+
+void FanState::E_FIXED()
+{
+    std::cout << "Fan states e_fixed function" << std::endl;
+}
+

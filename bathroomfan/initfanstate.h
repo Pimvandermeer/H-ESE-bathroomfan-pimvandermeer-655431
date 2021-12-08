@@ -6,8 +6,17 @@
 class InitFanState : public FanState
 {
 public:
-    virtual void Handle1();
-    virtual void Handle2();
+    virtual void Handle1() override;
+    virtual void Handle2() override;
+
+    //FUNCTIE MAKEN IN CPP FILE
+
+    //HIer moeten wellicht ook al verwijzingen naar objecten worden meegegeven
+//    virtual void E_START(Sensor *tempsensor) override;
+//    virtual void E_RUN() override;
+//    virtual void E_STOP() override;
+//    virtual void E_ERROR() override;
+//    virtual void E_FIXED() override;
 
     virtual ~InitFanState();
 };

@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "fanstate.h"
+#include "initfanstate.h"
 #include "idlefanstate.h"
 #include "runfanstate.h"
 

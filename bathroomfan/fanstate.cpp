@@ -1,7 +1,5 @@
 #include "fanstate.h"
 
-
-
 FanState::~FanState()
 {
     std::cout << "Fan state destructed" << std::endl;
@@ -9,9 +7,8 @@ FanState::~FanState()
 
 void FanState::set_context(FanContext *fancontext)
 {
-     this->fancontext_ = fancontext;
+    this->fancontext_ = fancontext;
 }
-
 
 void FanState::Handle1()
 {

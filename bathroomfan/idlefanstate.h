@@ -10,7 +10,6 @@ public:
     virtual void Handle2();
 
     virtual ~IdleFanState();
-
 };
 
 #endif // IDLEFANSTATE_H

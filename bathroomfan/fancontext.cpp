@@ -13,7 +13,7 @@ FanContext::~FanContext()
 
 void FanContext::TransitionTo(FanState *fanstate)
 {
-    std::cout << " Context: Transtition to " << typeid (*fanstate).name() << std::endl;
+    std::cout << " Context: Transtition to " << typeid(*fanstate).name() << std::endl;
     if (this->fanstate_ != nullptr)
     {
         delete this->fanstate_;

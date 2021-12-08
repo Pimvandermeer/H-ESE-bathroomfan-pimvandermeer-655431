@@ -9,7 +9,6 @@ public:
     virtual void Handle1();
     virtual void Handle2();
 
-
     virtual ~RunFanState();
 };
 

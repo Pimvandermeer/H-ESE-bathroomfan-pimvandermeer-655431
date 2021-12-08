@@ -2,9 +2,9 @@
 
 #include "fancontext.h"
 
-
-void ClientCode() {
-  FanContext *fancontext = new FanContext(new IdleFanState);
+void FanClientCode()
+{
+  FanContext *fancontext = new FanContext(new InitFanState);
   fancontext->Request1();
   fancontext->Request1();
   fancontext->Request2();
@@ -13,10 +13,10 @@ void ClientCode() {
 
 int main()
 {
-    while (1)
-    {
-        ClientCode();
-    };
+  while (1)
+  {
+    FanClientCode();
+  };
 
-    return 0;
+  return 0;
 }

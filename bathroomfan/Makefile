@@ -52,20 +52,32 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = errorfanstate.cpp \
+SOURCES       = calcbehaviour.cpp \
+		errorfanstate.cpp \
 		fancontext.cpp \
 		fanstate.cpp \
 		idlefanstate.cpp \
 		initfanstate.cpp \
 		main.cpp \
-		runfanstate.cpp 
-OBJECTS       = errorfanstate.o \
+		runfanstate.cpp \
+		sensebehaviour.cpp \
+		sensor.cpp \
+		../display/display.cpp \
+		../display/keyboard.cpp \
+		../display/devconsole.cpp 
+OBJECTS       = calcbehaviour.o \
+		errorfanstate.o \
 		fancontext.o \
 		fanstate.o \
 		idlefanstate.o \
 		initfanstate.o \
 		main.o \
-		runfanstate.o
+		runfanstate.o \
+		sensebehaviour.o \
+		sensor.o \
+		display.o \
+		keyboard.o \
+		devconsole.o
 DIST          = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf \
 		../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri \
 		../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf \
@@ -270,18 +282,31 @@ DIST          = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf \
 		../../../HAN/5.15.0/clang_64/mkspecs/features/exceptions.prf \
 		../../../HAN/5.15.0/clang_64/mkspecs/features/yacc.prf \
 		../../../HAN/5.15.0/clang_64/mkspecs/features/lex.prf \
-		bathroomfan.pro errorfanstate.h \
+		bathroomfan.pro calcbehaviour.h \
+		errorfanstate.h \
 		fancontext.h \
 		fanstate.h \
 		idlefanstate.h \
 		initfanstate.h \
-		runfanstate.h errorfanstate.cpp \
+		runfanstate.h \
+		sensebehaviour.h \
+		sensor.h \
+		../display/appinfo.h \
+		../display/display.h \
+		../display/keyboard.h \
+		../display/devconsole.h calcbehaviour.cpp \
+		errorfanstate.cpp \
 		fancontext.cpp \
 		fanstate.cpp \
 		idlefanstate.cpp \
 		initfanstate.cpp \
 		main.cpp \
-		runfanstate.cpp
+		runfanstate.cpp \
+		sensebehaviour.cpp \
+		sensor.cpp \
+		../display/display.cpp \
+		../display/keyboard.cpp \
+		../display/devconsole.cpp
 QMAKE_TARGET  = bathroomfan
 DESTDIR       = 
 TARGET        = bathroomfan
@@ -762,9 +787,19 @@ compiler_clean:
 
 ####### Compile
 
+calcbehaviour.o: calcbehaviour.cpp calcbehaviour.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o calcbehaviour.o calcbehaviour.cpp
+
 errorfanstate.o: errorfanstate.cpp errorfanstate.h \
 		fancontext.h \
 		fanstate.h \
+		sensor.h \
+		sensebehaviour.h \
+		calcbehaviour.h \
+		../display/display.h \
+		../display/appinfo.h \
+		../display/devconsole.h \
+		../display/keyboard.h \
 		initfanstate.h \
 		idlefanstate.h \
 		runfanstate.h
@@ -772,17 +807,38 @@ errorfanstate.o: errorfanstate.cpp errorfanstate.h \
 
 fancontext.o: fancontext.cpp fancontext.h \
 		fanstate.h \
+		sensor.h \
+		sensebehaviour.h \
+		calcbehaviour.h \
+		../display/display.h \
+		../display/appinfo.h \
+		../display/devconsole.h \
+		../display/keyboard.h \
 		initfanstate.h \
 		idlefanstate.h \
 		runfanstate.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fancontext.o fancontext.cpp
 
-fanstate.o: fanstate.cpp fanstate.h
+fanstate.o: fanstate.cpp fanstate.h \
+		sensor.h \
+		sensebehaviour.h \
+		calcbehaviour.h \
+		../display/display.h \
+		../display/appinfo.h \
+		../display/devconsole.h \
+		../display/keyboard.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fanstate.o fanstate.cpp
 
 idlefanstate.o: idlefanstate.cpp idlefanstate.h \
 		fancontext.h \
 		fanstate.h \
+		sensor.h \
+		sensebehaviour.h \
+		calcbehaviour.h \
+		../display/display.h \
+		../display/appinfo.h \
+		../display/devconsole.h \
+		../display/keyboard.h \
 		initfanstate.h \
 		runfanstate.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o idlefanstate.o idlefanstate.cpp
@@ -790,12 +846,26 @@ idlefanstate.o: idlefanstate.cpp idlefanstate.h \
 initfanstate.o: initfanstate.cpp initfanstate.h \
 		fancontext.h \
 		fanstate.h \
+		sensor.h \
+		sensebehaviour.h \
+		calcbehaviour.h \
+		../display/display.h \
+		../display/appinfo.h \
+		../display/devconsole.h \
+		../display/keyboard.h \
 		idlefanstate.h \
 		runfanstate.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o initfanstate.o initfanstate.cpp
 
 main.o: main.cpp fancontext.h \
 		fanstate.h \
+		sensor.h \
+		sensebehaviour.h \
+		calcbehaviour.h \
+		../display/display.h \
+		../display/appinfo.h \
+		../display/devconsole.h \
+		../display/keyboard.h \
 		initfanstate.h \
 		idlefanstate.h \
 		runfanstate.h
@@ -804,9 +874,42 @@ main.o: main.cpp fancontext.h \
 runfanstate.o: runfanstate.cpp runfanstate.h \
 		fancontext.h \
 		fanstate.h \
+		sensor.h \
+		sensebehaviour.h \
+		calcbehaviour.h \
+		../display/display.h \
+		../display/appinfo.h \
+		../display/devconsole.h \
+		../display/keyboard.h \
 		initfanstate.h \
 		idlefanstate.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o runfanstate.o runfanstate.cpp
+
+sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sensebehaviour.o sensebehaviour.cpp
+
+sensor.o: sensor.cpp sensor.h \
+		sensebehaviour.h \
+		calcbehaviour.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sensor.o sensor.cpp
+
+display.o: ../display/display.cpp ../display/display.h \
+		../display/appinfo.h \
+		../display/devconsole.h \
+		../display/keyboard.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o display.o ../display/display.cpp
+
+keyboard.o: ../display/keyboard.cpp ../display/keyboard.h \
+		../display/display.h \
+		../display/appinfo.h \
+		../display/devconsole.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o keyboard.o ../display/keyboard.cpp
+
+devconsole.o: ../display/devconsole.cpp ../display/devconsole.h \
+		../display/display.h \
+		../display/appinfo.h \
+		../display/keyboard.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o devconsole.o ../display/devconsole.cpp
 
 ####### Install
 

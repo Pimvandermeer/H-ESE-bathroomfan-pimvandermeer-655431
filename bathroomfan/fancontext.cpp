@@ -1,48 +1,69 @@
 #include "fancontext.h"
 
-FanContext::FanContext(FanState *fanstate) : fanstate_(nullptr)
+FanContext::FanContext(FanState *fanstate) : fanState_(nullptr)
 {
     this->TransitionTo(fanstate);
 }
 
 FanContext::~FanContext()
 {
-    delete fanstate_;
+    delete fanState_;
     std::cout << " Destructor Context" << std::endl;
 }
 
 void FanContext::TransitionTo(FanState *fanstate)
 {
     std::cout << " Context: Transtition to " << typeid(*fanstate).name() << std::endl;
-    if (this->fanstate_ != nullptr)
+    if (this->fanState_ != nullptr)
     {
-        delete this->fanstate_;
+        delete this->fanState_;
     }
-    this->fanstate_ = fanstate;
-    this->fanstate_->set_context(this);
+    this->fanState_ = fanstate;
+    this->fanState_->setContext(this);
 }
 
-void FanContext::Request1()
-{
-    this->fanstate_->Handle1();
-}
+//void FanContext::adNumStates()
+//{
+//    numStates++;
+//}
 
-void FanContext::Request2()
-{
-    this->fanstate_->Handle2();
-}
+//void FanContext::delNumStates()
+//{
+//    numStates--;
+//}
 
 void FanContext::Start()
 {
-    value = this->fanstate_->E_START();
+    this->fanState_->E_START();
 }
 
-int FanContext::getValue()
+void FanContext::Run()
 {
-    return *value;
+    this->fanState_->E_RUN();
 }
 
-FanState *FanContext::getFanState()
+void FanContext::Stop()
 {
-    return this->fanstate_;
+    this->fanState_->E_STOP();
 }
+
+void FanContext::Error()
+{
+    this->fanState_->E_ERROR();
+}
+
+void FanContext::Fixed()
+{
+    this->fanState_->E_FIXED();
+}
+
+
+//int FanContext::getValue()
+//{
+//    return *value;
+//}
+
+//FanState *FanContext::getFanState()
+//{
+//    return this->fanState_;
+//}

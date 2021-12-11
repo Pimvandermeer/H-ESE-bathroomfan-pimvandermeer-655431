@@ -2,24 +2,23 @@
 #define FANSTATE_H
 
 #include <iostream>
+#include "sensor.h"
+#include "../display/display.h"
 
 class FanContext;
 
 class FanState
 {
 protected:
-    FanContext *fancontext_;
+    FanContext *fanContext_;
 
 public:
     virtual ~FanState();
 
-    void set_context(FanContext *fancontext);
+    void setContext(FanContext *fanContext);
 
-    virtual void Handle1();
-    virtual void Handle2();
-
-
-    virtual int *E_START();
+  //  virtual int *E_START();
+    virtual void E_START();
     virtual void E_RUN();
     virtual void E_STOP();
     virtual void E_ERROR();

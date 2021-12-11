@@ -1,47 +1,38 @@
 #include "fanstate.h"
 
+
 FanState::~FanState()
 {
-    std::cout << "Fan state destructed" << std::endl;
+    Display::DSPshow(2, "Fanstate destructed");
 }
 
-void FanState::set_context(FanContext *fancontext)
+void FanState::setContext(FanContext *fanContext)
 {
-    this->fancontext_ = fancontext;
+    this->fanContext_ = fanContext;
 }
 
-void FanState::Handle1()
+void FanState::E_START()
 {
-    std::cout << " fan state function" << std::endl;
-}
-
-void FanState::Handle2()
-{
-    std::cout << " fan state function" << std::endl;
-}
-
-int* FanState::E_START()
-{
-    std::cout << "Fan states e_start function" << std::endl;
+    Display::DSPshow(2, "Fan states e_start function");
 }
 
 void FanState::E_RUN()
 {
-    std::cout << "Fan states e_run function" << std::endl;
+    Display::DSPshow(2, "Fan states e_run function");
 }
 
 void FanState::E_STOP()
 {
-    std::cout << "Fan states e_stop function" << std::endl;
+    Display::DSPshow(2, "Fan states e_stop function");
 }
 
 void FanState::E_ERROR()
 {
-    std::cout << "Fan states e_error function" << std::endl;
+    Display::DSPshow(2, "Fan states e_error function");
 }
 
 void FanState::E_FIXED()
 {
-    std::cout << "Fan states e_fixed function" << std::endl;
+    Display::DSPshow(2, "Fan states e_fixed function");
 }
 

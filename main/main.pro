@@ -1,5 +1,5 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    ../bathroomfan \
-    ../test
+    ../bathroomfan # \
+   # ../test

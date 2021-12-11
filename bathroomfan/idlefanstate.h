@@ -5,15 +5,17 @@
 
 class IdleFanState : public FanState
 {
-public:
-    virtual void Handle1() override;
-    virtual void Handle2() override;
+private:
+    Sensor *tempSensor_;
 
- //   virtual int *E_START() override;
-//    virtual void E_RUN() override;
-//    virtual void E_STOP() override;
-//    virtual void E_ERROR() override;
-//    virtual void E_FIXED() override;
+public:
+    IdleFanState(Sensor &tempsensor);
+
+    virtual void E_START() override;
+    virtual void E_RUN() override;
+    virtual void E_STOP() override;
+    virtual void E_ERROR() override;
+    virtual void E_FIXED() override;
 
 
     virtual ~IdleFanState();

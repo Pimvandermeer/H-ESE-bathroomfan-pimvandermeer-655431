@@ -1,38 +1,47 @@
 #include "idlefanstate.h"
 
+IdleFanState::IdleFanState(Sensor &tempSensor)
+{
+    std::cout << "Idle Fanstate created with " << tempSensor.getName() << std::endl;
+    this->tempSensor_ = &tempSensor;
+}
+
 IdleFanState::~IdleFanState()
 {
      std::cout << " Destructor IdleFanstate" << std::endl;
 }
 
-void IdleFanState::Handle1()
+void IdleFanState::E_START()
 {
-//     size_t size;
-
-//     std::cout << " Put Something in here" << std::endl;
-//     std::cin >> size;
-//     std::cout << " You filled in " << size << std::endl;
-    std::cout << "print this" << fancontext_->getFanState() << std::endl;
-      std::cout << "print this" << fancontext_->getValue() << std::endl;
-
-    std::cout << "here is the fancontext value" << fancontext_->getValue() << std::endl;
-     std::cout << "IdleFanState handles 1 request" << std::endl;
-     std::cout << "IdleFanState wants to change the state of the context.\n";
-
-     this->fancontext_->TransitionTo(new RunFanState);
+    Display::DSPshow(2, "IdleFanState is at start");
 }
 
-void IdleFanState::Handle2()
+void IdleFanState::E_RUN()
 {
+    Display::DSPshow(2, "IdleFanState is at run");
+    Display::DSPshow(3, "Now something must happen");
+    Display::DSPshow(4, "The name of the sensor is:");
 
-     std::cout << "IdleFanState handles request2.\n";
+    tempSensor_->senseTemp();
+
+    std::cout << tempSensor_->getName() << std::endl;
+
+
+    this->fanContext_->TransitionTo(new RunFanState);
 }
 
-//int IdleFanState::E_START()
-//{
+void IdleFanState::E_STOP()
+{
+    Display::DSPshow(2, "IdleFanState is at stop");
+}
 
+void IdleFanState::E_ERROR()
+{
+    Display::DSPshow(2, "IdleFanState is at error");
+}
 
+void IdleFanState::E_FIXED()
+{
+    Display::DSPshow(2, "IdleFanState is at fixed");
+}
 
-
-//    std::cout << " Idle state handles the initialisatie functie WRONG " << std::endl;
-//}

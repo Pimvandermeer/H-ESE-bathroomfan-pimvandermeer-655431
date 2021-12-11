@@ -6,8 +6,8 @@
 class RunFanState : public FanState
 {
 public:
-    virtual void Handle1() override;
-    virtual void Handle2() override;
+//    virtual void Handle1() override;
+//  //  virtual void Handle2() override;
 
     virtual ~RunFanState();
 };

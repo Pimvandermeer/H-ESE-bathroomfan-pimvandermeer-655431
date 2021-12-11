@@ -19,3 +19,4 @@ HEADERS += \
     idlefanstate.h \
     initfanstate.h \
     runfanstate.h
+

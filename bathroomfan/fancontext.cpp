@@ -31,3 +31,18 @@ void FanContext::Request2()
 {
     this->fanstate_->Handle2();
 }
+
+void FanContext::Start()
+{
+    value = this->fanstate_->E_START();
+}
+
+int FanContext::getValue()
+{
+    return *value;
+}
+
+FanState *FanContext::getFanState()
+{
+    return this->fanstate_;
+}

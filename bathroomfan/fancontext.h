@@ -11,6 +11,7 @@ class FanContext
 {
 private:
     FanState *fanstate_;
+    int *value;
 
 public:
     FanContext(FanState *fanstate);
@@ -21,6 +22,11 @@ public:
 
     void Request1();
     void Request2();
+
+    void Start();
+
+    int getValue();
+    FanState *getFanState();
 };
 
 #endif // FANCONTEXT_H

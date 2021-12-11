@@ -20,7 +20,7 @@ void FanState::Handle2()
     std::cout << " fan state function" << std::endl;
 }
 
-void FanState::E_START()
+int* FanState::E_START()
 {
     std::cout << "Fan states e_start function" << std::endl;
 }

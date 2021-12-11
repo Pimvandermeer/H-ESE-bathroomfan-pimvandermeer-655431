@@ -18,7 +18,8 @@ public:
     virtual void Handle1();
     virtual void Handle2();
 
-    virtual void E_START();
+
+    virtual int *E_START();
     virtual void E_RUN();
     virtual void E_STOP();
     virtual void E_ERROR();

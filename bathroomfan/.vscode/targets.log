@@ -8,12 +8,12 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
- 
-# Make data base, printed on Sat Dec 11 21:01:16 2021
+# Make data base, printed on Sun Dec 12 12:34:14 2021
 
 # Variables
 
 # automatic
+ 
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
@@ -64,7 +64,7 @@ EXPORT_QMAKE_XCODE_DEVELOPER_PATH = /Library/Developer/CommandLineTools
 # makefile (from `Makefile', line 11)
 EQ = =
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/sl/8jsydgk57fz2yld9bhlns4pw0000gn/T/vscode-ipc-0c268ad5-82cc-4566-95db-ee032843fde3.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/sl/8jsydgk57fz2yld9bhlns4pw0000gn/T/vscode-ipc-eef24677-fbdf-4f8d-b2cc-9760c5c6a1bd.sock
 # makefile (from `Makefile', line 38)
 COMPRESS = gzip -9f
 # environment
@@ -138,6 +138,7 @@ DISTDIR = /Volumes/compiled/SE-2/bathroom_fan/bathroomfan/.tmp/bathroomfan1.0.0
 # environment
 PLATFORMIO_PATH = /Volumes/Apple HDD/gebruiker/.platformio/python3/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS
 # default
+ 
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
@@ -163,7 +164,6 @@ EXPORT_QMAKE_MAC_SDK = macosx
 DESTDIR = 
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
- 
 # makefile (from `Makefile', line 318)
 EXPORT_VALID_ARCHS = x86_64
 # makefile (from `Makefile', line 42)
@@ -209,6 +209,7 @@ MAKEFILES :=
 # environment
 PLATFORMIO_CALLER = vscode
 # makefile (from `Makefile', line 16)
+ 
 CXX = /Library/Developer/CommandLineTools/usr/bin/clang++
 # environment
 LC_ALL = C
@@ -235,9 +236,8 @@ MAKELEVEL := 0
 # makefile (from `Makefile', line 68)
 OBJECTS = calcbehaviour.o errorfanstate.o fancontext.o fanstate.o idlefanstate.o initfanstate.o main.o runfanstate.o sensebehaviour.o sensor.o display.o keyboard.o devconsole.o
 # makefile (from `Makefile', line 81)
-DIST = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/common/unix.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/macx.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/sanitize.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/qconfig.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_accessibility_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bodymovin_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bootstrap_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_clipboard_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designercomponents_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_edid_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fb_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_graphics_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_mu 
-ltimediawidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_packetprotocol_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldebug_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldevtools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickshapes_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_service_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_theme_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uiplugin.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_functions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_post.prf .qmake.stash ../../../HAN/5.15.0/clang_64/mkspecs/features/exclusive_builds.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/sdk.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/resolve_config.prf ../../ 
-../HAN/5.15.0/clang_64/mkspecs/features/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/objective_c.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qml_debug.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/mac.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/warn_on.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qmake_use.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/file_copies.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/rez.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/asset_catalogs.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/testcase_targets.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/exceptions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/yacc.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/lex.prf bathroomfan.pro calcbehaviour.h errorfanstate.h fancontext.h fanstate.h idlefanstate.h initfanstate.h runfanstate.h sensebehaviour.h sensor.h ../display/appinfo.h ../display/display.h ../display/keyboard.h ../display/devconsole.h calcbehaviour.cpp errorfanstate.cpp fancontext.cpp fanstate.cpp idlefanstate.cpp initfanstate.cpp main.cpp runfanstate.cpp sensebehaviour.cpp sensor.cpp ../display/display.cpp ../display/keyboard.cpp ../display/devconsole.cpp
+DIST = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/common/unix.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/macx.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/sanitize.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/qconfig.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_accessibility_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bodymovin_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bootstrap_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_clipboard_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designercomponents_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_edid_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fb_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_graphics_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_packetprotocol_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldebug_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldevtools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest.pri ../../../HAN/ 
+5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickshapes_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_service_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_theme_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uiplugin.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_functions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_post.prf .qmake.stash ../../../HAN/5.15.0/clang_64/mkspecs/features/exclusive_builds.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/sdk.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/resolve_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/objective_c.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qml_debug.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/mac.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/warn_on.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qmake_use.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/file_copies.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/rez.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/asset_catalogs.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/testcase_targets.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/exceptions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/yacc.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/lex.prf bathroomfan.pro calcbehaviour.h errorfanstate.h fancontext.h fanstate.h idlefanstate.h initfanstate.h runfanstate.h sensebehaviour.h sensor.h ../display/appinfo.h ../display/display.h ../display/keyboard.h ../display/devconsole.h calcbehaviour.cpp errorfanstate.cpp fancontext.cpp fanstate.cpp idlefanstate.cpp initfanstate.cpp main.cpp runfanstate.cpp sensebehaviour.cpp sensor.cpp ../display/display.cpp ../display/keyboard.cpp ../display/devconsole.cpp
 # environment
 LANG = C
 # makefile (from `Makefile', line 35)
@@ -271,6 +271,7 @@ VSCODE_PID = 49291
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -293,7 +294,6 @@ VSCODE_PID = 49291
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri:
@@ -352,16 +352,15 @@ VSCODE_PID = 49291
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h
+sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 889):
+#  commands to execute (from `Makefile', line 897):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sensebehaviour.o sensebehaviour.cpp
 	
 
 ../../../HAN/5.15.0/clang_64/mkspecs/features/default_post.prf:
- 
 #  Implicit rule search has been done.
 #  Last modified 2020-05-11 10:15:07
 #  File has been updated.
@@ -371,6 +370,7 @@ sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -419,7 +419,6 @@ sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -436,6 +435,7 @@ sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -500,6 +500,7 @@ fancontext.h:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/common/clang-mac.conf:
@@ -508,20 +509,22 @@ fancontext.h:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 ../display/appinfo.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-11 18:52:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 display.o: ../display/display.cpp ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 900):
+#  commands to execute (from `Makefile', line 912):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o display.o ../display/display.cpp
 	
 
@@ -550,6 +553,7 @@ display.o: ../display/display.cpp ../display/display.h ../display/appinfo.h ../d
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
@@ -582,7 +586,6 @@ display.o: ../display/display.cpp ../display/display.h ../display/appinfo.h ../d
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 compiler_yacc_impl_clean:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -595,16 +598,17 @@ compiler_yacc_impl_clean:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-runfanstate.o: runfanstate.cpp runfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h initfanstate.h idlefanstate.h
+runfanstate.o: runfanstate.cpp runfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h idlefanstate.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 886):
+#  commands to execute (from `Makefile', line 890):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o runfanstate.o runfanstate.cpp
 	
 
 # Not a target:
 sensor.h:
+ 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -651,7 +655,6 @@ distclean: clean
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -674,6 +677,7 @@ first: all
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+ 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -710,7 +714,6 @@ errorfanstate.h:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
- 
 idlefanstate.cpp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -741,6 +744,7 @@ bathroomfan: calcbehaviour.o errorfanstate.o fancontext.o fanstate.o idlefanstat
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets.pri:
@@ -780,7 +784,6 @@ bathroomfan: calcbehaviour.o errorfanstate.o fancontext.o fanstate.o idlefanstat
 #  Last modified 2020-09-02 23:46:35
 #  File has been updated.
 #  Successfully updated.
- 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
@@ -833,6 +836,7 @@ uninstall: FORCE
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -841,11 +845,10 @@ uninstall: FORCE
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-Makefile: bathroomfan.pro ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/common/unix.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/macx.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/sanitize.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/qconfig.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_accessibility_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bodymovin_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bootstrap_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_clipboard_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designercomponents_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_edid_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fb_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_graphics_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_packetprotocol_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_platformcomposito 
-r_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldebug_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldevtools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickshapes_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_service_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_theme_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uiplugin.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_functions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_post.prf .qmake.stash ../../../HAN/5.15.0/clang_64/mkspecs/features/exclusive_builds.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/sdk.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/resolve_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/objective_c.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qml_debug.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/mac.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/warn_on.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qmake_use.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/file_copies.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/rez.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/asset_catalogs.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/testcase_targets.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/exceptions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/yacc.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/lex.prf bathroomfan.pro
+Makefile: bathroomfan.pro ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/common/unix.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/macx.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/sanitize.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/qconfig.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_accessibility_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bodymovin_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bootstrap_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_clipboard_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designercomponents_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_edid_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fb_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_graphics_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_packetprotocol_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldebug_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldevtools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels_private.pri 
+ ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickshapes_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_service_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_theme_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uiplugin.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_functions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_post.prf .qmake.stash ../../../HAN/5.15.0/clang_64/mkspecs/features/exclusive_builds.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/sdk.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/resolve_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/objective_c.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qml_debug.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/mac.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/warn_on.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qmake_use.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/file_copies.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/rez.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/asset_catalogs.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/testcase_targets.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/exceptions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/yacc.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/lex.prf bathroomfan.pro
 #  Implicit rule search has not been done.
- 
-#  Last modified 2021-12-11 21:01:16
+#  Last modified 2021-12-12 12:34:14
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -856,6 +859,7 @@ r_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positi
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender_private.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -899,9 +903,13 @@ compiler_clean:
 
 # Not a target:
 ../display/devconsole.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-11 19:17:12
+ 
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_accessibility_support_private.pri:
 #  Implicit rule search has been done.
@@ -926,15 +934,18 @@ compiler_rez_source_make_all:
 
 # Not a target:
 ../display/display.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-11 19:11:38
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-fanstate.o: fanstate.cpp fanstate.h sensor.h sensebehaviour.h calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h
+fanstate.o: fanstate.cpp fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 830):
+#  commands to execute (from `Makefile', line 834):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fanstate.o fanstate.cpp
 	
 
@@ -950,7 +961,6 @@ runfanstate.cpp:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus_private.pri:
@@ -964,6 +974,7 @@ runfanstate.cpp:
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+ 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -977,17 +988,16 @@ runfanstate.cpp:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-initfanstate.o: initfanstate.cpp initfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h idlefanstate.h runfanstate.h
+initfanstate.o: initfanstate.cpp initfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h idlefanstate.h runfanstate.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 858):
+#  commands to execute (from `Makefile', line 862):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o initfanstate.o initfanstate.cpp
 	
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender_private.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-09-02 23:47:05
 #  File has been updated.
 #  Successfully updated.
@@ -1026,6 +1036,7 @@ compiler_lex_make_all:
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+ 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1053,7 +1064,6 @@ benchmark: first
 #  File has not been updated.
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
- 
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
@@ -1104,13 +1114,13 @@ main.cpp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
+ 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
@@ -1176,7 +1186,6 @@ compiler_yacc_decl_make_all:
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
- 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1223,6 +1232,7 @@ xcodeproj:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2020-05-11 10:15:07
 #  File has been updated.
@@ -1240,7 +1250,6 @@ xcodeproj:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput_private.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -1302,7 +1311,6 @@ xcodeproj:
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
- 
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth_private.pri:
 #  Implicit rule search has been done.
@@ -1312,6 +1320,7 @@ xcodeproj:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -1355,7 +1364,6 @@ xcodeproj:
 ../../../HAN/5.15.0/clang_64/mkspecs/features/qml_debug.prf:
 #  Implicit rule search has been done.
 #  Last modified 2020-05-11 10:15:07
- 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1372,7 +1380,7 @@ xcodeproj:
 # Not a target:
 calcbehaviour.h:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-11 20:37:32
+#  Last modified 2021-12-12 12:27:16
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1384,6 +1392,7 @@ calcbehaviour.h:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine.pri:
@@ -1428,7 +1437,7 @@ keyboard.o: ../display/keyboard.cpp ../display/keyboard.h ../display/display.h .
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 906):
+#  commands to execute (from `Makefile', line 918):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o keyboard.o ../display/keyboard.cpp
 	
 
@@ -1456,6 +1465,7 @@ sensor.cpp:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/common/unix.conf:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-05-11 10:15:07
 #  File has been updated.
 #  Successfully updated.
@@ -1496,11 +1506,11 @@ sensor.cpp:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
@@ -1537,7 +1547,7 @@ sensor.cpp:
 # Not a target:
 calcbehaviour.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-11 20:37:32
+#  Last modified 2021-12-12 12:28:03
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1557,6 +1567,7 @@ calcbehaviour.cpp:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui.pri:
@@ -1584,7 +1595,6 @@ sensebehaviour.cpp:
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
- 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1598,14 +1608,15 @@ sensebehaviour.cpp:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-fancontext.o: fancontext.cpp fancontext.h fanstate.h sensor.h sensebehaviour.h calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h initfanstate.h idlefanstate.h runfanstate.h
+fancontext.o: fancontext.cpp fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 820):
+#  commands to execute (from `Makefile', line 824):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fancontext.o fancontext.cpp
 	
 
+ 
 .qmake.stash:
 #  Implicit rule search has been done.
 #  Last modified 2021-12-11 16:25:00
@@ -1646,15 +1657,16 @@ qmake: FORCE
 	@$(QMAKE) -o Makefile bathroomfan.pro -spec macx-clang CONFIG+=debug CONFIG+=x86_64 CONFIG+=qml_debug
 	
 
-idlefanstate.o: idlefanstate.cpp idlefanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h initfanstate.h runfanstate.h
+idlefanstate.o: idlefanstate.cpp idlefanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h runfanstate.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 844):
+#  commands to execute (from `Makefile', line 848):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o idlefanstate.o idlefanstate.cpp
 	
 
-calcbehaviour.o: calcbehaviour.cpp calcbehaviour.h
+calcbehaviour.o: calcbehaviour.cpp calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h
+ 
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `'
 #  File does not exist.
@@ -1662,24 +1674,23 @@ calcbehaviour.o: calcbehaviour.cpp calcbehaviour.h
 #  Needs to be updated (-q is set).
 # automatic
 # @ := calcbehaviour.o
- 
 # automatic
 # % := 
 # automatic
 # * := 
 # automatic
-# + := calcbehaviour.cpp calcbehaviour.h
+# + := calcbehaviour.cpp calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h
 # automatic
 # | := 
 # automatic
 # < := calcbehaviour.cpp
 # automatic
-# ^ := calcbehaviour.cpp calcbehaviour.h
+# ^ := calcbehaviour.cpp calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h
 # automatic
-# ? := calcbehaviour.cpp calcbehaviour.h
+# ? := calcbehaviour.cpp calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=3/19=16%
-#  commands to execute (from `Makefile', line 791):
+#  commands to execute (from `Makefile', line 795):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o calcbehaviour.o calcbehaviour.cpp
 	
 
@@ -1707,6 +1718,7 @@ initfanstate.cpp:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-06-16 10:28:06
 #  File has been updated.
 #  Successfully updated.
@@ -1716,7 +1728,6 @@ initfanstate.cpp:
 clean: compiler_clean
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 759):
 	-$(DEL_FILE) $(OBJECTS)
@@ -1775,12 +1786,11 @@ devconsole.o: ../display/devconsole.cpp ../display/devconsole.h ../display/displ
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 912):
+#  commands to execute (from `Makefile', line 924):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o devconsole.o ../display/devconsole.cpp
 	
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets_private.pri:
- 
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
@@ -1807,6 +1817,7 @@ devconsole.o: ../display/devconsole.cpp ../display/devconsole.h ../display/displ
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+ 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1850,11 +1861,11 @@ bathroomfan.pro:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-errorfanstate.o: errorfanstate.cpp errorfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h initfanstate.h idlefanstate.h runfanstate.h
+errorfanstate.o: errorfanstate.cpp errorfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 806):
+#  commands to execute (from `Makefile', line 810):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o errorfanstate.o errorfanstate.cpp
 	
 
@@ -1862,7 +1873,6 @@ dist: distdir FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  commands to execute (from `Makefile', line 751):
 	(cd `dirname $(DISTDIR)` && $(TAR) $(DISTNAME).tar $(DISTNAME) && $(COMPRESS) $(DISTNAME).tar) && $(MOVE) `dirname $(DISTDIR)`/$(DISTNAME).tar.gz . && $(DEL_FILE) -r $(DISTDIR)
 	
@@ -1937,7 +1947,6 @@ install: FORCE
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri:
@@ -1990,7 +1999,6 @@ install: FORCE
 
 # Not a target:
 idlefanstate.h:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -2027,11 +2035,11 @@ idlefanstate.h:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-main.o: main.cpp fancontext.h fanstate.h sensor.h sensebehaviour.h calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h initfanstate.h idlefanstate.h runfanstate.h
+main.o: main.cpp fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 872):
+#  commands to execute (from `Makefile', line 876):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 	
 
@@ -2046,6 +2054,7 @@ main.o: main.cpp fancontext.h fanstate.h sensor.h sensebehaviour.h calcbehaviour
 # Not a target:
 fanstate.h:
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -2075,14 +2084,16 @@ fanstate.h:
 
 # Not a target:
 ../display/keyboard.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-11 18:56:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/rez.prf:
 #  Implicit rule search has been done.
 #  Last modified 2020-05-11 10:15:07
- 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -2124,6 +2135,7 @@ qmake_all: FORCE
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+ 
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus.pri:
 #  Implicit rule search has been done.
@@ -2164,7 +2176,6 @@ compiler_rez_source_clean:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/common/sanitize.conf:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-05-11 10:15:07
 #  File has been updated.
 #  Successfully updated.
@@ -2193,6 +2204,7 @@ fanstate.cpp:
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+ 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -2272,7 +2284,6 @@ fanstate.cpp:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -2360,7 +2371,6 @@ compiler_yacc_impl_make_all:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql.pri:
@@ -2384,14 +2394,15 @@ compiler_yacc_impl_make_all:
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
+ 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-sensor.o: sensor.cpp sensor.h sensebehaviour.h calcbehaviour.h
+sensor.o: sensor.cpp sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 894):
+#  commands to execute (from `Makefile', line 906):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sensor.o sensor.cpp
 	
 
@@ -2404,7 +2415,7 @@ sensor.o: sensor.cpp sensor.h sensebehaviour.h calcbehaviour.h
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # files hash-table stats:
-# Load=272/1024=27%, Rehash=0, Collisions=139/633=22%
+# Load=272/1024=27%, Rehash=0, Collisions=148/645=23%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -2416,6 +2427,6 @@ sensor.o: sensor.cpp sensor.h sensebehaviour.h calcbehaviour.h
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4021 / max = 4021 / min = 4021 / avg = 4021
 
-# Finished Make data base on Sat Dec 11 21:01:16 2021
+# Finished Make data base on Sun Dec 12 12:34:14 2021
 
  

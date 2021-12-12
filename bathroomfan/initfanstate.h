@@ -7,7 +7,7 @@ class InitFanState : public FanState
 {
 private:
     int sensorValue;
-    Sensor *tempSensor = new Sensor("Temp Sensor");
+    Sensor *tempSensor = new Sensor("Temp Sensor", senseBehaviour::SENSE_TEMP , calcBehaviour::CALCULATE_TEMP);
 
 public:
     int *myFunction();

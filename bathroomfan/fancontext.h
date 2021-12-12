@@ -13,10 +13,7 @@ class FanContext
 {
 private:
     FanState *fanState_;
-
-
     static int numStates;
-  //  int *value;
 
 public:
     FanContext(FanState *fanstate);
@@ -34,10 +31,6 @@ public:
     void Error();
     void Fixed();
 
-
-
-  //  int getValue();
-  //  FanState *getFanState();
 };
 
 #endif // FANCONTEXT_H

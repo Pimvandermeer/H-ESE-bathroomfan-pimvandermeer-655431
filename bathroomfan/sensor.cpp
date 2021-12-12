@@ -1,7 +1,7 @@
 #include "sensor.h"
 
-Sensor::Sensor(std::string nameVal)
-    : sensorName_{nameVal}
+Sensor::Sensor(std::string nameVal, senseBehaviour::sense_e sensBehaviour, calcBehaviour::calc_e calcbehaviour)
+    : sensorName_{nameVal}, sensorBehaviour_{sensBehaviour}, calculateBehaviour_{calcbehaviour}
 {
 }
 
@@ -10,23 +10,39 @@ Sensor::~Sensor()
      std::cout << "Destructor called for" << sensorName_ << std::endl;
 }
 
-void Sensor::senseTemp()
+void Sensor::sense(senseBehaviour::sense_e *enumValue)
 {
-    this->sense_.senseTemperature();
+    sensedValue_ = this->sensor_->sense(enumValue);
+    calculatedValue_ = this->calculator_->calculate(&calculateBehaviour_, &sensedValue_);
 }
 
-void Sensor::senseHum()
+senseBehaviour::sense_e *Sensor::getSensBehaviour()
 {
-    this->sense_.senseHumidity();
+    return &sensorBehaviour_;
+}
+
+int *Sensor::getSensedValue()
+{
+    return &sensedValue_;
+}
+
+void Sensor::calc(calcBehaviour::calc_e *EnumValue, int *calcValue)
+{
+    calculatedValue_ = this->calculator_->calculate(EnumValue, calcValue);
+}
+
+calcBehaviour::calc_e *Sensor::getCalcBehaviour()
+{
+    return &calculateBehaviour_;
+}
+
+int *Sensor::getCalculatedValue()
+{
+    return &calculatedValue_;
 }
 
 std::string Sensor::getName()
 {
     return sensorName_;
-}
-
-void Sensor::setName(std::string nameValue)
-{
-    sensorName_ = nameValue;
 }
 

@@ -787,7 +787,11 @@ compiler_clean:
 
 ####### Compile
 
-calcbehaviour.o: calcbehaviour.cpp calcbehaviour.h
+calcbehaviour.o: calcbehaviour.cpp calcbehaviour.h \
+		../display/display.h \
+		../display/appinfo.h \
+		../display/devconsole.h \
+		../display/keyboard.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o calcbehaviour.o calcbehaviour.cpp
 
 errorfanstate.o: errorfanstate.cpp errorfanstate.h \
@@ -795,11 +799,11 @@ errorfanstate.o: errorfanstate.cpp errorfanstate.h \
 		fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		calcbehaviour.h \
+		../display/devconsole.h \
 		../display/display.h \
 		../display/appinfo.h \
-		../display/devconsole.h \
 		../display/keyboard.h \
+		calcbehaviour.h \
 		initfanstate.h \
 		idlefanstate.h \
 		runfanstate.h
@@ -809,11 +813,11 @@ fancontext.o: fancontext.cpp fancontext.h \
 		fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		calcbehaviour.h \
+		../display/devconsole.h \
 		../display/display.h \
 		../display/appinfo.h \
-		../display/devconsole.h \
 		../display/keyboard.h \
+		calcbehaviour.h \
 		initfanstate.h \
 		idlefanstate.h \
 		runfanstate.h
@@ -822,11 +826,11 @@ fancontext.o: fancontext.cpp fancontext.h \
 fanstate.o: fanstate.cpp fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		calcbehaviour.h \
+		../display/devconsole.h \
 		../display/display.h \
 		../display/appinfo.h \
-		../display/devconsole.h \
-		../display/keyboard.h
+		../display/keyboard.h \
+		calcbehaviour.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fanstate.o fanstate.cpp
 
 idlefanstate.o: idlefanstate.cpp idlefanstate.h \
@@ -834,11 +838,11 @@ idlefanstate.o: idlefanstate.cpp idlefanstate.h \
 		fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		calcbehaviour.h \
+		../display/devconsole.h \
 		../display/display.h \
 		../display/appinfo.h \
-		../display/devconsole.h \
 		../display/keyboard.h \
+		calcbehaviour.h \
 		initfanstate.h \
 		runfanstate.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o idlefanstate.o idlefanstate.cpp
@@ -848,11 +852,11 @@ initfanstate.o: initfanstate.cpp initfanstate.h \
 		fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		calcbehaviour.h \
+		../display/devconsole.h \
 		../display/display.h \
 		../display/appinfo.h \
-		../display/devconsole.h \
 		../display/keyboard.h \
+		calcbehaviour.h \
 		idlefanstate.h \
 		runfanstate.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o initfanstate.o initfanstate.cpp
@@ -861,11 +865,11 @@ main.o: main.cpp fancontext.h \
 		fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		calcbehaviour.h \
+		../display/devconsole.h \
 		../display/display.h \
 		../display/appinfo.h \
-		../display/devconsole.h \
 		../display/keyboard.h \
+		calcbehaviour.h \
 		initfanstate.h \
 		idlefanstate.h \
 		runfanstate.h
@@ -876,20 +880,28 @@ runfanstate.o: runfanstate.cpp runfanstate.h \
 		fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		calcbehaviour.h \
+		../display/devconsole.h \
 		../display/display.h \
 		../display/appinfo.h \
-		../display/devconsole.h \
 		../display/keyboard.h \
+		calcbehaviour.h \
 		initfanstate.h \
 		idlefanstate.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o runfanstate.o runfanstate.cpp
 
-sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h
+sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h \
+		../display/devconsole.h \
+		../display/display.h \
+		../display/appinfo.h \
+		../display/keyboard.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sensebehaviour.o sensebehaviour.cpp
 
 sensor.o: sensor.cpp sensor.h \
 		sensebehaviour.h \
+		../display/devconsole.h \
+		../display/display.h \
+		../display/appinfo.h \
+		../display/keyboard.h \
 		calcbehaviour.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sensor.o sensor.cpp
 

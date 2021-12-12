@@ -57,13 +57,3 @@ void FanContext::Fixed()
     this->fanState_->E_FIXED();
 }
 
-
-//int FanContext::getValue()
-//{
-//    return *value;
-//}
-
-//FanState *FanContext::getFanState()
-//{
-//    return this->fanState_;
-//}

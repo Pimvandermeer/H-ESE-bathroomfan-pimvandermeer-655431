@@ -22,9 +22,12 @@ void IdleFanState::E_RUN()
     Display::DSPshow(3, "Now something must happen");
     Display::DSPshow(4, "The name of the sensor is:");
 
-    tempSensor_->senseTemp();
+    tempSensor_->sense(tempSensor_->getSensBehaviour());
+
+    //tempSensor_->calc(tempSensor_->getCalcBehaviour(), tempSensor_->getSensedValue());
 
     std::cout << tempSensor_->getName() << std::endl;
+    std::cout << "From idle is this the calulated value" << *tempSensor_->getCalculatedValue() << std::endl;
 
 
     this->fanContext_->TransitionTo(new RunFanState);

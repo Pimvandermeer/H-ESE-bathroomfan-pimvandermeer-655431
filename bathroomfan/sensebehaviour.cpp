@@ -1,17 +1,18 @@
 #include "sensebehaviour.h"
 
-int senseBehaviour::sense(sense_e *enumValue)
+double senseBehaviour::sense(sense_e *enumValue)
 {
-    int num = 0;
+    double num = 0.0;
+
     switch (*enumValue) {
         case SENSE_TEMP:
-        num = Devconsole::DCSsimulationSystemInputInteger("How high is the temp?", -20, 80);
+        num = Devconsole::DCSsimulationSystemInputDouble("How high is the temp put something in between -20 and 80?", -20, 80);
         break;
     case SENSE_HUM:
-        num = Devconsole::DCSsimulationSystemInputInteger("What is the Humidity?", 0, 100);
+        num = Devconsole::DCSsimulationSystemInputDouble("What is the Humidity?", 0, 100);
         break;
     case SENSE_PROX:
-        num = Devconsole::DCSsimulationSystemInputInteger("What is the Proximity?", 0, 100);
+        num = Devconsole::DCSsimulationSystemInputDouble("What is the Proximity?", 0, 100);
         break;
     case SENSE_DEFAULT:
         std::cout << "Something went wrong!" << std::endl;

@@ -37,16 +37,15 @@ void Display::DSPclear(void)
       exit(EXIT_FAILURE); //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
    }
 
-   int error = system("clear");
-   // #ifdef __APPLE__
-   //    int error = system("clear"); // Execute MAC OSX clear command
-   // #endif
-   // #ifdef _WIN32
-   //    int error = system("cls"); // Execute WIN32 cls command
-   // #endif
-   // #ifdef __linux__
-   //    int error = system("clear"); // Execute Linux clear command
-   // #endif
+    #ifdef __APPLE__
+      int error = system("clear"); // Execute MAC OSX clear command
+    #endif
+    #ifdef _WIN32
+       int error = system("cls"); // Execute WIN32 cls command
+    #endif
+    #ifdef __linux__
+       int error = system("clear"); // Execute Linux clear command
+    #endif
 
    if (error != 0)
    {

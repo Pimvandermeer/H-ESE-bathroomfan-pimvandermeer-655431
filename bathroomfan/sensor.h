@@ -11,11 +11,12 @@ private:
     std::string sensorName_;
     senseBehaviour *sensor_ = new senseBehaviour();
     calcBehaviour *calculator_ = new calcBehaviour();
+
     senseBehaviour::sense_e sensorBehaviour_;
     calcBehaviour::calc_e calculateBehaviour_;
 
-    int calculatedValue_ = 0;
-    int sensedValue_ = 0;
+    double calculatedValue_ = 0.0;
+    double sensedValue_ = 0.0;
 
 public:
 
@@ -28,13 +29,11 @@ public:
 
     void sense(senseBehaviour::sense_e *enumValue);
     senseBehaviour::sense_e *getSensBehaviour();
-    int *getSensedValue();
+    double *getSensedValue();
 
-    void calc(calcBehaviour::calc_e *enumValue, int *calcValue);
+    void calc(calcBehaviour::calc_e *enumValue, double *calcValue);
     calcBehaviour::calc_e *getCalcBehaviour();
-    int *getCalculatedValue();
-
-
+    double *getCalculatedValue();
 
 
     ~Sensor();

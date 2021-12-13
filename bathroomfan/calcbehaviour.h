@@ -15,7 +15,7 @@ public:
         CALULATE_DEFAULT
     } calc_e;
 
-    virtual int calculate(calc_e *enumValue, int *value);
+    virtual double calculate(calc_e *enumValue, double *value);
 };
 
 #endif // CALCBEHAVIOUR_H

@@ -15,7 +15,7 @@ public:
         SENSE_DEFAULT
     } sense_e;
 
-    virtual int sense(sense_e *enumValue);
+    virtual double sense(sense_e *enumValue);
 };
 
 #endif // SENSEBEHAVIOUR_H

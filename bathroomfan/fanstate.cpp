@@ -3,7 +3,7 @@
 
 FanState::~FanState()
 {
-    Display::DSPshow(2, "Fanstate destructed");
+   std::cout << "Fanstate destructed" << std::endl;
 }
 
 void FanState::setContext(FanContext *fanContext)

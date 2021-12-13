@@ -6,11 +6,11 @@
 class InitFanState : public FanState
 {
 private:
-    int sensorValue;
-    Sensor *tempSensor = new Sensor("Temp Sensor", senseBehaviour::SENSE_TEMP , calcBehaviour::CALCULATE_TEMP);
+    Sensor *tempSensor_ = new Sensor("Temperature Sensor", senseBehaviour::SENSE_TEMP , calcBehaviour::CALCULATE_TEMP);
+    Sensor *humSensor_ = new Sensor("Humidity Sensor", senseBehaviour::SENSE_HUM, calcBehaviour::CALCULATE_HUM);
 
 public:
-    int *myFunction();
+  //  int *myFunction();
 
  //   virtual int *E_START() override;
     virtual void E_START() override;

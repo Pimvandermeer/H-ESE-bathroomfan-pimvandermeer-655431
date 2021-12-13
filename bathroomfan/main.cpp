@@ -7,6 +7,7 @@ void FanClientCode()
   FanContext *fancontext = new FanContext(new InitFanState);
   fancontext->Start();
   fancontext->Run();
+ // fancontext->Error();
 
  //  std::cout << "print this from client Code" << fancontext->getValue() << std::endl;
 

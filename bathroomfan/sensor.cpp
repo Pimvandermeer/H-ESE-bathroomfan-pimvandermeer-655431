@@ -21,12 +21,12 @@ senseBehaviour::sense_e *Sensor::getSensBehaviour()
     return &sensorBehaviour_;
 }
 
-int *Sensor::getSensedValue()
+double *Sensor::getSensedValue()
 {
     return &sensedValue_;
 }
 
-void Sensor::calc(calcBehaviour::calc_e *EnumValue, int *calcValue)
+void Sensor::calc(calcBehaviour::calc_e *EnumValue, double *calcValue)
 {
     calculatedValue_ = this->calculator_->calculate(EnumValue, calcValue);
 }
@@ -36,7 +36,7 @@ calcBehaviour::calc_e *Sensor::getCalcBehaviour()
     return &calculateBehaviour_;
 }
 
-int *Sensor::getCalculatedValue()
+double *Sensor::getCalculatedValue()
 {
     return &calculatedValue_;
 }

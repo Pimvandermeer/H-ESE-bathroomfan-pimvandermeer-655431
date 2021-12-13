@@ -14,20 +14,20 @@ InitFanState::~InitFanState()
 //    return p;
 //}
 
-int *InitFanState::myFunction()
-{
-    static int number {0};
+//int *InitFanState::myFunction()
+//{
+//    static int number {0};
 
-    Display::DSPshow(2, "Put Something in here myFunction");
+//    Display::DSPshow(2, "Put Something in here myFunction");
 
-    std::cin >> number;
+//    std::cin >> number;
 
-    std::cout << " You filled in " << number << std::endl;
+//    std::cout << " You filled in " << number << std::endl;
 
-    sensorValue = number;
+//   // sensorValue = number;
 
-    return &number;
-}
+//    return &number;
+//}
 
 
 void InitFanState::E_START()
@@ -35,16 +35,14 @@ void InitFanState::E_START()
     Display::DSPinitialise();
     Devconsole::DCSinitialise();
 
-
-
-    int *p = 0;
-    p = myFunction();
-
-  //  std::cout << " Init FanState initialiase with a value: " << *p << std::endl;
-
     Display::DSPshow(2, "InitFanstat is started");
 
-    this->fanContext_->TransitionTo(new IdleFanState(*tempSensor));
+    Devconsole::DCSsimulationSystemInfo("We are at start These sensors have been initialiazed\n");
+
+    std::cout << this->tempSensor_->getName() << std::endl;
+    std::cout << this->humSensor_->getName() << std::endl;
+
+    this->fanContext_->TransitionTo(new IdleFanState(*tempSensor_, *humSensor_));
 }
 
 void InitFanState::E_RUN()

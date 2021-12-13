@@ -8,20 +8,19 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Sun Dec 12 12:34:14 2021
+# Make data base, printed on Mon Dec 13 22:14:23 2021
 
 # Variables
 
 # automatic
- 
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
-# makefile (from `Makefile', line 310)
+# makefile (from `Makefile', line 322)
 QMAKE_TARGET = bathroomfan
 # environment
 VSCODE_LOG_NATIVE = false
-# makefile (from `Makefile', line 312)
+# makefile (from `Makefile', line 324)
 TARGET = bathroomfan
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
@@ -37,7 +36,7 @@ CURDIR := /Volumes/compiled/SE-2/bathroom_fan/bathroomfan
 LINK = /Library/Developer/CommandLineTools/usr/bin/clang++
 # makefile
 SHELL = /bin/sh
-# makefile (from `Makefile', line 320)
+# makefile (from `Makefile', line 332)
 EXPORT_ARCH_ARGS = $(foreach arch, $(if $(EXPORT_ACTIVE_ARCHS), $(EXPORT_ACTIVE_ARCHS), $(EXPORT_VALID_ARCHS)), -arch $(arch))
 # environment
 VSCODE_NLS_CONFIG = {"locale":"nl","availableLanguages":{},"_languagePackSupport":true}
@@ -50,21 +49,22 @@ MAKEFILE_LIST :=  Makefile /Volumes/compiled/HAN/5.15.0/clang_64/mkspecs/feature
 # makefile (from `/Volumes/compiled/HAN/5.15.0/clang_64/mkspecs/features/mac/sdk.mk', line 3)
 CHECK_SDK_COMMAND = /usr/bin/xcrun --sdk $(EXPORT_QMAKE_MAC_SDK) -show-sdk-version 2>&1
 # makefile (from `Makefile', line 55)
-SOURCES = calcbehaviour.cpp errorfanstate.cpp fancontext.cpp fanstate.cpp idlefanstate.cpp initfanstate.cpp main.cpp runfanstate.cpp sensebehaviour.cpp sensor.cpp ../display/display.cpp ../display/keyboard.cpp ../display/devconsole.cpp 
+SOURCES = calcbehaviour.cpp errorfanstate.cpp fancontext.cpp fanstate.cpp idlefanstate.cpp initfanstate.cpp logger.cpp main.cpp relay.cpp runfanstate.cpp sensebehaviour.cpp sensor.cpp ../display/display.cpp ../display/keyboard.cpp ../display/devconsole.cpp timer.cpp 
 # makefile (from `Makefile', line 19)
 CXXFLAGS = -pipe -stdlib=libc++ -g -std=gnu++11 $(EXPORT_ARCH_ARGS) -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=10.13 -Wall -Wextra -fPIC $(DEFINES)
 # makefile (from `Makefile', line 21)
+ 
 QMAKE = /Volumes/compiled/HAN/5.15.0/clang_64/bin/qmake
 # makefile (from `Makefile', line 25)
 COPY = cp -f
 # environment
 VSCODE_VERBOSE_LOGGING = true
-# makefile (from `Makefile', line 317)
+# makefile (from `Makefile', line 329)
 EXPORT_QMAKE_XCODE_DEVELOPER_PATH = /Library/Developer/CommandLineTools
 # makefile (from `Makefile', line 11)
 EQ = =
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/sl/8jsydgk57fz2yld9bhlns4pw0000gn/T/vscode-ipc-eef24677-fbdf-4f8d-b2cc-9760c5c6a1bd.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/sl/8jsydgk57fz2yld9bhlns4pw0000gn/T/vscode-ipc-bfb85c09-0efa-4dfb-b9f7-f8be4789be6c.sock
 # makefile (from `Makefile', line 38)
 COMPRESS = gzip -9f
 # environment
@@ -88,14 +88,14 @@ ELECTRON_RUN_AS_NODE = 1
 # makefile (from `Makefile', line 32)
 QINSTALL_PROGRAM = /Volumes/compiled/HAN/5.15.0/clang_64/bin/qmake -install qinstall -exe
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.cMC5XCHfFQ/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.VdJJRDfh7m/Listeners
 # automatic
 %F = $(notdir $%)
-# makefile (from `Makefile', line 319)
+# makefile (from `Makefile', line 331)
 EXPORT_ACTIVE_ARCHS = $(filter $(EXPORT_VALID_ARCHS), $(ARCHS))
 # environment
 VSCODE_PIPE_LOGGING = true
-# makefile (from `Makefile', line 316)
+# makefile (from `Makefile', line 328)
 EXPORT_QMAKE_MAC_SDK_VERSION = 10.15
 # environment
 PWD = /Volumes/compiled/SE-2/bathroom_fan/bathroomfan
@@ -138,7 +138,6 @@ DISTDIR = /Volumes/compiled/SE-2/bathroom_fan/bathroomfan/.tmp/bathroomfan1.0.0
 # environment
 PLATFORMIO_PATH = /Volumes/Apple HDD/gebruiker/.platformio/python3/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS
 # default
- 
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
@@ -156,15 +155,15 @@ CC = /Library/Developer/CommandLineTools/usr/bin/clang
 MAKE_VERSION := 3.81
 # environment
 USER = gebruiker
-# makefile (from `Makefile', line 315)
+# makefile (from `Makefile', line 327)
 EXPORT_QMAKE_MAC_SDK = macosx
 # makefile
 .DEFAULT_GOAL := first
-# makefile (from `Makefile', line 311)
+# makefile (from `Makefile', line 323)
 DESTDIR = 
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
-# makefile (from `Makefile', line 318)
+# makefile (from `Makefile', line 330)
 EXPORT_VALID_ARCHS = x86_64
 # makefile (from `Makefile', line 42)
 LFLAGS = -stdlib=libc++ -headerpad_max_install_names $(EXPORT_ARCH_ARGS) -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=10.13 -Wl,-rpath,@executable_path/../Frameworks
@@ -192,7 +191,7 @@ MFLAGS = -Rrqp
 *D = $(patsubst %/,%,$(dir $*))
 # environment
 XPC_SERVICE_NAME = com.microsoft.VSCode.28056
-# makefile (from `Makefile', line 321)
+# makefile (from `Makefile', line 333)
 EXPORT__PRO_FILE_ = /Volumes/compiled/SE-2/bathroom_fan/bathroomfan/bathroomfan.pro
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
@@ -209,7 +208,6 @@ MAKEFILES :=
 # environment
 PLATFORMIO_CALLER = vscode
 # makefile (from `Makefile', line 16)
- 
 CXX = /Library/Developer/CommandLineTools/usr/bin/clang++
 # environment
 LC_ALL = C
@@ -224,26 +222,27 @@ LIBS = $(SUBLIBS)
 # default
 SUFFIXES := 
 # makefile (from `Makefile', line 20)
-INCPATH = -I. -I../../../HAN/5.15.0/clang_64/mkspecs/macx-clang
+INCPATH = -I. -I../3rdparty -I../../../HAN/5.15.0/clang_64/mkspecs/macx-clang
 # makefile (from `Makefile', line 30)
 INSTALL_DIR = cp -f -R
 # makefile (from `Makefile', line 27)
+ 
 COPY_DIR = cp -f -R
 # default
 .INCLUDE_DIRS = /usr/local/include
 # environment
 MAKELEVEL := 0
-# makefile (from `Makefile', line 68)
-OBJECTS = calcbehaviour.o errorfanstate.o fancontext.o fanstate.o idlefanstate.o initfanstate.o main.o runfanstate.o sensebehaviour.o sensor.o display.o keyboard.o devconsole.o
-# makefile (from `Makefile', line 81)
+# makefile (from `Makefile', line 71)
+OBJECTS = calcbehaviour.o errorfanstate.o fancontext.o fanstate.o idlefanstate.o initfanstate.o logger.o main.o relay.o runfanstate.o sensebehaviour.o sensor.o display.o keyboard.o devconsole.o timer.o
+# makefile (from `Makefile', line 87)
 DIST = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/common/unix.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/macx.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/sanitize.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/qconfig.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_accessibility_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bodymovin_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bootstrap_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_clipboard_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designercomponents_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_edid_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fb_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_graphics_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_packetprotocol_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldebug_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldevtools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest.pri ../../../HAN/ 
-5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickshapes_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_service_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_theme_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uiplugin.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_functions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_post.prf .qmake.stash ../../../HAN/5.15.0/clang_64/mkspecs/features/exclusive_builds.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/sdk.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/resolve_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/objective_c.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qml_debug.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/mac.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/warn_on.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qmake_use.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/file_copies.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/rez.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/asset_catalogs.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/testcase_targets.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/exceptions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/yacc.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/lex.prf bathroomfan.pro calcbehaviour.h errorfanstate.h fancontext.h fanstate.h idlefanstate.h initfanstate.h runfanstate.h sensebehaviour.h sensor.h ../display/appinfo.h ../display/display.h ../display/keyboard.h ../display/devconsole.h calcbehaviour.cpp errorfanstate.cpp fancontext.cpp fanstate.cpp idlefanstate.cpp initfanstate.cpp main.cpp runfanstate.cpp sensebehaviour.cpp sensor.cpp ../display/display.cpp ../display/keyboard.cpp ../display/devconsole.cpp
+5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickshapes_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_service_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_theme_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uiplugin.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_functions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_post.prf .qmake.stash ../../../HAN/5.15.0/clang_64/mkspecs/features/exclusive_builds.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/sdk.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/resolve_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/objective_c.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qml_debug.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/mac.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/warn_on.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qmake_use.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/file_copies.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/rez.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/asset_catalogs.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/testcase_targets.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/exceptions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/yacc.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/lex.prf bathroomfan.pro calcbehaviour.h errorfanstate.h fancontext.h fanstate.h idlefanstate.h initfanstate.h logger.h relay.h runfanstate.h sensebehaviour.h sensor.h ../display/appinfo.h ../display/display.h ../display/keyboard.h ../display/devconsole.h timer.h calcbehaviour.cpp errorfanstate.cpp fancontext.cpp fanstate.cpp idlefanstate.cpp initfanstate.cpp logger.cpp main.cpp relay.cpp runfanstate.cpp sensebehaviour.cpp sensor.cpp ../display/display.cpp ../display/keyboard.cpp ../display/devconsole.cpp timer.cpp
 # environment
 LANG = C
 # makefile (from `Makefile', line 35)
 DEL_DIR = rmdir
 # environment
-VSCODE_PID = 49291
+VSCODE_PID = 8178
 # variable set hash-table stats:
 # Load=114/1024=11%, Rehash=0, Collisions=16/161=10%
 
@@ -253,9 +252,9 @@ VSCODE_PID = 49291
 
 # Directories
 
-# . (device 16777217, inode 578433): 39 files, no impossibilities.
+# . (device 16777219, inode 578433): 49 files, no impossibilities.
 
-# 39 files, no impossibilities in 1 directories.
+# 49 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -268,10 +267,10 @@ VSCODE_PID = 49291
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
+ 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
- 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -283,6 +282,15 @@ VSCODE_PID = 49291
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/sinks/sink.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -318,6 +326,16 @@ VSCODE_PID = 49291
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+logger.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-13 22:10:25
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth.pri:
@@ -356,7 +374,7 @@ sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h ../display/devconsole.h ..
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 897):
+#  commands to execute (from `Makefile', line 1036):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sensebehaviour.o sensebehaviour.cpp
 	
 
@@ -370,7 +388,6 @@ sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h ../display/devconsole.h ..
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -383,6 +400,7 @@ sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h ../display/devconsole.h ..
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bootstrap_private.pri:
@@ -409,9 +427,37 @@ sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h ../display/devconsole.h ..
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+# Not a target:
+../3rdparty/spdlog/common.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+ 
+
+# Not a target:
+../3rdparty/spdlog/pattern_formatter.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/details/periodic_worker.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -425,6 +471,25 @@ sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h ../display/devconsole.h ..
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+# Not a target:
+../3rdparty/spdlog/details/null_mutex.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ 
+# Not a target:
+../3rdparty/spdlog/tweakme.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uiplugin.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -433,9 +498,17 @@ sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h ../display/devconsole.h ..
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+# Not a target:
+logger.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-13 22:07:45
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -464,9 +537,28 @@ FORCE:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+../3rdparty/spdlog/fmt/bundled/core.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+ 
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/details/windows_include.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -490,9 +582,31 @@ FORCE:
 
 # Not a target:
 fancontext.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 12:11:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/spdlog-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/details/log_msg-inl.h:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d_private.pri:
 #  Implicit rule search has been done.
@@ -500,7 +614,15 @@ fancontext.h:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/sinks/wincolor_sink.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/common/clang-mac.conf:
@@ -524,10 +646,11 @@ display.o: ../display/display.cpp ../display/display.h ../display/appinfo.h ../d
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 912):
+#  commands to execute (from `Makefile', line 1051):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o display.o ../display/display.cpp
 	
 
+ 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:47:05
@@ -553,7 +676,6 @@ display.o: ../display/display.cpp ../display/display.h ../display/appinfo.h ../d
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri:
- 
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
@@ -589,6 +711,7 @@ compiler_yacc_impl_clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 ../../../HAN/5.15.0/clang_64/mkspecs/common/clang.conf:
 #  Implicit rule search has been done.
@@ -598,20 +721,31 @@ compiler_yacc_impl_clean:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-runfanstate.o: runfanstate.cpp runfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h idlefanstate.h
+# Not a target:
+../3rdparty/spdlog/details/fmt_helper.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+runfanstate.o: runfanstate.cpp runfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h idlefanstate.h relay.h timer.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 890):
+#  commands to execute (from `Makefile', line 1029):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o runfanstate.o runfanstate.cpp
 	
 
 # Not a target:
 sensor.h:
- 
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-13 17:03:11
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions_private.pri:
 #  Implicit rule search has been done.
@@ -621,9 +755,37 @@ sensor.h:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+# Not a target:
+../3rdparty/spdlog/fmt/bundled/format.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/fmt/xchar.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:49:24
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/sinks/rotating_file_sink.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -638,16 +800,19 @@ sensor.h:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
-fancontext.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+../3rdparty/spdlog/sinks/base_sink.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 distclean: clean
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 764):
+#  commands to execute (from `Makefile', line 776):
 	-$(DEL_FILE) $(TARGET) 
 	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
@@ -677,7 +842,6 @@ first: all
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
- 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -701,9 +865,12 @@ first: all
 
 # Not a target:
 errorfanstate.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-11 18:23:25
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core_private.pri:
 #  Implicit rule search has been done.
@@ -715,18 +882,22 @@ errorfanstate.h:
 
 # Not a target:
 idlefanstate.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-13 20:47:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+ 
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-bathroomfan: calcbehaviour.o errorfanstate.o fancontext.o fanstate.o idlefanstate.o initfanstate.o main.o runfanstate.o sensebehaviour.o sensor.o display.o keyboard.o devconsole.o
+bathroomfan: calcbehaviour.o errorfanstate.o fancontext.o fanstate.o idlefanstate.o initfanstate.o logger.o main.o relay.o runfanstate.o sensebehaviour.o sensor.o display.o keyboard.o devconsole.o timer.o
 #  Implicit rule search has not been done.
-#  Last modified 2021-12-11 19:06:08
+#  Last modified 2021-12-13 21:35:27
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/11=0%
-#  commands to execute (from `Makefile', line 329):
+#  commands to execute (from `Makefile', line 341):
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 	
 
@@ -744,7 +915,6 @@ bathroomfan: calcbehaviour.o errorfanstate.o fancontext.o fanstate.o idlefanstat
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets.pri:
@@ -779,6 +949,7 @@ bathroomfan: calcbehaviour.o errorfanstate.o fancontext.o fanstate.o idlefanstat
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:46:35
@@ -819,9 +990,21 @@ bathroomfan: calcbehaviour.o errorfanstate.o fancontext.o fanstate.o idlefanstat
 
 # Not a target:
 runfanstate.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-13 21:00:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/details/backtracer.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 uninstall: FORCE
 #  Implicit rule search has not been done.
@@ -848,18 +1031,26 @@ uninstall: FORCE
 Makefile: bathroomfan.pro ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/common/unix.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/macx.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/sanitize.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/qconfig.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_accessibility_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bodymovin_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bootstrap_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_clipboard_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designercomponents_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_edid_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fb_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_graphics_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_packetprotocol_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldebug_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldevtools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels_private.pri 
  ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickshapes_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_service_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_theme_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uiplugin.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_functions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_post.prf .qmake.stash ../../../HAN/5.15.0/clang_64/mkspecs/features/exclusive_builds.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/sdk.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/resolve_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/objective_c.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qml_debug.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/mac.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/warn_on.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qmake_use.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/file_copies.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/rez.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/asset_catalogs.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/testcase_targets.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/exceptions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/yacc.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/lex.prf bathroomfan.pro
 #  Implicit rule search has not been done.
-#  Last modified 2021-12-12 12:34:14
+#  Last modified 2021-12-13 22:14:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 536):
+#  commands to execute (from `Makefile', line 548):
 	$(QMAKE) -o Makefile bathroomfan.pro -spec macx-clang CONFIG+=debug CONFIG+=x86_64 CONFIG+=qml_debug
 	
 
+# Not a target:
+../3rdparty/spdlog/fmt/ostr.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender_private.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -868,9 +1059,13 @@ Makefile: bathroomfan.pro ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.
 
 # Not a target:
 errorfanstate.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-11 18:22:25
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+ 
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 compiler_clean:
 #  Implicit rule search has not been done.
@@ -893,6 +1088,7 @@ compiler_clean:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 ../../../HAN/5.15.0/clang_64/mkspecs/features/default_pre.prf:
 #  Implicit rule search has been done.
 #  Last modified 2020-05-11 10:15:07
@@ -904,8 +1100,7 @@ compiler_clean:
 # Not a target:
 ../display/devconsole.h:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-11 19:17:12
- 
+#  Last modified 2021-12-13 16:40:11
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -919,6 +1114,7 @@ compiler_clean:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 compiler_rez_source_make_all:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -943,9 +1139,12 @@ compiler_rez_source_make_all:
 
 fanstate.o: fanstate.cpp fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 834):
+#  Last modified 2021-12-13 21:35:26
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 850):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fanstate.o fanstate.cpp
 	
 
@@ -960,6 +1159,7 @@ runfanstate.cpp:
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
+ 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
@@ -974,7 +1174,6 @@ runfanstate.cpp:
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
- 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -988,15 +1187,28 @@ runfanstate.cpp:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-initfanstate.o: initfanstate.cpp initfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h idlefanstate.h runfanstate.h
+# Not a target:
+../3rdparty/spdlog/details/log_msg_buffer.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+initfanstate.o: initfanstate.cpp initfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h idlefanstate.h runfanstate.h relay.h timer.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 862):
+#  Last modified 2021-12-13 21:35:26
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 882):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o initfanstate.o initfanstate.cpp
 	
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender_private.pri:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:47:05
 #  File has been updated.
@@ -1008,6 +1220,15 @@ compiler_lex_make_all:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+# Not a target:
+../3rdparty/spdlog/details/file_helper-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus.pri:
 #  Implicit rule search has been done.
@@ -1035,8 +1256,8 @@ compiler_lex_make_all:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent_private.pri:
 #  Implicit rule search has been done.
-#  Last modified 2020-09-02 23:40:08
  
+#  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1091,6 +1312,7 @@ benchmark: first
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
+ 
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
@@ -1100,6 +1322,14 @@ benchmark: first
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+relay.o: relay.cpp relay.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 1013):
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o relay.o relay.cpp
+	
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing_private.pri:
 #  Implicit rule search has been done.
@@ -1120,7 +1350,6 @@ main.cpp:
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
- 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
@@ -1131,7 +1360,26 @@ compiler_yacc_decl_make_all:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/features/yacc.prf:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-05-11 10:15:07
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/logger-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/common-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1148,6 +1396,25 @@ compiler_yacc_decl_make_all:
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:49:24
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+timer.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-13 20:58:46
+ 
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/details/os.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1185,6 +1452,7 @@ compiler_yacc_decl_make_all:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network_private.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -1203,7 +1471,7 @@ xcodeproj:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 772):
+#  commands to execute (from `Makefile', line 784):
 	@$(QMAKE) -spec macx-xcode "$(EXPORT__PRO_FILE_)" -spec macx-clang CONFIG+=debug CONFIG+=x86_64 CONFIG+=qml_debug
 	
 
@@ -1232,7 +1500,6 @@ xcodeproj:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf:
- 
 #  Implicit rule search has been done.
 #  Last modified 2020-05-11 10:15:07
 #  File has been updated.
@@ -1256,9 +1523,66 @@ xcodeproj:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+# Not a target:
+../3rdparty/spdlog/formatter.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+logger.o: logger.cpp logger.h ../3rdparty/spdlog/fmt/ostr.h ../3rdparty/spdlog/fmt/bundled/ostream.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/rotating_file_sink.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/rotating_file_sink-inl.h ../3rdparty/spdlog/sinks/dist_sink.h
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := logger.o
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+ 
+# + := logger.cpp logger.h ../3rdparty/spdlog/fmt/ostr.h ../3rdparty/spdlog/fmt/bundled/ostream.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/rotating_file_sink.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/rotating_file_sink-inl.h ../3rdparty/spdlog/sinks/dist_sink.h
+# automatic
+# | := 
+# automatic
+# < := logger.cpp
+# automatic
+ 
+# ^ := logger.cpp logger.h ../3rdparty/spdlog/fmt/ostr.h ../3rdparty/spdlog/fmt/bundled/ostream.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/rotating_file_sink.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/rotating_file_sink-inl.h ../3rdparty/spdlog/sinks/dist_sink.h
+# automatic
+ 
+# ? := logger.cpp logger.h ../3rdparty/spdlog/fmt/ostr.h ../3rdparty/spdlog/fmt/bundled/ostream.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/rotating_file_sink.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/rotating_file_sink-inl.h ../3rdparty/spdlog/sinks/dist_sink.h
+# variable set hash-table stats:
+ 
+# Load=8/32=25%, Rehash=0, Collisions=3/19=16%
+#  commands to execute (from `Makefile', line 937):
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o logger.o logger.cpp
+	
+
+# Not a target:
+timer.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../3rdparty/spdlog/details/registry.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1290,6 +1614,7 @@ xcodeproj:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:47:05
 #  File has been updated.
 #  Successfully updated.
@@ -1299,6 +1624,15 @@ xcodeproj:
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/details/console_globals.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1320,10 +1654,19 @@ xcodeproj:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
- 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview_private.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:40:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/fmt/bundled/xchar.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1375,12 +1718,13 @@ xcodeproj:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 calcbehaviour.h:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-12 12:27:16
+#  Last modified 2021-12-13 17:08:49
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1392,7 +1736,6 @@ calcbehaviour.h:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine.pri:
@@ -1417,6 +1760,7 @@ calcbehaviour.h:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation.pri:
@@ -1429,15 +1773,18 @@ calcbehaviour.h:
 
 # Not a target:
 sensebehaviour.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-13 17:08:17
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 keyboard.o: ../display/keyboard.cpp ../display/keyboard.h ../display/display.h ../display/appinfo.h ../display/devconsole.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 918):
+#  commands to execute (from `Makefile', line 1057):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o keyboard.o ../display/keyboard.cpp
 	
 
@@ -1460,12 +1807,12 @@ sensor.cpp:
 #  Last modified 2020-05-11 10:15:07
 #  File has been updated.
 #  Successfully updated.
+ 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/common/unix.conf:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-05-11 10:15:07
 #  File has been updated.
 #  Successfully updated.
@@ -1488,9 +1835,37 @@ sensor.cpp:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+# Not a target:
+../3rdparty/spdlog/pattern_formatter-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/details/circular_q.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_pre.prf:
 #  Implicit rule search has been done.
 #  Last modified 2020-05-11 10:15:07
+#  File has been updated.
+#  Successfully updated.
+ 
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/details/periodic_worker-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1510,7 +1885,6 @@ sensor.cpp:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
@@ -1541,13 +1915,32 @@ sensor.cpp:
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
+ 
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/sinks/sink-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 calcbehaviour.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-12 12:28:03
+#  Last modified 2021-12-13 17:08:38
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/logger.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1567,7 +1960,6 @@ calcbehaviour.cpp:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui.pri:
@@ -1589,6 +1981,7 @@ sensebehaviour.cpp:
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
+ 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
@@ -1608,17 +2001,29 @@ sensebehaviour.cpp:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-fancontext.o: fancontext.cpp fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h
+# Not a target:
+../3rdparty/spdlog/spdlog.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+fancontext.o: fancontext.cpp fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h relay.h timer.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 824):
+#  Last modified 2021-12-13 21:35:26
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 840):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fancontext.o fancontext.cpp
 	
 
- 
 .qmake.stash:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2021-12-11 16:25:00
 #  File has been updated.
 #  Successfully updated.
@@ -1628,6 +2033,15 @@ fancontext.o: fancontext.cpp fancontext.h fanstate.h sensor.h sensebehaviour.h .
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/sinks/wincolor_sink-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1653,52 +2067,41 @@ qmake: FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 743):
+#  commands to execute (from `Makefile', line 755):
 	@$(QMAKE) -o Makefile bathroomfan.pro -spec macx-clang CONFIG+=debug CONFIG+=x86_64 CONFIG+=qml_debug
 	
 
-idlefanstate.o: idlefanstate.cpp idlefanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h runfanstate.h
+idlefanstate.o: idlefanstate.cpp idlefanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h runfanstate.h relay.h timer.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 848):
+#  Last modified 2021-12-13 21:35:26
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 866):
+ 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o idlefanstate.o idlefanstate.cpp
 	
 
 calcbehaviour.o: calcbehaviour.cpp calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h
- 
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: `'
-#  File does not exist.
+#  Last modified 2021-12-13 21:35:26
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := calcbehaviour.o
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := calcbehaviour.cpp calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h
-# automatic
-# | := 
-# automatic
-# < := calcbehaviour.cpp
-# automatic
-# ^ := calcbehaviour.cpp calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h
-# automatic
-# ? := calcbehaviour.cpp calcbehaviour.h ../display/display.h ../display/appinfo.h ../display/devconsole.h ../display/keyboard.h
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=3/19=16%
-#  commands to execute (from `Makefile', line 795):
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 807):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o calcbehaviour.o calcbehaviour.cpp
 	
 
 # Not a target:
 initfanstate.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-13 20:47:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml_private.pri:
 #  Implicit rule search has been done.
@@ -1718,8 +2121,16 @@ initfanstate.cpp:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-06-16 10:28:06
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/details/synchronous_factory.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1729,14 +2140,33 @@ clean: compiler_clean
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 759):
+#  commands to execute (from `Makefile', line 771):
 	-$(DEL_FILE) $(OBJECTS)
 	-$(DEL_FILE) *~ core *.core
 	
 
+# Not a target:
+../3rdparty/spdlog/sinks/ansicolor_sink-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+ 
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/fmt/bundled/format-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1774,6 +2204,15 @@ clean: compiler_clean
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+# Not a target:
+../3rdparty/spdlog/sinks/rotating_file_sink-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -1786,7 +2225,7 @@ devconsole.o: ../display/devconsole.cpp ../display/devconsole.h ../display/displ
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 924):
+#  commands to execute (from `Makefile', line 1063):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o devconsole.o ../display/devconsole.cpp
 	
 
@@ -1796,6 +2235,7 @@ devconsole.o: ../display/devconsole.cpp ../display/devconsole.h ../display/displ
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/qconfig.pri:
@@ -1817,7 +2257,6 @@ devconsole.o: ../display/devconsole.cpp ../display/devconsole.h ../display/displ
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
- 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1825,13 +2264,25 @@ devconsole.o: ../display/devconsole.cpp ../display/devconsole.h ../display/displ
 
 # Not a target:
 initfanstate.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-13 20:45:49
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 bathroomfan.pro:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-11 20:37:32
+#  Last modified 2021-12-13 21:58:24
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1845,8 +2296,15 @@ bathroomfan.pro:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+# Not a target:
+relay.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -1861,11 +2319,14 @@ bathroomfan.pro:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-errorfanstate.o: errorfanstate.cpp errorfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h
+errorfanstate.o: errorfanstate.cpp errorfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h relay.h timer.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 810):
+#  Last modified 2021-12-13 21:35:26
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 824):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o errorfanstate.o errorfanstate.cpp
 	
 
@@ -1873,7 +2334,7 @@ dist: distdir FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 751):
+#  commands to execute (from `Makefile', line 763):
 	(cd `dirname $(DISTDIR)` && $(TAR) $(DISTNAME).tar $(DISTNAME) && $(COMPRESS) $(DISTNAME).tar) && $(MOVE) `dirname $(DISTDIR)`/$(DISTNAME).tar.gz . && $(DEL_FILE) -r $(DISTDIR)
 	
 
@@ -1917,6 +2378,7 @@ install: FORCE
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -1936,6 +2398,24 @@ install: FORCE
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/sinks/stdout_color_sinks.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/details/backtracer-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1983,6 +2463,7 @@ install: FORCE
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -1999,9 +2480,12 @@ install: FORCE
 
 # Not a target:
 idlefanstate.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-13 17:29:20
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad_private.pri:
 #  Implicit rule search has been done.
@@ -2016,6 +2500,16 @@ idlefanstate.h:
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/fmt/fmt.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+ 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
@@ -2035,13 +2529,23 @@ idlefanstate.h:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-main.o: main.cpp fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h
+main.o: main.cpp fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h ../display/display.h ../display/appinfo.h ../display/keyboard.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h relay.h timer.h logger.h ../3rdparty/spdlog/fmt/ostr.h ../3rdparty/spdlog/fmt/bundled/ostream.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/rotating_file_sink.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/rotating_file_sink-inl.h ../3rdparty/spdlog/sinks/dist_sink.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 876):
+#  commands to execute (from `Makefile', line 1006):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 	
+
+# Not a target:
+../3rdparty/spdlog/sinks/ansicolor_sink.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+ 
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest.pri:
 #  Implicit rule search has been done.
@@ -2053,14 +2557,25 @@ main.o: main.cpp fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/de
 
 # Not a target:
 fanstate.h:
-#  Implicit rule search has not been done.
- 
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-11 19:28:21
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/sinks/dist_sink.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -2082,6 +2597,7 @@ fanstate.h:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 # Not a target:
 ../display/keyboard.h:
 #  Implicit rule search has been done.
@@ -2120,6 +2636,15 @@ qmake_all: FORCE
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+../3rdparty/spdlog/details/file_helper.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_theme_support_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -2129,17 +2654,26 @@ qmake_all: FORCE
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning.pri:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
- 
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+relay.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-13 20:33:08
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -2161,9 +2695,19 @@ qmake_all: FORCE
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+# Not a target:
+fancontext.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 12:12:12
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:47:05
+ 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -2197,14 +2741,16 @@ check: first
 
 # Not a target:
 fanstate.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-13 17:19:09
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
- 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -2234,6 +2780,16 @@ fanstate.cpp:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
+# Not a target:
+../3rdparty/spdlog/details/os-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -2241,6 +2797,14 @@ fanstate.cpp:
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+timer.o: timer.cpp timer.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 1066):
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o timer.o timer.cpp
+	
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels.pri:
 #  Implicit rule search has been done.
@@ -2268,6 +2832,7 @@ fanstate.cpp:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -2285,6 +2850,15 @@ fanstate.cpp:
 ../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/version.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -2310,7 +2884,7 @@ distdir: FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 754):
+#  commands to execute (from `Makefile', line 766):
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	
@@ -2318,6 +2892,25 @@ distdir: FORCE
 ../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf:
 #  Implicit rule search has been done.
 #  Last modified 2020-05-11 10:15:07
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ 
+../3rdparty/spdlog/sinks/base_sink-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/details/log_msg.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -2331,6 +2924,15 @@ compiler_yacc_decl_clean:
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:47:05
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../3rdparty/spdlog/fmt/bundled/ostream.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -2350,6 +2952,7 @@ compiler_yacc_decl_clean:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools.pri:
@@ -2360,10 +2963,28 @@ compiler_yacc_decl_clean:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+# Not a target:
+../3rdparty/spdlog/details/registry-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 compiler_yacc_impl_make_all:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+# Not a target:
+../3rdparty/spdlog/details/log_msg_buffer-inl.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-12 09:01:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf:
 #  Implicit rule search has been done.
@@ -2377,6 +2998,7 @@ compiler_yacc_impl_make_all:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
+ 
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
@@ -2394,7 +3016,6 @@ compiler_yacc_impl_make_all:
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
- 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
@@ -2402,7 +3023,7 @@ sensor.o: sensor.cpp sensor.h sensebehaviour.h ../display/devconsole.h ../displa
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 906):
+#  commands to execute (from `Makefile', line 1045):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sensor.o sensor.cpp
 	
 
@@ -2415,7 +3036,7 @@ sensor.o: sensor.cpp sensor.h sensebehaviour.h ../display/devconsole.h ../displa
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # files hash-table stats:
-# Load=272/1024=27%, Rehash=0, Collisions=148/645=23%
+# Load=333/1024=33%, Rehash=0, Collisions=209/836=25%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -2423,10 +3044,11 @@ sensor.o: sensor.cpp sensor.h sensebehaviour.h ../display/devconsole.h ../displa
 # No general (`VPATH' variable) search path.
 
 # # of strings in strcache: 2
+ 
 # # of strcache buffers: 1
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4021 / max = 4021 / min = 4021 / avg = 4021
 
-# Finished Make data base on Sun Dec 12 12:34:14 2021
+# Finished Make data base on Mon Dec 13 22:14:23 2021
 
  

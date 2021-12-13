@@ -7,9 +7,10 @@ class IdleFanState : public FanState
 {
 private:
     Sensor *tempSensor_;
+    Sensor *humSensor_;
 
 public:
-    IdleFanState(Sensor &tempsensor);
+    IdleFanState(Sensor &tempSensor, Sensor &humSensor);
 
     virtual void E_START() override;
     virtual void E_RUN() override;

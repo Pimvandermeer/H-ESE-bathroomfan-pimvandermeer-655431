@@ -1,9 +1,9 @@
 #include "idlefanstate.h"
 
-IdleFanState::IdleFanState(Sensor &tempSensor)
+IdleFanState::IdleFanState(Sensor &tempSensor, Sensor &humSensor)
+    : tempSensor_{&tempSensor}, humSensor_{&humSensor}
 {
-    std::cout << "Idle Fanstate created with " << tempSensor.getName() << std::endl;
-    this->tempSensor_ = &tempSensor;
+  //  this->tempSensor_ = &tempSensor;   Mag ook
 }
 
 IdleFanState::~IdleFanState()
@@ -19,18 +19,23 @@ void IdleFanState::E_START()
 void IdleFanState::E_RUN()
 {
     Display::DSPshow(2, "IdleFanState is at run");
-    Display::DSPshow(3, "Now something must happen");
-    Display::DSPshow(4, "The name of the sensor is:");
 
     tempSensor_->sense(tempSensor_->getSensBehaviour());
 
+    if (*tempSensor_->getCalculatedValue() >= 174)
+    {
+        Display::DSPshow(4, "The value is higher so I will go to running state");
+        this->fanContext_->TransitionTo(new RunFanState);
+        fanContext_->Stop();
+    }
+
     //tempSensor_->calc(tempSensor_->getCalcBehaviour(), tempSensor_->getSensedValue());
 
-    std::cout << tempSensor_->getName() << std::endl;
-    std::cout << "From idle is this the calulated value" << *tempSensor_->getCalculatedValue() << std::endl;
+  //  std::cout << tempSensor_->getName() << std::endl;
+  //  std::cout << "From idle is this the calulated value" << *tempSensor_->getCalculatedValue() << std::endl;
 
 
-    this->fanContext_->TransitionTo(new RunFanState);
+
 }
 
 void IdleFanState::E_STOP()

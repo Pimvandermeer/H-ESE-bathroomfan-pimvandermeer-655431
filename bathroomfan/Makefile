@@ -17,7 +17,7 @@ CXX           = /Library/Developer/CommandLineTools/usr/bin/clang++
 DEFINES       = -DQT_QML_DEBUG
 CFLAGS        = -pipe -g $(EXPORT_ARCH_ARGS) -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=10.13 -Wall -Wextra -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -stdlib=libc++ -g -std=gnu++11 $(EXPORT_ARCH_ARGS) -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=10.13 -Wall -Wextra -fPIC $(DEFINES)
-INCPATH       = -I. -I../../../HAN/5.15.0/clang_64/mkspecs/macx-clang
+INCPATH       = -I. -I../3rdparty -I../../../HAN/5.15.0/clang_64/mkspecs/macx-clang
 QMAKE         = /Volumes/compiled/HAN/5.15.0/clang_64/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -58,26 +58,32 @@ SOURCES       = calcbehaviour.cpp \
 		fanstate.cpp \
 		idlefanstate.cpp \
 		initfanstate.cpp \
+		logger.cpp \
 		main.cpp \
+		relay.cpp \
 		runfanstate.cpp \
 		sensebehaviour.cpp \
 		sensor.cpp \
 		../display/display.cpp \
 		../display/keyboard.cpp \
-		../display/devconsole.cpp 
+		../display/devconsole.cpp \
+		timer.cpp 
 OBJECTS       = calcbehaviour.o \
 		errorfanstate.o \
 		fancontext.o \
 		fanstate.o \
 		idlefanstate.o \
 		initfanstate.o \
+		logger.o \
 		main.o \
+		relay.o \
 		runfanstate.o \
 		sensebehaviour.o \
 		sensor.o \
 		display.o \
 		keyboard.o \
-		devconsole.o
+		devconsole.o \
+		timer.o
 DIST          = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf \
 		../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri \
 		../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf \
@@ -288,25 +294,31 @@ DIST          = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf \
 		fanstate.h \
 		idlefanstate.h \
 		initfanstate.h \
+		logger.h \
+		relay.h \
 		runfanstate.h \
 		sensebehaviour.h \
 		sensor.h \
 		../display/appinfo.h \
 		../display/display.h \
 		../display/keyboard.h \
-		../display/devconsole.h calcbehaviour.cpp \
+		../display/devconsole.h \
+		timer.h calcbehaviour.cpp \
 		errorfanstate.cpp \
 		fancontext.cpp \
 		fanstate.cpp \
 		idlefanstate.cpp \
 		initfanstate.cpp \
+		logger.cpp \
 		main.cpp \
+		relay.cpp \
 		runfanstate.cpp \
 		sensebehaviour.cpp \
 		sensor.cpp \
 		../display/display.cpp \
 		../display/keyboard.cpp \
-		../display/devconsole.cpp
+		../display/devconsole.cpp \
+		timer.cpp
 QMAKE_TARGET  = bathroomfan
 DESTDIR       = 
 TARGET        = bathroomfan
@@ -806,7 +818,9 @@ errorfanstate.o: errorfanstate.cpp errorfanstate.h \
 		calcbehaviour.h \
 		initfanstate.h \
 		idlefanstate.h \
-		runfanstate.h
+		runfanstate.h \
+		relay.h \
+		timer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o errorfanstate.o errorfanstate.cpp
 
 fancontext.o: fancontext.cpp fancontext.h \
@@ -820,7 +834,9 @@ fancontext.o: fancontext.cpp fancontext.h \
 		calcbehaviour.h \
 		initfanstate.h \
 		idlefanstate.h \
-		runfanstate.h
+		runfanstate.h \
+		relay.h \
+		timer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fancontext.o fancontext.cpp
 
 fanstate.o: fanstate.cpp fanstate.h \
@@ -844,7 +860,9 @@ idlefanstate.o: idlefanstate.cpp idlefanstate.h \
 		../display/keyboard.h \
 		calcbehaviour.h \
 		initfanstate.h \
-		runfanstate.h
+		runfanstate.h \
+		relay.h \
+		timer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o idlefanstate.o idlefanstate.cpp
 
 initfanstate.o: initfanstate.cpp initfanstate.h \
@@ -858,8 +876,65 @@ initfanstate.o: initfanstate.cpp initfanstate.h \
 		../display/keyboard.h \
 		calcbehaviour.h \
 		idlefanstate.h \
-		runfanstate.h
+		runfanstate.h \
+		relay.h \
+		timer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o initfanstate.o initfanstate.cpp
+
+logger.o: logger.cpp logger.h \
+		../3rdparty/spdlog/fmt/ostr.h \
+		../3rdparty/spdlog/fmt/bundled/ostream.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/rotating_file_sink.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/rotating_file_sink-inl.h \
+		../3rdparty/spdlog/sinks/dist_sink.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o logger.o logger.cpp
 
 main.o: main.cpp fancontext.h \
 		fanstate.h \
@@ -872,8 +947,70 @@ main.o: main.cpp fancontext.h \
 		calcbehaviour.h \
 		initfanstate.h \
 		idlefanstate.h \
-		runfanstate.h
+		runfanstate.h \
+		relay.h \
+		timer.h \
+		logger.h \
+		../3rdparty/spdlog/fmt/ostr.h \
+		../3rdparty/spdlog/fmt/bundled/ostream.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/rotating_file_sink.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/rotating_file_sink-inl.h \
+		../3rdparty/spdlog/sinks/dist_sink.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
+
+relay.o: relay.cpp relay.h \
+		../display/display.h \
+		../display/appinfo.h \
+		../display/devconsole.h \
+		../display/keyboard.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o relay.o relay.cpp
 
 runfanstate.o: runfanstate.cpp runfanstate.h \
 		fancontext.h \
@@ -886,7 +1023,9 @@ runfanstate.o: runfanstate.cpp runfanstate.h \
 		../display/keyboard.h \
 		calcbehaviour.h \
 		initfanstate.h \
-		idlefanstate.h
+		idlefanstate.h \
+		relay.h \
+		timer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o runfanstate.o runfanstate.cpp
 
 sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h \
@@ -922,6 +1061,9 @@ devconsole.o: ../display/devconsole.cpp ../display/devconsole.h \
 		../display/appinfo.h \
 		../display/keyboard.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o devconsole.o ../display/devconsole.cpp
+
+timer.o: timer.cpp timer.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o timer.o timer.cpp
 
 ####### Install
 

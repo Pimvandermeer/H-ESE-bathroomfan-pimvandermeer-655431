@@ -3,6 +3,7 @@
 
 #include <time.h>
 #include <stdio.h>
+#include "log.h"
 
 
 class Timer

@@ -8,13 +8,13 @@ void LogManager::initialize()
     std::vector<spdlog::sink_ptr> sinks{consoleSink, fileSink};
 
     auto logger = std::make_shared<spdlog::logger>(BATHROOM_STATE, sinks.begin(), sinks.end());
-    logger->set_level(spdlog::level::info);
-    logger->flush_on(spdlog::level::info);
+    logger->set_level(spdlog::level::trace);
+    logger->flush_on(spdlog::level::trace);
     spdlog::register_logger(logger);
 
     auto loggersens = std::make_shared<spdlog::logger>(BATHROOM_SENSOR, sinks.begin(), sinks.end());
-    loggersens->set_level(spdlog::level::info);
-    loggersens->flush_on(spdlog::level::info);
+    loggersens->set_level(spdlog::level::trace);
+    loggersens->flush_on(spdlog::level::trace);
     spdlog::register_logger(loggersens);
 }
 

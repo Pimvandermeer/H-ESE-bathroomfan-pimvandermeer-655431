@@ -8,11 +8,18 @@
 class RunFanState : public FanState
 {
 private:
+    std::string exceedSensorName_ = "None";
+    double *exceedValue_ = NULL;
+    bool enteredAfterToiler_;
+
     Timer *timer_ = new Timer(3000);
     Relay *relay_ = new Relay(false);
 
-public:
 
+public:
+   RunFanState(std::string exceedSensorName, double &exceedValue);
+
+   virtual void E_CONFIG() override;
    virtual void E_START() override;
    virtual void E_RUN() override;
    virtual void E_STOP() override;

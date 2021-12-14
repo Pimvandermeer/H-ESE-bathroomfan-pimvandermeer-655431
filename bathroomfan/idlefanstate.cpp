@@ -11,29 +11,38 @@ IdleFanState::~IdleFanState()
     STATE_TRACE("IdleFanstate has been destructed");
 }
 
-void IdleFanState::E_START()
+void IdleFanState::E_CONFIG()
 {
     // Error because idle should not recieve this
-    STATE_ERROR("IdleFanState recieved e_start command");
+    STATE_ERROR("IdleFanState recieved e_config command");
 }
 
-void IdleFanState::E_RUN()
+void IdleFanState::E_START()
 {
     STATE_TRACE("IdleFanState recieved e_run command");
 
     tempSensor_->sense(tempSensor_->getSensBehaviour());
+    humSensor_->sense(humSensor_->getSensBehaviour());
 
     if (*tempSensor_->getCalculatedValue() >= 174)
     {
-        STATE_INFO(" SIMULATION The value is higher so I will go to running state");
-        this->fanContext_->TransitionTo(new RunFanState);
-        fanContext_->Stop();
-    }
+        STATE_INFO(" SIMULATION The temperature value is higher so I will go to running state");
+        this->fanContext_->TransitionTo(new RunFanState(tempSensor_->getName(), *tempSensor_->getCalculatedValue()));
+       // fanContext_->Stop();
+    };
 
-    // tempSensor_->calc(tempSensor_->getCalcBehaviour(), tempSensor_->getSensedValue());
+    if(*humSensor_->getCalculatedValue() >= 397)
+    {
+        STATE_INFO(" SIMULATION The temperature value is higher so I will go to running state");
+        this->fanContext_->TransitionTo(new RunFanState(tempSensor_->getName(), *tempSensor_->getCalculatedValue()));
+       // fanContext_->Stop();
+    };
+}
 
-    //  std::cout << tempSensor_->getName() << std::endl;
-    //  std::cout << "From idle is this the calulated value" << *tempSensor_->getCalculatedValue() << std::endl;
+void IdleFanState::E_RUN()
+{
+    // Error because idle should not recieve this
+    STATE_ERROR("IdleFanState recieved e_run command");
 }
 
 void IdleFanState::E_STOP()

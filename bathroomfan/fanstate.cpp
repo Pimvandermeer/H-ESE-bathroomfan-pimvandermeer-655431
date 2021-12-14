@@ -16,6 +16,12 @@ void FanState::setContext(FanContext *fanContext)
     this->fanContext_ = fanContext;
 }
 
+void FanState::E_CONFIG()
+{
+    // Error because is=t must be overwritten by actual state
+    STATE_ERROR("Fanstates recieved e_config command")
+}
+
 void FanState::E_START()
 {
     // Error because is=t must be overwritten by actual state

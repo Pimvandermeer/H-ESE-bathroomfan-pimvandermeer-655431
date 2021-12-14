@@ -1,6 +1,7 @@
 #include "fancontext.h"
 
-FanContext::FanContext(FanState *fanstate) : fanState_(nullptr)
+FanContext::FanContext(FanState *fanstate, int &minutes)
+    : fanState_(nullptr), minutesToRunFan_(minutes)
 {
     this->TransitionTo(fanstate);
     //  stateLogger_.initialize();
@@ -25,15 +26,16 @@ void FanContext::TransitionTo(FanState *fanstate)
     this->fanState_->setContext(this);
 }
 
-// void FanContext::adNumStates()
-//{
-//     numStates++;
-// }
+int *FanContext::getMinutesToRun()
+{
+    return &minutesToRunFan_;
+}
 
-// void FanContext::delNumStates()
-//{
-//     numStates--;
-// }
+void FanContext::Config()
+{
+    STATE_TRACE("Fancontext initiated E_CONFIG");
+    this->fanState_->E_CONFIG();
+}
 
 void FanContext::Start()
 {

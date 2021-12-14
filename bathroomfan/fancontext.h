@@ -6,7 +6,7 @@
 #include "initfanstate.h"
 #include "idlefanstate.h"
 #include "runfanstate.h"
-#include "../display/display.h"
+#include "errorfanstate.h"
 #include "logmanager.h"
 
 class FanContext
@@ -14,19 +14,18 @@ class FanContext
 private:
     FanState *fanState_;
     // LogManager stateLogger_;
-
-    static int numStates;
+    int minutesToRunFan_ = 0;
 
 public:
-    FanContext(FanState *fanstate);
+    FanContext(FanState *fanstate, int &minutes);
 
     ~FanContext();
 
     void TransitionTo(FanState *fanstate);
 
-    void adNumStates();
-    void delNumStates();
+    int *getMinutesToRun();
 
+    void Config();
     void Start();
     void Run();
     void Stop();

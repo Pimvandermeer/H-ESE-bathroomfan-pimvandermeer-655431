@@ -12,7 +12,7 @@ Relay::~Relay()
 
 void Relay::turnOn()
 {
-    SENS_INFO("--SIMULATION The Bathroomfan is now Running");
+    SENS_INFO("--SIMULATION The Bathroomfan is now running for {} minutes");
     status_ = true;
 }
 

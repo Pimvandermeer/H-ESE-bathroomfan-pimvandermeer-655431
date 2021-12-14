@@ -3,10 +3,12 @@
 Timer::Timer(int delay)
     : setDelay_{delay}
 {
+    SENS_TRACE("Timer has been contructed");
 }
 
 Timer::~Timer()
 {
+    SENS_TRACE("Sensor has been destructed");
 }
 
 void Timer::displayDelay(int number_of_seconds)

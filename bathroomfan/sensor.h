@@ -6,7 +6,6 @@
 #include "calcbehaviour.h"
 #include "logmanager.h"
 
-
 class Sensor
 {
 private:

@@ -18,6 +18,7 @@ public:
     void setContext(FanContext *fanContext);
 
   //  virtual int *E_START();
+    virtual void E_CONFIG();
     virtual void E_START();
     virtual void E_RUN();
     virtual void E_STOP();

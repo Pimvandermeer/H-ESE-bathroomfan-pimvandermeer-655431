@@ -4,14 +4,13 @@
 #include "log.h"
 #include "../display/appinfo.h"
 
-void FanClientCode()
+void FanClientCode(int *minutes)
 {
-  FanContext *fancontext = new FanContext(new InitFanState);
+  FanContext *fancontext = new FanContext(new InitFanState, *minutes);
+  fancontext->Config();
   fancontext->Start();
   fancontext->Run();
-  // fancontext->Error();
-
-  //  std::cout << "print this from client Code" << fancontext->getValue() << std::endl;
+  fancontext->Error();
 
   delete fancontext;
 }
@@ -20,12 +19,16 @@ int main()
 {
   LogManager logger;
   logger.initialize();
+
+  int Minutes = 10;
+
   STATE_INFO("We started the {} and are now at version {}\n\n", APP, VERSION);
 
   while (1)
   {
-    FanClientCode();
+    FanClientCode(&Minutes);
   };
+
   logger.shutdown();
 
   return 0;

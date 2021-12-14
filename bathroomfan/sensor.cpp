@@ -3,11 +3,12 @@
 Sensor::Sensor(std::string nameVal, senseBehaviour::sense_e sensBehaviour, calcBehaviour::calc_e calcbehaviour)
     : sensorName_{nameVal}, sensorBehaviour_{sensBehaviour}, calculateBehaviour_{calcbehaviour}
 {
+    SENS_TRACE("Sensor has been contructed");
 }
 
 Sensor::~Sensor()
 {
-     std::cout << "Destructor called for" << sensorName_ << std::endl;
+     SENS_TRACE("Sensor has been detructed");
 }
 
 void Sensor::sense(senseBehaviour::sense_e *enumValue)

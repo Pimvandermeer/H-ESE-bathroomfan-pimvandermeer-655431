@@ -1,38 +1,47 @@
 #include "fanstate.h"
 
+FanState::FanState()
+{
+    STATE_TRACE("Fanstate has been initialised");
+}
 
 FanState::~FanState()
 {
-   std::cout << "Fanstate destructed" << std::endl;
+    STATE_TRACE("Fanstate has been destructed");
 }
 
 void FanState::setContext(FanContext *fanContext)
 {
+    STATE_TRACE("Fanstate set the conext {}");
     this->fanContext_ = fanContext;
 }
 
 void FanState::E_START()
 {
-    Display::DSPshow(2, "Fan states e_start function");
+    // Error because is=t must be overwritten by actual state
+    STATE_ERROR("Fanstates recieved e_start command")
 }
 
 void FanState::E_RUN()
 {
-    Display::DSPshow(2, "Fan states e_run function");
+    // Error because is=t must be overwritten by actual state
+    STATE_ERROR("Fanstate recieved e_run command")
 }
 
 void FanState::E_STOP()
 {
-    Display::DSPshow(2, "Fan states e_stop function");
+    // Error because is=t must be overwritten by actual state
+    STATE_ERROR("Fanstate recieved e_stop command")
 }
 
 void FanState::E_ERROR()
 {
-    Display::DSPshow(2, "Fan states e_error function");
+    // Error because is=t must be overwritten by actual state
+    STATE_ERROR("Fanstate recieved e_error command")
 }
 
 void FanState::E_FIXED()
 {
-    Display::DSPshow(2, "Fan states e_fixed function");
+    // Error because is=t must be overwritten by actual state
+    STATE_ERROR("Fanstate recieved e_fixed command")
 }
-

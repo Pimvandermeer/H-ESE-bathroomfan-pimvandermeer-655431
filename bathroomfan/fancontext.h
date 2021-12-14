@@ -7,12 +7,14 @@
 #include "idlefanstate.h"
 #include "runfanstate.h"
 #include "../display/display.h"
-
+#include "logmanager.h"
 
 class FanContext
 {
 private:
     FanState *fanState_;
+    // LogManager stateLogger_;
+
     static int numStates;
 
 public:
@@ -30,7 +32,6 @@ public:
     void Stop();
     void Error();
     void Fixed();
-
 };
 
 #endif // FANCONTEXT_H

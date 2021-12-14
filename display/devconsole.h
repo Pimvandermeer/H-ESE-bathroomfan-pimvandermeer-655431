@@ -1,7 +1,8 @@
 #ifndef DEVCONSOLE_H
 #define DEVCONSOLE_H
 
-#include "display.h"
+#include "log.h"
+#include "keyboard.h"
 
 namespace Devconsole
 {

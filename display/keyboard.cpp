@@ -2,7 +2,7 @@
 
 void Keyboard::KYBinitialise(void)
 {
-   Devconsole::DCSdebugSystemInfo("Keyboard: initialised");
+   SENS_INFO("Keyboard: initialised");
 }
 
 void Keyboard::KYBclear(void)

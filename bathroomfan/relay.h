@@ -2,7 +2,7 @@
 #define RELAY_H
 
 #include <iostream>
-#include "../display/display.h"
+#include "log.h"
 
 class Relay
 {

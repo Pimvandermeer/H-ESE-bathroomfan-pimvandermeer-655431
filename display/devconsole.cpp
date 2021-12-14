@@ -8,7 +8,7 @@ Keyboard keyboard;
 void Devconsole::DCSinitialise(void)
 {
    keyboard.KYBinitialise();
-   Devconsole::DCSdebugSystemInfo("Development Console: initialised");
+//   Devconsole::DCSdebugSystemInfo("Development Console: initialised");
 }
 
 bool Devconsole::DCSsimulationSystemInputYN(const char questionText[])
@@ -18,7 +18,8 @@ bool Devconsole::DCSsimulationSystemInputYN(const char questionText[])
 
    do
    {
-      printf("\n-- SIMULATION  %s [y/n]? ", questionText);
+       SENS_INFO("-- SIMULATION  {} [y/n]?", questionText);
+   //   printf("\n-- SIMULATION  %s [y/n]? ", questionText);
 
       int nOK = scanf(" %c", &input);
 
@@ -97,7 +98,8 @@ int Devconsole::DCSsimulationSystemInput(const char text[], const char fmt[], ..
    int nArgsOK = 0;
    va_list arg;
 
-   printf("\n-- SIMULATION  %s ", text);
+    SENS_DEBUG("SIMULATION {}", text);
+//   printf("\n-- SIMULATION  %s ", text);
    va_start(arg, fmt);
    nArgsOK = vfscanf(stdin, fmt, arg);
    va_end(arg);
@@ -109,7 +111,8 @@ void Devconsole::DCSdebugSystemInfo(const char fmt[], ...)
 {
    va_list arg;
 
-   printf("\n-- DEBUG  ");
+   SENS_DEBUG("--DEBUG");
+//   printf("\n-- DEBUG  ");
    va_start(arg, fmt);
    vfprintf(stdout, fmt, arg);
    va_end(arg);
@@ -119,7 +122,8 @@ void Devconsole::DCSsimulationSystemInfo(const char fmt[], ...)
 {
    va_list arg;
 
-   printf("\n-- SIMULATION  ");
+   SENS_DEBUG("---SIMULATION");
+//   printf("\n-- SIMULATION  ");
    va_start(arg, fmt);
    vfprintf(stdout, fmt, arg);
    va_end(arg);
@@ -129,7 +133,8 @@ void DCSshowSystemError(const char fmt[], ...)
 {
    va_list arg;
 
-   printf("\n-- SYSTEM ERROR  ");
+   SENS_ERROR(" --SYSTEM ERROR");
+ //  printf("\n-- SYSTEM ERROR  ");
    va_start(arg, fmt);
    vfprintf(stdout, fmt, arg);
    va_end(arg);

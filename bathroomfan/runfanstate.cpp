@@ -4,36 +4,40 @@ RunFanState::~RunFanState()
 {
     delete this->timer_;
     delete this->relay_;
-    std::cout << " Destructor RunFanStae" << std::endl;
+    STATE_INFO("RunFanState has been destructed");
 }
 
 void RunFanState::E_START()
 {
-    Display::DSPshow(2, "Run FanState is at start");
+    //Error because idle should not recieve this
+    STATE_ERROR("RunFanState recieved e_start command");
 }
 
 void RunFanState::E_RUN()
 {
-
-    Display::DSPshow(2, "Run FanState is at run");
+    //Error because idle should not recieve this
+    STATE_ERROR("RunFanState recieved e_run command");
 }
 
 void RunFanState::E_STOP()
 {
+    STATE_TRACE("RunFanStae recieved e_stop command");
+
     this->timer_->displayDelay(1000);
     this->relay_->turnOn();
     this-> timer_->displayDelay(3000);
     this->relay_->turnOff();
-    Display::DSPshow(2, "Run FanState is at stop");
 }
 
 void RunFanState::E_ERROR()
 {
-    Display::DSPshow(2, "Run FanState is at error");
+    //Error because idle should not recieve this
+    STATE_ERROR("RunFanState recieved e_error command");
 }
 
 void RunFanState::E_FIXED()
 {
-    Display::DSPshow(2, "Run FanState is at fixed");
+    //Error because idle should not recieve this
+    STATE_ERROR("RunFanState recieved e_fixed command");
 }
 

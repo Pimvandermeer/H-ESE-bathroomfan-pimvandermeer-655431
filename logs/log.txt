@@ -1,0 +1,494 @@
+[2021-12-14 13:22:20.222] [bathroomlogger] [trace] Here is some other text
+[2021-12-14 13:22:20.223] [bathroomlogger] [info] AND this is some other Text 10
+[2021-12-14 13:22:25.163] [bathroomlogger] [error] THIS IS A INITFAN STATE ERROR
+[2021-12-14 13:22:29.447] [bathroomlogger] [trace] Here is some other text
+[2021-12-14 13:22:29.451] [bathroomlogger] [info] AND this is some other Text 10
+[2021-12-14 13:22:32.006] [bathroomlogger] [error] THIS IS A INITFAN STATE ERROR
+[2021-12-14 13:24:02.453] [bathroomlogger] [info] Fan Context has been initialised 10
+[2021-12-14 13:24:06.698] [bathroomlogger] [error] THIS IS A INITFAN STATE ERROR
+[2021-12-14 13:24:10.948] [bathroomlogger] [info] Fan Context has been initialised 10
+[2021-12-14 13:24:10.957] [bathroomlogger] [error] THIS IS A INITFAN STATE ERROR
+[2021-12-14 13:25:38.696] [bathroomlogger] [info] Fan Context has been initialised 10
+[2021-12-14 13:25:41.719] [bathroomlogger] [error] THIS IS A INITFAN STATE ERROR
+[2021-12-14 13:25:43.802] [bathroomlogger] [info] Fan Context has been initialised 10
+[2021-12-14 13:25:43.814] [bathroomlogger] [error] THIS IS A INITFAN STATE ERROR
+[2021-12-14 13:25:45.940] [bathroomlogger] [info] Fan Context has been initialised 10
+[2021-12-14 13:25:46.490] [bathroomlogger] [error] THIS IS A INITFAN STATE ERROR
+[2021-12-14 13:33:39.354] [bathroomlogger] [info] Fan Context has been initialised 10
+[2021-12-14 13:33:44.699] [bathroomlogger] [error] THIS IS A INITFAN STATE ERROR
+[2021-12-14 13:33:52.420] [bathroomlogger] [info] THE SENSOR BEHAVIOUR IS SHOWN
+[2021-12-14 13:35:46.100] [bathroomlogger] [info] Fan Context has been initialised 10
+[2021-12-14 13:35:47.343] [bathroomlogger] [error] THIS IS A INITFAN STATE ERROR
+[2021-12-14 13:35:53.848] [bathroomlogger] [info] THE SENSOR BEHAVIOUR IS 0 SHOWN
+[2021-12-14 13:47:50.053] [bathroomlogger] [trace] state
+[2021-12-14 13:51:56.865] [bathroomlogger] [trace] Fan Context has been initialised 10
+[2021-12-14 13:51:56.866] [sensor] [trace] THIS IS FROM THE SENSOR
+[2021-12-14 14:12:37.798] [bathroom_state] [trace] Fan Context has been initialised 10
+[2021-12-14 14:12:37.799] [bathroom_sensor] [trace] THIS IS FROM THE SENSOR
+[2021-12-14 14:12:51.398] [bathroom_state] [info] THIS IS A INITFAN STATE ERROR
+[2021-12-14 14:34:55.934] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 14:34:55.934] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 14:35:03.170] [bathroom_state] [info] THIS IS A INITFAN STATE ERROR
+[2021-12-14 14:35:03.170] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 14:35:03.170] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 14:35:03.170] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 14:35:03.170] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 14:35:03.170] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 14:35:03.170] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 14:40:00.210] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 14:40:00.211] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 14:40:01.811] [bathroom_state] [info] THIS IS A INITFAN STATE ERROR
+[2021-12-14 14:40:01.811] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 14:40:01.811] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 14:40:01.811] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 14:40:01.811] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 14:40:01.811] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 14:40:01.811] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 14:40:01.811] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 14:56:38.333] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 14:56:38.333] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 14:56:44.956] [bathroom_state] [info] THIS IS A INITFAN STATE ERROR
+[2021-12-14 14:56:44.956] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 14:56:44.956] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 14:56:44.956] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 14:56:44.956] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 14:56:44.956] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 14:56:44.956] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 14:56:44.956] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 14:56:44.956] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 15:18:33.269] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 15:18:33.269] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 15:18:40.651] [bathroom_state] [info] THIS IS A INITFAN STATE ERROR
+[2021-12-14 15:18:40.651] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 15:18:40.651] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 15:18:40.651] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 15:18:40.651] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 15:18:40.651] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 15:18:40.651] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:18:40.651] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 15:18:40.651] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 15:28:25.592] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 15:28:25.593] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 15:28:27.475] [bathroom_state] [info] THIS IS A INITFAN STATE ERROR
+[2021-12-14 15:28:27.475] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 15:28:27.475] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 15:28:27.475] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 15:28:27.475] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 15:28:27.475] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 15:28:27.475] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:28:27.475] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 15:28:27.475] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 15:28:27.475] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 15:29:18.126] [bathroom_state] [info] IdleFanstate has been destructed
+[2021-12-14 15:29:18.126] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:29:18.127] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 15:29:18.127] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 15:47:10.914] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 15:47:10.915] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 15:47:10.916] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 15:47:10.916] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 15:47:10.916] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 15:47:10.916] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 15:47:10.916] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 15:47:10.916] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 15:47:10.916] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:47:10.916] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 15:47:10.916] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 15:47:10.916] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 15:47:30.720] [bathroom_state] [info] The value is higher so I will go to running state
+[2021-12-14 15:47:30.720] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 15:47:30.720] [bathroom_state] [info]  Context: Transtition to  11RunFanState
+[2021-12-14 15:47:30.720] [bathroom_state] [info] IdleFanstate has been destructed
+[2021-12-14 15:47:30.720] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:47:30.720] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 15:47:30.720] [bathroom_state] [trace] Fancontext initiated E_STOP
+[2021-12-14 15:47:31.721] [bathroom_sensor] [info] The Bathroomfan is now Running
+[2021-12-14 15:47:34.723] [bathroom_sensor] [info] The Bathroomfan is now stopped
+[2021-12-14 15:47:42.070] [bathroom_sensor] [info] Relay has been bestructed
+[2021-12-14 15:47:42.070] [bathroom_state] [info] RunFanState has been destructed
+[2021-12-14 15:47:42.070] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:47:42.071] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 15:47:42.071] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 15:47:42.071] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 15:47:42.071] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 15:47:42.071] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 15:47:42.071] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 15:47:42.071] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 15:47:42.071] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 15:47:42.071] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:47:42.071] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 15:47:42.071] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 15:47:42.071] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 15:56:54.101] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 15:56:54.103] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 15:56:54.103] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 15:56:54.103] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 15:56:54.103] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 15:56:54.103] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 15:56:54.103] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 15:56:54.103] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 15:56:54.103] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:56:54.103] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 15:56:54.103] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 15:56:54.103] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 15:57:02.735] [bathroom_sensor] [info] I recieved a temp value: 36 and calculated the value to 178.56
+[2021-12-14 15:57:02.735] [bathroom_state] [info] The value is higher so I will go to running state
+[2021-12-14 15:57:02.735] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 15:57:02.735] [bathroom_state] [info]  Context: Transtition to  11RunFanState
+[2021-12-14 15:57:02.735] [bathroom_state] [info] IdleFanstate has been destructed
+[2021-12-14 15:57:02.735] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:57:02.735] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 15:57:02.735] [bathroom_state] [trace] Fancontext initiated E_STOP
+[2021-12-14 15:57:02.736] [bathroom_state] [trace] RunFanStae recieved e_stop command
+[2021-12-14 15:57:03.736] [bathroom_sensor] [info] The Bathroomfan is now Running
+[2021-12-14 15:57:06.738] [bathroom_sensor] [info] The Bathroomfan is now stopped
+[2021-12-14 15:57:06.738] [bathroom_sensor] [info] Relay has been bestructed
+[2021-12-14 15:57:06.738] [bathroom_state] [info] RunFanState has been destructed
+[2021-12-14 15:57:06.738] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:57:06.742] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 15:57:06.742] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 15:57:06.742] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 15:57:06.742] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 15:57:06.742] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 15:57:06.742] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 15:57:06.742] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 15:57:06.742] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 15:57:06.742] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:57:06.742] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 15:57:06.742] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 15:57:06.742] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 15:57:46.568] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 15:57:46.569] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 15:57:46.569] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 15:57:46.569] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 15:57:46.569] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 15:57:46.569] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 15:57:46.569] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 15:57:46.569] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 15:57:46.569] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:57:46.569] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 15:57:46.569] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 15:57:46.569] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 15:57:48.726] [bathroom_sensor] [info] I recieved a temp value: 39 and calculated the value to 193.44
+[2021-12-14 15:57:48.726] [bathroom_state] [info] The value is higher so I will go to running state
+[2021-12-14 15:57:48.726] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 15:57:48.726] [bathroom_state] [info]  Context: Transtition to  11RunFanState
+[2021-12-14 15:57:48.726] [bathroom_state] [info] IdleFanstate has been destructed
+[2021-12-14 15:57:48.726] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:57:48.726] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 15:57:48.726] [bathroom_state] [trace] Fancontext initiated E_STOP
+[2021-12-14 15:57:48.726] [bathroom_state] [trace] RunFanStae recieved e_stop command
+[2021-12-14 15:57:49.727] [bathroom_sensor] [info] The Bathroomfan is now Running
+[2021-12-14 15:57:52.730] [bathroom_sensor] [info] The Bathroomfan is now stopped
+[2021-12-14 15:57:52.730] [bathroom_sensor] [info] Relay has been bestructed
+[2021-12-14 15:57:52.730] [bathroom_state] [info] RunFanState has been destructed
+[2021-12-14 15:57:52.730] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:57:52.731] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 15:57:52.731] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 15:57:52.731] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 15:57:52.731] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 15:57:52.731] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 15:57:52.731] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 15:57:52.731] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 15:57:52.731] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 15:57:52.731] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 15:57:52.731] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 15:57:52.731] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 15:57:52.731] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 16:01:35.104] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 16:01:35.105] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 16:01:35.105] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 16:01:35.105] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 16:01:35.105] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 16:01:35.105] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 16:01:35.105] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 16:01:35.105] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 16:01:35.105] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 16:01:35.105] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 16:01:35.105] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 16:01:35.105] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 16:22:16.009] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 16:22:16.010] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 16:22:16.010] [bathroom_sensor] [debug] --DEBUG
+[2021-12-14 16:22:16.010] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 16:22:16.010] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 16:22:16.010] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 16:22:16.010] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 16:22:16.010] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 16:22:16.010] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 16:22:16.010] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 16:22:16.010] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 16:22:16.010] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 16:22:16.010] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 16:22:16.010] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 16:44:31.674] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 16:44:31.675] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 16:44:31.675] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 16:44:31.675] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 16:44:31.675] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 16:44:31.675] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 16:44:31.675] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 16:44:31.675] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 16:44:31.675] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 16:44:31.675] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 16:44:31.675] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 16:44:31.675] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 16:44:31.675] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 16:44:31.675] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 16:44:53.150] [bathroom_sensor] [info] I recieved a temperature value: 23 and calculated the value to 114.08
+[2021-12-14 16:44:53.150] [bathroom_state] [info] IdleFanstate has been destructed
+[2021-12-14 16:44:53.150] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 16:44:53.151] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 16:44:53.151] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 16:44:53.151] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 16:44:53.151] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 16:44:53.151] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 16:44:53.151] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 16:44:53.151] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 16:44:53.151] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 16:44:53.151] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 16:44:53.151] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 16:44:53.151] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 16:44:53.151] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 16:44:53.151] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 16:44:53.151] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 16:46:36.824] [bathroom_logger] [info] here is some info10
+[2021-12-14 16:46:36.824] [bathroom_logger] [error] There has been a error
+[2021-12-14 16:48:19.475] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 16:48:19.476] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 16:48:19.476] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 16:48:19.476] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 16:48:19.476] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 16:48:19.476] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 16:48:19.476] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 16:48:19.476] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 16:48:19.476] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 16:48:19.476] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 16:48:19.476] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 16:48:19.476] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 16:48:19.476] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 16:48:19.476] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 16:48:47.483] [bathroom_sensor] [info] I recieved a temperature value: 35 and calculated the value to 173.6
+[2021-12-14 16:48:47.483] [bathroom_state] [info] IdleFanstate has been destructed
+[2021-12-14 16:48:47.483] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 16:48:47.483] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 16:48:47.483] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 16:48:47.483] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 16:48:47.483] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 16:48:47.484] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 16:48:47.484] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 16:48:47.484] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 16:48:47.484] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 16:48:47.484] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 16:48:47.484] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 16:48:47.484] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 16:48:47.484] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 16:48:47.484] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 16:48:47.484] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 16:48:55.762] [bathroom_sensor] [info] I recieved a temperature value: 39 and calculated the value to 193.44
+[2021-12-14 16:48:55.762] [bathroom_state] [info] The value is higher so I will go to running state
+[2021-12-14 16:48:55.763] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 16:48:55.763] [bathroom_state] [info]  Context: Transtition to  11RunFanState
+[2021-12-14 16:48:55.763] [bathroom_state] [info] IdleFanstate has been destructed
+[2021-12-14 16:48:55.763] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 16:48:55.763] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 16:48:55.763] [bathroom_state] [trace] Fancontext initiated E_STOP
+[2021-12-14 16:48:55.763] [bathroom_state] [trace] RunFanStae recieved e_stop command
+[2021-12-14 16:48:56.773] [bathroom_sensor] [info] The Bathroomfan is now Running
+[2021-12-14 16:48:59.802] [bathroom_sensor] [info] The Bathroomfan is now stopped
+[2021-12-14 16:48:59.802] [bathroom_sensor] [info] Relay has been bestructed
+[2021-12-14 16:48:59.802] [bathroom_state] [info] RunFanState has been destructed
+[2021-12-14 16:48:59.802] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 16:48:59.803] [bathroom_state] [info] Fan Context has been initialised
+[2021-12-14 16:48:59.803] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 16:48:59.803] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 16:48:59.803] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 16:48:59.803] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 16:48:59.803] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 16:48:59.803] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 16:48:59.803] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 16:48:59.803] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 16:48:59.803] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 16:48:59.803] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 16:48:59.803] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 16:48:59.803] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 16:48:59.803] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 17:06:55.227] [bathroom_state] [trace] Fan Context has been initialised
+[2021-12-14 17:06:55.228] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 17:06:55.228] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 17:06:55.228] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 17:06:55.228] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 17:06:55.228] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 17:06:55.228] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 17:06:55.228] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 17:06:55.228] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 17:06:55.228] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 17:06:55.228] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:06:55.228] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 17:06:55.228] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 17:06:55.228] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 17:36:20.474] [bathroom_state] [trace] Fan Context has been initialised
+[2021-12-14 17:36:20.475] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 17:36:20.475] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 17:36:20.475] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 17:36:20.476] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 17:36:20.476] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 17:36:20.476] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 17:36:20.476] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 17:36:20.476] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 17:36:20.476] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 17:36:20.476] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:36:20.476] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 17:36:20.476] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 17:36:20.476] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 17:36:24.078] [bathroom_sensor] [info] I recieved a temperature value: 36 and calculated the value to 178.56
+[2021-12-14 17:36:24.078] [bathroom_state] [info] The value is higher so I will go to running state
+[2021-12-14 17:36:24.078] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 17:36:24.079] [bathroom_state] [info]  Context: Transtition to  11RunFanState
+[2021-12-14 17:36:24.079] [bathroom_state] [info] IdleFanstate has been destructed
+[2021-12-14 17:36:24.079] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 17:36:24.079] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:36:24.079] [bathroom_state] [trace] Fancontext initiated E_STOP
+[2021-12-14 17:36:24.079] [bathroom_state] [trace] RunFanStae recieved e_stop command
+[2021-12-14 17:36:25.080] [bathroom_sensor] [info] The Bathroomfan is now Running
+[2021-12-14 17:36:28.082] [bathroom_sensor] [info] The Bathroomfan is now stopped
+[2021-12-14 17:36:28.082] [bathroom_sensor] [info] Relay has been bestructed
+[2021-12-14 17:36:28.082] [bathroom_state] [info] RunFanState has been destructed
+[2021-12-14 17:36:28.082] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 17:36:28.083] [bathroom_state] [trace] Fan Context has been initialised
+[2021-12-14 17:36:28.085] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 17:36:28.085] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 17:36:28.085] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 17:36:28.085] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 17:36:28.085] [bathroom_state] [info] Fanstate has been initialised
+[2021-12-14 17:36:28.085] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 17:36:28.085] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 17:36:28.085] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 17:36:28.085] [bathroom_state] [info] Fanstate has been destructed
+[2021-12-14 17:36:28.085] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:36:28.085] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 17:36:28.085] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 17:36:28.086] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 17:40:08.337] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 17:40:08.338] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 17:40:08.338] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 17:40:08.338] [bathroom_state] [info]  Context: Transtition to  12InitFanState
+[2021-12-14 17:40:08.338] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:41:12.710] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 17:41:12.710] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 17:41:12.711] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 17:41:12.711] [bathroom_state] [info]  Context: Transtition to  12InitFanState
+[2021-12-14 17:41:12.711] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:41:12.711] [bathroom_state] [trace] Fan Context has been initialised
+[2021-12-14 17:41:12.711] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 17:41:12.711] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 17:41:12.711] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 17:41:12.711] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 17:41:12.711] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 17:41:12.711] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 17:41:12.711] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 17:41:12.711] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 17:41:12.711] [bathroom_state] [trace] Fanstate has been destructed
+[2021-12-14 17:41:12.711] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:41:12.711] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 17:41:12.711] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 17:41:12.711] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 17:41:49.916] [bathroom_state] [info] We started the OO BATHROOM FAN and are now at version 1.0
+[2021-12-14 17:41:49.916] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 17:41:49.916] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 17:41:49.916] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 17:41:49.916] [bathroom_state] [info]  Context: Transtition to  12InitFanState
+[2021-12-14 17:41:49.916] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:41:49.916] [bathroom_state] [trace] Fan Context has been initialised
+[2021-12-14 17:41:49.917] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 17:41:49.917] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 17:41:49.917] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 17:41:49.917] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 17:41:49.917] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 17:41:49.917] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 17:41:49.917] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 17:41:49.917] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 17:41:49.917] [bathroom_state] [trace] Fanstate has been destructed
+[2021-12-14 17:41:49.917] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:41:49.917] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 17:41:49.917] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 17:41:49.917] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 17:42:12.097] [bathroom_state] [info] We started the OO BATHROOM FAN and are now at version 1.0
+
+
+[2021-12-14 17:42:12.098] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 17:42:12.098] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 17:42:12.098] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 17:42:12.098] [bathroom_state] [info]  Context: Transtition to  12InitFanState
+[2021-12-14 17:42:12.098] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:42:12.098] [bathroom_state] [trace] Fan Context has been initialised
+[2021-12-14 17:42:12.098] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 17:42:12.098] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 17:42:12.098] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 17:42:12.098] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 17:42:12.098] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 17:42:12.098] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 17:42:12.098] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 17:42:12.098] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 17:42:12.098] [bathroom_state] [trace] Fanstate has been destructed
+[2021-12-14 17:42:12.098] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:42:12.098] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 17:42:12.098] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 17:42:12.099] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 17:42:42.669] [bathroom_sensor] [info] SIMULATION -- I recieved a temperature value: 23 and calculated the value to 114.08
+[2021-12-14 17:42:42.669] [bathroom_state] [info] IdleFanstate has been destructed
+[2021-12-14 17:42:42.669] [bathroom_state] [trace] Fanstate has been destructed
+[2021-12-14 17:42:42.669] [bathroom_state] [trace] Destructor Context
+[2021-12-14 17:42:42.669] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 17:42:42.669] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 17:42:42.669] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 17:42:42.669] [bathroom_state] [info]  Context: Transtition to  12InitFanState
+[2021-12-14 17:42:42.669] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:42:42.669] [bathroom_state] [trace] Fan Context has been initialised
+[2021-12-14 17:42:42.669] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 17:42:42.669] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 17:42:42.669] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 17:42:42.669] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 17:42:42.669] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 17:42:42.669] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 17:42:42.669] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 17:42:42.669] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 17:42:42.669] [bathroom_state] [trace] Fanstate has been destructed
+[2021-12-14 17:42:42.669] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:42:42.669] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 17:42:42.669] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 17:42:42.670] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 17:43:18.101] [bathroom_sensor] [info] SIMULATION -- I recieved a temperature value: 39 and calculated the value to 193.44
+[2021-12-14 17:43:18.101] [bathroom_state] [info]  SIMULATION The value is higher so I will go to running state
+[2021-12-14 17:43:18.101] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 17:43:18.101] [bathroom_state] [info]  Context: Transtition to  11RunFanState
+[2021-12-14 17:43:18.101] [bathroom_state] [info] IdleFanstate has been destructed
+[2021-12-14 17:43:18.101] [bathroom_state] [trace] Fanstate has been destructed
+[2021-12-14 17:43:18.101] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:43:18.101] [bathroom_state] [trace] Fancontext initiated E_STOP
+[2021-12-14 17:43:18.101] [bathroom_state] [trace] RunFanStae recieved e_stop command
+[2021-12-14 17:43:19.102] [bathroom_sensor] [info] The Bathroomfan is now Running
+[2021-12-14 17:43:22.114] [bathroom_sensor] [info] The Bathroomfan is now stopped
+[2021-12-14 17:43:22.114] [bathroom_sensor] [info] Relay has been bestructed
+[2021-12-14 17:43:22.114] [bathroom_state] [info] RunFanState has been destructed
+[2021-12-14 17:43:22.114] [bathroom_state] [trace] Fanstate has been destructed
+[2021-12-14 17:43:22.114] [bathroom_state] [trace] Destructor Context
+[2021-12-14 17:43:22.115] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 17:43:22.115] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 17:43:22.115] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 17:43:22.115] [bathroom_state] [info]  Context: Transtition to  12InitFanState
+[2021-12-14 17:43:22.115] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:43:22.115] [bathroom_state] [trace] Fan Context has been initialised
+[2021-12-14 17:43:22.115] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 17:43:22.115] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 17:43:22.115] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 17:43:22.115] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 17:43:22.115] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 17:43:22.115] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 17:43:22.115] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 17:43:22.115] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 17:43:22.115] [bathroom_state] [trace] Fanstate has been destructed
+[2021-12-14 17:43:22.115] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 17:43:22.115] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 17:43:22.115] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 17:43:22.115] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?

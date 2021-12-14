@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "../display/devconsole.h"
+#include "logmanager.h"
 
 class senseBehaviour
 {

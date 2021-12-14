@@ -4,6 +4,8 @@
 #include <iostream>
 #include "sensebehaviour.h"
 #include "calcbehaviour.h"
+#include "logmanager.h"
+
 
 class Sensor
 {
@@ -34,7 +36,6 @@ public:
     void calc(calcBehaviour::calc_e *enumValue, double *calcValue);
     calcBehaviour::calc_e *getCalcBehaviour();
     double *getCalculatedValue();
-
 
     ~Sensor();
 };

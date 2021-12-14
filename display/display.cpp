@@ -9,7 +9,7 @@ static char display[DSP_HEIGHT][DSP_WIDTH + 1] = {{0}};
 static char topDisplay[DSP_WIDTH] = {0};
 
 //debug boolean
-bool debug = 0;
+bool debug = 1;
 
 void Display::DSPinitialise(void)
 {

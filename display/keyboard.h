@@ -1,7 +1,8 @@
 #ifndef KEYBOARD_H
 #define KEYBOARD_H
 
-#include "display.h"
+
+#include "devconsole.h"
 
 /* Keyboard is een aparte klasse/bject die zorgt voor de afhandeling van de ingave van de gebruiker
 hier hoeven variable geen private cuntie te hebben */

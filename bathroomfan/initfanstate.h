@@ -10,9 +10,6 @@ private:
     Sensor *humSensor_ = new Sensor("Humidity Sensor", senseBehaviour::SENSE_HUM, calcBehaviour::CALCULATE_HUM);
 
 public:
-  //  int *myFunction();
-
- //   virtual int *E_START() override;
     virtual void E_START() override;
     virtual void E_RUN() override;
     virtual void E_STOP() override;

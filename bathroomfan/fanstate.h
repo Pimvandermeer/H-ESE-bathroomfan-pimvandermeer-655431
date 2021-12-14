@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include "sensor.h"
-#include "../display/display.h"
 
 class FanContext;
 
@@ -13,6 +12,7 @@ protected:
     FanContext *fanContext_;
 
 public:
+    FanState();
     virtual ~FanState();
 
     void setContext(FanContext *fanContext);

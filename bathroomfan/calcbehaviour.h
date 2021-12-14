@@ -2,7 +2,7 @@
 #define CALCBEHAVIOUR_H
 
 #include <iostream>
-#include "../display/display.h"
+#include "log.h"
 
 class calcBehaviour
 {

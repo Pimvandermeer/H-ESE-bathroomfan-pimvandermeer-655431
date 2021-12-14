@@ -7,17 +7,17 @@ Relay::Relay(bool status)
 
 Relay::~Relay()
 {
-    std::cout << "Destructor called for Relay" << std::endl;
+    SENS_INFO("Relay has been bestructed");
 }
 
 void Relay::turnOn()
 {
-    Display::DSPshow(5, "The Fan is now turned on");
+    SENS_INFO("The Bathroomfan is now Running");
     status_ = true;
 }
 
 void Relay::turnOff()
 {
-    Display::DSPshow(5, "The Fan is now turned off");
+    SENS_INFO("The Bathroomfan is now stopped");
     status_ = false;
 }

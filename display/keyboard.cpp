@@ -2,7 +2,7 @@
 
 void Keyboard::KYBinitialise(void)
 {
-   SENS_INFO("Keyboard: initialised");
+   SENS_TRACE("Keyboard: initialised");
 }
 
 void Keyboard::KYBclear(void)

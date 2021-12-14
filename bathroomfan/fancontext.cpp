@@ -16,7 +16,7 @@ FanContext::~FanContext()
 
 void FanContext::TransitionTo(FanState *fanstate)
 {
-    STATE_INFO(" Context: Transtition to  {}", typeid(*fanstate).name())
+    STATE_TRACE(" Context: Transtition to  {}", typeid(*fanstate).name())
     if (this->fanState_ != nullptr)
     {
         delete this->fanState_;

@@ -8,7 +8,7 @@ IdleFanState::IdleFanState(Sensor &tempSensor, Sensor &humSensor)
 
 IdleFanState::~IdleFanState()
 {
-    STATE_INFO("IdleFanstate has been destructed");
+    STATE_TRACE("IdleFanstate has been destructed");
 }
 
 void IdleFanState::E_START()
@@ -19,7 +19,7 @@ void IdleFanState::E_START()
 
 void IdleFanState::E_RUN()
 {
-    STATE_INFO("IdleFanState recieved e_run command");
+    STATE_TRACE("IdleFanState recieved e_run command");
 
     tempSensor_->sense(tempSensor_->getSensBehaviour());
 

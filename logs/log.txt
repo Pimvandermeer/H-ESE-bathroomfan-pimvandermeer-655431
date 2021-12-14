@@ -492,3 +492,133 @@
 [2021-12-14 17:43:22.115] [bathroom_state] [trace] Fancontext initiated E_RUN
 [2021-12-14 17:43:22.115] [bathroom_state] [info] IdleFanState recieved e_run command
 [2021-12-14 17:43:22.115] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 18:03:22.446] [bathroom_state] [info] We started the OO BATHROOM FAN and are now at version 1.0
+
+
+[2021-12-14 18:03:22.448] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 18:03:22.449] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 18:03:22.449] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 18:03:22.449] [bathroom_state] [info]  Context: Transtition to  12InitFanState
+[2021-12-14 18:03:22.449] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 18:03:22.449] [bathroom_state] [trace] Fan Context has been initialised
+[2021-12-14 18:03:22.449] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 18:03:22.450] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 18:03:22.450] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 18:03:22.450] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:03:22.451] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 18:03:22.451] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:03:22.451] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 18:03:22.451] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 18:03:22.451] [bathroom_state] [trace] Fanstate has been destructed
+[2021-12-14 18:03:22.451] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 18:03:22.451] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 18:03:22.451] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 18:03:22.451] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 18:03:34.918] [bathroom_sensor] [info] SIMULATION -- I recieved a temperature value: 35 and calculated the value to 173.6
+[2021-12-14 18:03:34.918] [bathroom_state] [info] IdleFanstate has been destructed
+[2021-12-14 18:03:34.918] [bathroom_state] [trace] Fanstate has been destructed
+[2021-12-14 18:03:34.918] [bathroom_state] [trace] Destructor Context
+[2021-12-14 18:03:34.918] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 18:03:34.918] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 18:03:34.918] [bathroom_sensor] [trace] Sensor has been contructed
+[2021-12-14 18:03:34.918] [bathroom_state] [info]  Context: Transtition to  12InitFanState
+[2021-12-14 18:03:34.918] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 18:03:34.918] [bathroom_state] [trace] Fan Context has been initialised
+[2021-12-14 18:03:34.919] [bathroom_state] [trace] Fancontext initiated E_START
+[2021-12-14 18:03:34.919] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 18:03:34.919] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 18:03:34.919] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:03:34.919] [bathroom_state] [trace] Fanstate has been initialised
+[2021-12-14 18:03:34.919] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:03:34.919] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 18:03:34.919] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 18:03:34.919] [bathroom_state] [trace] Fanstate has been destructed
+[2021-12-14 18:03:34.919] [bathroom_state] [trace] Fanstate set the conext {}
+[2021-12-14 18:03:34.919] [bathroom_state] [trace] Fancontext initiated E_RUN
+[2021-12-14 18:03:34.919] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 18:03:34.919] [bathroom_sensor] [debug] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 18:04:54.091] [bathroom_state] [info] We started the OO BATHROOM FAN and are now at version 1.0
+
+
+[2021-12-14 18:04:54.095] [bathroom_state] [info]  Context: Transtition to  12InitFanState
+[2021-12-14 18:04:54.095] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 18:04:54.095] [bathroom_state] [info] InitFanstate recieved e_start command
+[2021-12-14 18:04:54.095] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:04:54.095] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:04:54.095] [bathroom_state] [info]  Context: Transtition to  12IdleFanState
+[2021-12-14 18:04:54.095] [bathroom_state] [info] Initfanstate has been destructed
+[2021-12-14 18:04:54.095] [bathroom_state] [info] IdleFanState recieved e_run command
+[2021-12-14 18:10:59.531] [bathroom_state] [info] We started the OO BATHROOM FAN and are now at version 1.0
+
+
+[2021-12-14 18:10:59.531] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 18:10:59.532] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:10:59.532] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:11:09.390] [bathroom_sensor] [info] SIMULATION -- I recieved a temperature value: 23 and calculated the value to 114.08
+[2021-12-14 18:11:09.390] [bathroom_sensor] [info] Keyboard: initialised
+[2021-12-14 18:11:09.390] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:11:09.390] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:11:55.102] [bathroom_state] [info] We started the OO BATHROOM FAN and are now at version 1.0
+
+
+[2021-12-14 18:11:55.103] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:11:55.103] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:12:04.212] [bathroom_sensor] [info] SIMULATION -- I recieved a temperature value: 12 and calculated the value to 59.519999999999996
+[2021-12-14 18:12:04.213] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:12:04.213] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:13:40.556] [bathroom_state] [info] We started the OO BATHROOM FAN and are now at version 1.0
+
+
+[2021-12-14 18:13:40.557] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:13:40.557] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:14:18.116] [bathroom_state] [info] We started the OO BATHROOM FAN and are now at version 1.0
+
+
+[2021-12-14 18:14:18.117] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:14:18.117] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:14:18.117] [bathroom_sensor] [info] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 18:14:41.575] [bathroom_state] [info] We started the OO BATHROOM FAN and are now at version 1.0
+
+
+[2021-12-14 18:14:41.576] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:14:41.576] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:14:41.576] [bathroom_sensor] [info] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 18:14:51.594] [bathroom_sensor] [info] SIMULATION -- I recieved a temperature value: 38 and calculated the value to 188.48
+[2021-12-14 18:14:51.594] [bathroom_state] [info]  SIMULATION The value is higher so I will go to running state
+[2021-12-14 18:14:52.594] [bathroom_sensor] [info] The Bathroomfan is now Running
+[2021-12-14 18:14:55.596] [bathroom_sensor] [info] The Bathroomfan is now stopped
+[2021-12-14 18:14:55.596] [bathroom_sensor] [info] Relay has been bestructed
+[2021-12-14 18:14:55.596] [bathroom_state] [info] RunFanState has been destructed
+[2021-12-14 18:14:55.596] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:14:55.596] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:14:55.596] [bathroom_sensor] [info] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 18:16:05.043] [bathroom_state] [info] We started the OO BATHROOM FAN and are now at version 1.0
+
+
+[2021-12-14 18:16:05.043] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:16:05.043] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:16:05.043] [bathroom_sensor] [info] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 18:16:14.152] [bathroom_sensor] [info] SIMULATION -- I recieved a temperature value: 38 and calculated the value to 188.48
+[2021-12-14 18:16:14.152] [bathroom_state] [info]  SIMULATION The value is higher so I will go to running state
+[2021-12-14 18:16:15.153] [bathroom_sensor] [info] --SIMULATION The Bathroomfan is now Running
+[2021-12-14 18:16:18.155] [bathroom_sensor] [info] --SIMULATION The Bathroomfan is now stopped
+[2021-12-14 18:16:18.155] [bathroom_state] [info] We have now 2 senors with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:16:18.155] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:16:18.155] [bathroom_sensor] [info] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 18:17:20.836] [bathroom_state] [info] We started the OO BATHROOM FAN and are now at version 1.0
+
+
+[2021-12-14 18:17:20.836] [bathroom_state] [info] InitFanstate has now 2 senors initialised with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:17:20.836] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:17:20.836] [bathroom_sensor] [info] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 18:17:23.191] [bathroom_sensor] [info] SIMULATION -- I recieved a temperature value: 12 and calculated the value to 59.519999999999996
+[2021-12-14 18:17:23.191] [bathroom_state] [info] InitFanstate has now 2 senors initialised with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:17:23.191] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:17:23.191] [bathroom_sensor] [info] SIMULATION How high is the temp put something in between -20 and 80?
+[2021-12-14 18:17:45.863] [bathroom_sensor] [info] SIMULATION -- I recieved a temperature value: 39 and calculated the value to 193.44
+[2021-12-14 18:17:45.863] [bathroom_state] [info]  SIMULATION The value is higher so I will go to running state
+[2021-12-14 18:17:46.864] [bathroom_sensor] [info] --SIMULATION The Bathroomfan is now Running
+[2021-12-14 18:17:49.867] [bathroom_sensor] [info] --SIMULATION The Bathroomfan is now stopped
+[2021-12-14 18:17:49.867] [bathroom_state] [info] InitFanstate has now 2 senors initialised with the name Temperature Sensor, Temperature Sensor
+[2021-12-14 18:17:49.867] [bathroom_state] [info] Idle Fan State has been initialised and recieved the following objects: Temperature Sensor, Humidity Sensor
+[2021-12-14 18:17:49.867] [bathroom_sensor] [info] SIMULATION How high is the temp put something in between -20 and 80?

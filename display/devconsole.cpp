@@ -98,8 +98,8 @@ int Devconsole::DCSsimulationSystemInput(const char text[], const char fmt[], ..
    int nArgsOK = 0;
    va_list arg;
 
-    SENS_DEBUG("SIMULATION {}", text);
-//   printf("\n-- SIMULATION  %s ", text);
+    SENS_INFO("SIMULATION {}", text);
+  // printf("\n-- SIMULATION  %s ", text);
    va_start(arg, fmt);
    nArgsOK = vfscanf(stdin, fmt, arg);
    va_end(arg);

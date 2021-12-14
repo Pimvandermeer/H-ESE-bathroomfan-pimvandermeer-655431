@@ -12,7 +12,7 @@ FanState::~FanState()
 
 void FanState::setContext(FanContext *fanContext)
 {
-    STATE_TRACE("Fanstate set the conext {}");
+    STATE_TRACE("Fanstate set the conext");
     this->fanContext_ = fanContext;
 }
 

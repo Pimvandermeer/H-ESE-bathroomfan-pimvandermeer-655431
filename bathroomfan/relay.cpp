@@ -7,17 +7,17 @@ Relay::Relay(bool status)
 
 Relay::~Relay()
 {
-    SENS_INFO("Relay has been bestructed");
+    SENS_TRACE("Relay has been bestructed");
 }
 
 void Relay::turnOn()
 {
-    SENS_INFO("The Bathroomfan is now Running");
+    SENS_INFO("--SIMULATION The Bathroomfan is now Running");
     status_ = true;
 }
 
 void Relay::turnOff()
 {
-    SENS_INFO("The Bathroomfan is now stopped");
+    SENS_INFO("--SIMULATION The Bathroomfan is now stopped");
     status_ = false;
 }

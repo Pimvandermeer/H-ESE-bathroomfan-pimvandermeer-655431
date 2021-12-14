@@ -4,7 +4,7 @@ RunFanState::~RunFanState()
 {
     delete this->timer_;
     delete this->relay_;
-    STATE_INFO("RunFanState has been destructed");
+    STATE_TRACE("RunFanState has been destructed");
 }
 
 void RunFanState::E_START()

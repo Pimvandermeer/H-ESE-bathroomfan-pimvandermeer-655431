@@ -24,19 +24,19 @@ void InitFanState::E_START()
 
 void InitFanState::E_RUN()
 {
-    // Error because init should not recieve this
+    // Error because init should not recieve this!
     STATE_ERROR("InitFanstate recieved e_run command");
 }
 
 void InitFanState::E_STOP()
 {
-    // Error because init should not recieve this
+    // Error because init should not recieve this!
     STATE_ERROR("InitFanstate recieved e_stop command");
 }
 
 void InitFanState::E_ERROR()
 {
-    // Error because init should not recieve this
+    // Error because init should not recieve this!
     STATE_ERROR("InitFanstate recieved e_error command");
 }
 

@@ -36,7 +36,7 @@ void InitFanState::E_STOP()
 
 void InitFanState::E_ERROR()
 {
-    // Error because init should not recieve this!
+    // Error because init should not  recieve this!
     STATE_ERROR("InitFanstate recieved e_error command");
 }
 

@@ -18,30 +18,30 @@ void InitFanState::E_CONFIG()
 
 void InitFanState::E_START()
 {
-    // Error because idle should not recieve this
+    // Error because init should not recieve this
     STATE_ERROR("InitFanstate recieved e_start command");
 }
 
 void InitFanState::E_RUN()
 {
-    // Error because idle should not recieve this
+    // Error because init should not recieve this
     STATE_ERROR("InitFanstate recieved e_run command");
 }
 
 void InitFanState::E_STOP()
 {
-    // Error because idle should not recieve this
+    // Error because init should not recieve this
     STATE_ERROR("InitFanstate recieved e_stop command");
 }
 
 void InitFanState::E_ERROR()
 {
-    // Error because idle should not recieve this
+    // Error because init should not recieve this
     STATE_ERROR("InitFanstate recieved e_error command");
 }
 
 void InitFanState::E_FIXED()
 {
-    // Error because idle should not recieve this
+    // Error because init should not recieve this
     STATE_ERROR("InitFanstate recieved e_fixed command");
 }

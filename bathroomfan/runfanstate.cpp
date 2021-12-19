@@ -7,8 +7,8 @@ RunFanState::RunFanState(std::string exceedSensorName, double &exceedValue)
 
 RunFanState::~RunFanState()
 {
-    delete this->timer_;
-    delete this->relay_;
+    delete timer_;
+    delete relay_;
     STATE_TRACE("RunFanState has been destructed");
 }
 

@@ -33,7 +33,7 @@ void IdleFanState::E_START()
 
     if(*humSensor_->getCalculatedValue() >= 397)
     {
-        STATE_INFO(" SIMULATION The temperature value is higher so I will go to running state");
+        STATE_INFO(" SIMULATION The humidity value is higher so I will go to running state");
         this->fanContext_->TransitionTo(new RunFanState(tempSensor_->getName(), *tempSensor_->getCalculatedValue()));
        // fanContext_->Stop();
     };

@@ -8,10 +8,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Tue Dec 14 21:33:10 2021
+# Make data base, printed on Sat Dec 18 09:53:03 2021
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -52,7 +53,6 @@ CHECK_SDK_COMMAND = /usr/bin/xcrun --sdk $(EXPORT_QMAKE_MAC_SDK) -show-sdk-versi
 SOURCES = calcbehaviour.cpp errorfanstate.cpp fancontext.cpp fanstate.cpp idlefanstate.cpp initfanstate.cpp logmanager.cpp main.cpp relay.cpp runfanstate.cpp sensebehaviour.cpp sensor.cpp ../display/keyboard.cpp ../display/devconsole.cpp timer.cpp 
 # makefile (from `Makefile', line 19)
 CXXFLAGS = -pipe -stdlib=libc++ -g -std=gnu++11 $(EXPORT_ARCH_ARGS) -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=10.13 -Wall -Wextra -fPIC $(DEFINES)
- 
 # makefile (from `Makefile', line 21)
 QMAKE = /Volumes/compiled/HAN/5.15.0/clang_64/bin/qmake
 # makefile (from `Makefile', line 25)
@@ -64,7 +64,7 @@ EXPORT_QMAKE_XCODE_DEVELOPER_PATH = /Library/Developer/CommandLineTools
 # makefile (from `Makefile', line 11)
 EQ = =
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/sl/8jsydgk57fz2yld9bhlns4pw0000gn/T/vscode-ipc-10e89ae1-3c3a-4d3a-945d-29fba71739a9.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/sl/8jsydgk57fz2yld9bhlns4pw0000gn/T/vscode-ipc-29f0150b-4b4e-4088-b37e-ce4774a77d73.sock
 # makefile (from `Makefile', line 38)
 COMPRESS = gzip -9f
 # environment
@@ -75,6 +75,8 @@ NO_PROXY = 127.0.0.1
 MAKEFILE = Makefile
 # makefile (from `Makefile', line 23)
 CHK_DIR_EXISTS = test -d
+# environment
+LaunchInstanceID = C7AB6F95-FCE9-4149-8287-55A57CBE544C
 # makefile (from `Makefile', line 44)
 AR = /Library/Developer/CommandLineTools/usr/bin/ar cq
 # makefile (from `/Volumes/compiled/HAN/5.15.0/clang_64/mkspecs/features/mac/sdk.mk', line 4)
@@ -88,7 +90,7 @@ ELECTRON_RUN_AS_NODE = 1
 # makefile (from `Makefile', line 32)
 QINSTALL_PROGRAM = /Volumes/compiled/HAN/5.15.0/clang_64/bin/qmake -install qinstall -exe
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.VdJJRDfh7m/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.rRK5zRo8ym/Listeners
 # automatic
 %F = $(notdir $%)
 # makefile (from `Makefile', line 328)
@@ -118,7 +120,7 @@ DISTNAME = bathroomfan1.0.0
 # makefile (from `Makefile', line 17)
 DEFINES = -DQT_QML_DEBUG
 # environment
-VSCODE_CODE_CACHE_PATH = /Volumes/Apple HDD/gebruiker/Library/Application Support/Code/CachedData/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e
+VSCODE_CODE_CACHE_PATH = /Volumes/Apple HDD/gebruiker/Library/Application Support/Code/CachedData/fe719cd3e5825bf14e14182fddeb88ee8daf044f
 # makefile (from `Makefile', line 37)
 TAR = tar -cf
 # environment
@@ -150,6 +152,7 @@ SHLVL = 1
 # environment
 XPC_FLAGS = 0x0
 # makefile (from `Makefile', line 15)
+ 
 CC = /Library/Developer/CommandLineTools/usr/bin/clang
 # default
 MAKE_VERSION := 3.81
@@ -178,7 +181,7 @@ MOVE = mv -f
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Volumes/Apple HDD/gebruiker/Library/Application Support/Code/1.63.0-main.sock
+VSCODE_IPC_HOOK = /Volumes/Apple HDD/gebruiker/Library/Application Support/Code/1.63.1-main.sock
 # makefile (from `Makefile', line 51)
 OBJECTS_DIR = ./
 # makefile (from `Makefile', line 31)
@@ -190,18 +193,19 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = com.microsoft.VSCode.28056
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000004.Electron
 # makefile (from `Makefile', line 330)
 EXPORT__PRO_FILE_ = /Volumes/compiled/SE-2/bathroom_fan/bathroomfan/bathroomfan.pro
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
- 
 # makefile (from `Makefile', line 47)
 STRIP = strip
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x5
+# environment
+COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # automatic
@@ -218,6 +222,8 @@ INSTALL_PROGRAM = install -m 755 -p
 DEL_FILE = rm -f
 # makefile (from `Makefile', line 43)
 LIBS = $(SUBLIBS)    
+# environment
+SECURITYSESSIONID = 186a8
 # automatic
 ^F = $(notdir $^)
 # default
@@ -235,17 +241,17 @@ MAKELEVEL := 0
 # makefile (from `Makefile', line 70)
 OBJECTS = calcbehaviour.o errorfanstate.o fancontext.o fanstate.o idlefanstate.o initfanstate.o logmanager.o main.o relay.o runfanstate.o sensebehaviour.o sensor.o keyboard.o devconsole.o timer.o
 # makefile (from `Makefile', line 85)
-DIST = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/common/unix.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/macx.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/sanitize.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/qconfig.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_accessibility_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bodymovin_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bootstrap_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_clipboard_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designercomponents_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_edid_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fb_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_graphics_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_packetprotocol_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_posi 
-tioning.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldebug_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldevtools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickshapes_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_service_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_theme_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uiplugin.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_functions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_post.prf .qmake.stash ../../../HAN/5.15.0/clang_64/mkspecs/features/exclusive_builds.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/sdk.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/resolve_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/objective_c.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qml_debug.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/mac.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/warn_on.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qmake_use.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/file_copies.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/rez.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/asset_catalogs.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/testcase_targets.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/exceptions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/yacc.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/lex.prf bathroomfan.pro calcbehaviour.h errorfanstate.h fancontext.h fanstate.h idlefanstate.h initfanstate.h log.h logmanager.h relay.h runfanstate.h sensebehaviour.h sensor.h ../ 
-display/appinfo.h ../display/keyboard.h ../display/devconsole.h timer.h calcbehaviour.cpp errorfanstate.cpp fancontext.cpp fanstate.cpp idlefanstate.cpp initfanstate.cpp logmanager.cpp main.cpp relay.cpp runfanstate.cpp sensebehaviour.cpp sensor.cpp ../display/keyboard.cpp ../display/devconsole.cpp timer.cpp
+DIST = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/common/unix.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/macx.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/sanitize.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/qconfig.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_accessibility_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bodymovin_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bootstrap_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_clipboard_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designercomponents_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_edid_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fb_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_graphics_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_mu 
+ltimediawidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_packetprotocol_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldebug_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldevtools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickshapes_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_service_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_theme_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uiplugin.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_functions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_post.prf .qmake.stash ../../../HAN/5.15.0/clang_64/mkspecs/features/exclusive_builds.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/sdk.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/resolve_config.prf ../../ 
+../HAN/5.15.0/clang_64/mkspecs/features/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/objective_c.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qml_debug.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/mac.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/warn_on.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qmake_use.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/file_copies.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/rez.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/asset_catalogs.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/testcase_targets.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/exceptions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/yacc.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/lex.prf bathroomfan.pro calcbehaviour.h errorfanstate.h fancontext.h fanstate.h idlefanstate.h initfanstate.h log.h logmanager.h relay.h runfanstate.h sensebehaviour.h sensor.h ../display/appinfo.h ../display/keyboard.h ../display/devconsole.h timer.h calcbehaviour.cpp errorfanstate.cpp fancontext.cpp fanstate.cpp idlefanstate.cpp initfanstate.cpp logmanager.cpp main.cpp relay.cpp runfanstate.cpp sensebehaviour.cpp sensor.cpp ../display/keyboard.cpp ../display/devconsole.cpp timer.cpp
 # environment
 LANG = C
 # makefile (from `Makefile', line 35)
 DEL_DIR = rmdir
 # environment
-VSCODE_PID = 37466
+VSCODE_PID = 638
 # variable set hash-table stats:
-# Load=114/1024=11%, Rehash=0, Collisions=16/161=10%
+# Load=117/1024=11%, Rehash=0, Collisions=17/164=10%
 
 # Pattern-specific Variable Values
 
@@ -253,9 +259,9 @@ VSCODE_PID = 37466
 
 # Directories
 
-# . (device 16777219, inode 578433): 50 files, no impossibilities.
+# . (device 16777221, inode 578433): 53 files, no impossibilities.
 
-# 50 files, no impossibilities in 1 directories.
+# 53 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -285,7 +291,6 @@ VSCODE_PID = 37466
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base.conf:
@@ -298,6 +303,7 @@ VSCODE_PID = 37466
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:51:19
 #  File has been updated.
 #  Successfully updated.
@@ -350,7 +356,6 @@ VSCODE_PID = 37466
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h ../display/devconsole.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h ../display/keyboard.h logmanager.h
@@ -369,6 +374,7 @@ sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h ../display/devconsole.h lo
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -437,7 +443,6 @@ sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h ../display/devconsole.h lo
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -479,6 +484,7 @@ sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h ../display/devconsole.h lo
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -541,7 +547,6 @@ FORCE:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help.pri:
@@ -558,6 +563,7 @@ fancontext.h:
 #  Last modified 2021-12-14 21:17:24
 #  File has been updated.
 #  Successfully updated.
+ 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
@@ -633,8 +639,8 @@ idlefanstate.h:
 #  Last modified 2021-12-14 19:44:49
 #  File has been updated.
 #  Successfully updated.
- 
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d_private.pri:
@@ -695,9 +701,12 @@ idlefanstate.h:
 
 # Not a target:
 fanstate.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-14 19:44:10
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 compiler_yacc_impl_clean:
 #  Implicit rule search has not been done.
@@ -705,6 +714,7 @@ compiler_yacc_impl_clean:
 #  File has not been updated.
 
 ../../../HAN/5.15.0/clang_64/mkspecs/common/clang.conf:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2020-05-11 10:15:07
 #  File has been updated.
@@ -722,7 +732,6 @@ compiler_yacc_impl_clean:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 runfanstate.o: runfanstate.cpp runfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h ../display/keyboard.h logmanager.h calcbehaviour.h initfanstate.h idlefanstate.h errorfanstate.h relay.h timer.h
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -759,6 +768,7 @@ sensor.h:
 # Not a target:
 ../3rdparty/spdlog/fmt/xchar.h:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
@@ -812,7 +822,6 @@ distclean: clean
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
- 
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
@@ -824,6 +833,7 @@ first: all
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender_private.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -865,13 +875,17 @@ errorfanstate.h:
 
 # Not a target:
 idlefanstate.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-15 12:53:06
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 bathroomfan: calcbehaviour.o errorfanstate.o fancontext.o fanstate.o idlefanstate.o initfanstate.o logmanager.o main.o relay.o runfanstate.o sensebehaviour.o sensor.o keyboard.o devconsole.o timer.o
 #  Implicit rule search has not been done.
-#  File does not exist.
+ 
+#  Last modified 2021-12-15 12:51:59
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
@@ -938,6 +952,7 @@ bathroomfan: calcbehaviour.o errorfanstate.o fancontext.o fanstate.o idlefanstat
 
 ../../../HAN/5.15.0/clang_64/mkspecs/features/qmake_use.prf:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-05-11 10:15:07
 #  File has been updated.
 #  Successfully updated.
@@ -1005,11 +1020,11 @@ uninstall: FORCE
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-Makefile: bathroomfan.pro ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/common/unix.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/macx.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/sanitize.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/qconfig.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore 
-_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_accessibility_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bodymovin_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bootstrap_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_clipboard_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designercomponents_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_edid_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fb_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_graphics_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_packetprotocol_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldebug_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldevtools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickshapes_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/mo 
-dules/qt_lib_repparser.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_service_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_theme_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uiplugin.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_functions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_post.prf .qmake.stash ../../../HAN/5.15.0/clang_64/mkspecs/features/exclusive_builds.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/sdk.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/resolve_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/objective_c.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qml_debug.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/mac.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/warn_on.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qmake_use.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/file_copies.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/rez.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/asset_catalogs.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/testcase_targets.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/exceptions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/yacc.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/lex.prf bathroomfan.pro
+Makefile: bathroomfan.pro ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/common/unix.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/macx.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/sanitize.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/gcc-base-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang.conf ../../../HAN/5.15.0/clang_64/mkspecs/common/clang-mac.conf ../../../HAN/5.15.0/clang_64/mkspecs/qconfig.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3danimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickinput_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickrender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_accessibility_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bluetooth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bodymovin_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_bootstrap_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_clipboard_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_concurrent_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_core_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_datavisualization_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designercomponents_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_edid_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri ../../. 
+./HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fb_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gamepad_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_graphics_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_gui_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_help_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_location_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_macextras_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimedia_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_network_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_networkauth_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_nfc_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_openglextensions_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_packetprotocol_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioningquick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_printsupport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldebug_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldevtools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmltest_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3druntimerender_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dutils_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickparticles_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickshapes_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quickwidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_repparser_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scripttools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_scxml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sensors_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialbus_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_service_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_sql_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_studio3d_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_texttospeech_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_theme_support_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uiplugin.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_uitools_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webchannel_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webengine_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecore_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_websockets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_webview_private.pri ../../../ 
+HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_functions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qt_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/macx-clang/qmake.conf ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_post.prf .qmake.stash ../../../HAN/5.15.0/clang_64/mkspecs/features/exclusive_builds.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/sdk.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/toolchain.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_pre.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/resolve_config.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/default_post.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/objective_c.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qml_debug.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/mac.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/warn_on.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/qmake_use.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/file_copies.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/rez.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/mac/asset_catalogs.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/testcase_targets.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/exceptions.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/yacc.prf ../../../HAN/5.15.0/clang_64/mkspecs/features/lex.prf bathroomfan.pro
 #  Implicit rule search has not been done.
-#  Last modified 2021-12-14 21:33:10
+#  Last modified 2021-12-18 09:53:03
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1028,6 +1043,7 @@ dules/qt_lib_repparser.pri ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_r
 
 # Not a target:
 errorfanstate.cpp:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2021-12-14 19:52:11
 #  File has been updated.
@@ -1059,7 +1075,6 @@ compiler_clean:
 ../../../HAN/5.15.0/clang_64/mkspecs/features/default_pre.prf:
 #  Implicit rule search has been done.
 #  Last modified 2020-05-11 10:15:07
- 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1077,6 +1092,7 @@ compiler_clean:
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_accessibility_support_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+ 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1097,8 +1113,11 @@ compiler_rez_source_make_all:
 
 fanstate.o: fanstate.cpp fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h ../display/keyboard.h logmanager.h calcbehaviour.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2021-12-14 21:07:06
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 #  commands to execute (from `Makefile', line 1041):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fanstate.o fanstate.cpp
 	
@@ -1117,7 +1136,6 @@ runfanstate.cpp:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
- 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_dbus_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -1132,6 +1150,7 @@ runfanstate.cpp:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_designer_private.pri:
@@ -1187,10 +1206,10 @@ compiler_lex_make_all:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/features/file_copies.prf:
- 
 #  Implicit rule search has been done.
 #  Last modified 2020-05-11 10:15:07
 #  File has been updated.
@@ -1252,6 +1271,7 @@ benchmark: first
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels_private.pri:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
@@ -1273,7 +1293,6 @@ benchmark: first
 #  Modification time never checked.
 #  File has not been updated.
 
- 
 relay.o: relay.cpp relay.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -1302,6 +1321,7 @@ main.cpp:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 compiler_yacc_decl_make_all:
@@ -1364,6 +1384,7 @@ timer.h:
 ../3rdparty/spdlog/details/os.h:
 #  Implicit rule search has been done.
 #  Last modified 2021-12-12 09:01:34
+ 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1371,7 +1392,6 @@ timer.h:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -1415,6 +1435,7 @@ xcodeproj:
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 781):
+ 
 	@$(QMAKE) -spec macx-xcode "$(EXPORT__PRO_FILE_)" -spec macx-clang CONFIG+=debug CONFIG+=x86_64 CONFIG+=qml_debug
 	
 
@@ -1462,9 +1483,9 @@ xcodeproj:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
- 
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
@@ -1518,6 +1539,7 @@ log.h:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmldevtools_private.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -1557,7 +1579,6 @@ log.h:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
- 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3dassetimport_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:47:05
@@ -1570,6 +1591,7 @@ log.h:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:50:03
 #  File has been updated.
+ 
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
@@ -1618,6 +1640,7 @@ log.h:
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+ 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1648,7 +1671,6 @@ calcbehaviour.h:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
- 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_testlib.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -1721,7 +1743,6 @@ sensor.cpp:
 #  File has not been updated.
 
 ../../../HAN/5.15.0/clang_64/mkspecs/features/testcase_targets.prf:
- 
 #  Implicit rule search has been done.
 #  Last modified 2020-05-11 10:15:07
 #  File has been updated.
@@ -1736,6 +1757,7 @@ sensor.cpp:
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+ 
 
 ../../../HAN/5.15.0/clang_64/mkspecs/common/macx.conf:
 #  Implicit rule search has been done.
@@ -1821,6 +1843,7 @@ sensor.cpp:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_fb_support_private.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -1893,6 +1916,7 @@ sensebehaviour.cpp:
 #  File has not been updated.
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_packetprotocol_private.pri:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
@@ -1918,7 +1942,6 @@ sensebehaviour.cpp:
 
 # Not a target:
 ../3rdparty/spdlog/spdlog.h:
- 
 #  Implicit rule search has been done.
 #  Last modified 2021-12-12 09:01:34
 #  File has been updated.
@@ -1928,8 +1951,11 @@ sensebehaviour.cpp:
 
 fancontext.o: fancontext.cpp fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h ../display/keyboard.h logmanager.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h relay.h timer.h errorfanstate.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2021-12-14 21:41:05
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 #  commands to execute (from `Makefile', line 982):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fancontext.o fancontext.cpp
 	
@@ -1972,9 +1998,9 @@ logmanager.h:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
+ 
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_post.prf:
@@ -1995,8 +2021,30 @@ qmake: FORCE
 
 idlefanstate.o: idlefanstate.cpp idlefanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h ../display/keyboard.h logmanager.h calcbehaviour.h initfanstate.h runfanstate.h relay.h timer.h errorfanstate.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit/static pattern stem: `'
+#  Last modified 2021-12-14 21:41:05
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := idlefanstate.o
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := idlefanstate.cpp idlefanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h ../display/keyboard.h logmanager.h calcbehaviour.h initfanstate.h runfanstate.h relay.h timer.h errorfanstate.h
+# automatic
+# | := 
+# automatic
+# < := idlefanstate.cpp
+# automatic
+# ^ := idlefanstate.cpp idlefanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h .. 
+/3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h ../display/keyboard.h logmanager.h calcbehaviour.h initfanstate.h runfanstate.h relay.h timer.h errorfanstate.h
+# automatic
+ 
+# ? := idlefanstate.cpp
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=3/19=16%
 #  commands to execute (from `Makefile', line 1107):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o idlefanstate.o idlefanstate.cpp
 	
@@ -2048,8 +2096,8 @@ calcbehaviour.o: calcbehaviour.cpp calcbehaviour.h log.h ../3rdparty/spdlog/spdl
 clean: compiler_clean
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
+ 
 #  commands to execute (from `Makefile', line 768):
 	-$(DEL_FILE) $(OBJECTS)
 	-$(DEL_FILE) *~ core *.core
@@ -2115,6 +2163,7 @@ clean: compiler_clean
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_svg.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -2129,7 +2178,6 @@ devconsole.o: ../display/devconsole.cpp ../display/devconsole.h log.h ../3rdpart
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o devconsole.o ../display/devconsole.cpp
 	
 
- 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_widgets_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -2165,6 +2213,7 @@ devconsole.o: ../display/devconsole.cpp ../display/devconsole.h log.h ../3rdpart
 # Not a target:
 initfanstate.h:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2021-12-14 19:45:07
 #  File has been updated.
 #  Successfully updated.
@@ -2180,7 +2229,6 @@ bathroomfan.pro:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
- 
 ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h:
 #  Implicit rule search has been done.
 #  Last modified 2021-12-12 09:01:34
@@ -2220,31 +2268,13 @@ relay.cpp:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 errorfanstate.o: errorfanstate.cpp errorfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h ../display/keyboard.h logmanager.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h relay.h timer.h
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: `'
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := errorfanstate.o
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := errorfanstate.cpp errorfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h  
-../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h ../display/keyboard.h logmanager.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h relay.h timer.h
-# automatic
-# | := 
-# automatic
-# < := errorfanstate.cpp
-# automatic
-# ^ := errorfanstate.cpp errorfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h ../display/keyboard.h logmanager.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h relay.h timer.h
-# automatic
  
-# ? := errorfanstate.cpp errorfanstate.h fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h ../display/keyboard.h logmanager.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h relay.h timer.h
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-14 21:41:05
+#  File has been updated.
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=3/19=16%
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 #  commands to execute (from `Makefile', line 916):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o errorfanstate.o errorfanstate.cpp
 	
@@ -2267,7 +2297,6 @@ dist: distdir FORCE
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_serialport_private.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -2304,6 +2333,7 @@ install: FORCE
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dlogic.pri:
@@ -2346,7 +2376,6 @@ install: FORCE
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_remoteobjects_private.pri:
@@ -2368,6 +2397,7 @@ install: FORCE
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_xml.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
+ 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -2388,6 +2418,7 @@ install: FORCE
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+ 
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_charts.pri:
 #  Implicit rule search has been done.
@@ -2414,7 +2445,6 @@ initfanstate.cpp:
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_3dcore_private.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
- 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -2447,12 +2477,14 @@ initfanstate.cpp:
 
 main.o: main.cpp fancontext.h fanstate.h sensor.h sensebehaviour.h ../display/devconsole.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h ../display/keyboard.h logmanager.h calcbehaviour.h initfanstate.h idlefanstate.h runfanstate.h relay.h timer.h errorfanstate.h ../display/appinfo.h
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 1293):
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 	
 
+ 
 # Not a target:
 ../3rdparty/spdlog/sinks/ansicolor_sink.h:
 #  Implicit rule search has been done.
@@ -2483,7 +2515,6 @@ fanstate.h:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
- 
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
@@ -2507,6 +2538,7 @@ fanstate.h:
 # Not a target:
 ../display/keyboard.h:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2021-12-14 16:23:10
 #  File has been updated.
 #  Successfully updated.
@@ -2531,7 +2563,6 @@ fanstate.h:
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_opengl_private.pri:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -2571,6 +2602,7 @@ qmake_all: FORCE
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_positioning.pri:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2020-09-02 23:40:08
 #  File has been updated.
 #  Successfully updated.
@@ -2588,7 +2620,6 @@ qmake_all: FORCE
 # Not a target:
 relay.h:
 #  Implicit rule search has been done.
- 
 #  Last modified 2021-12-14 21:08:17
 #  File has been updated.
 #  Successfully updated.
@@ -2613,9 +2644,12 @@ relay.h:
 
 # Not a target:
 fancontext.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-14 21:17:47
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_quick3drender.pri:
 #  Implicit rule search has been done.
@@ -2631,6 +2665,7 @@ compiler_rez_source_clean:
 #  File has not been updated.
 
 ../../../HAN/5.15.0/clang_64/mkspecs/common/sanitize.conf:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2020-05-11 10:15:07
 #  File has been updated.
@@ -2667,7 +2702,6 @@ check: first
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
- 
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_script.pri:
 #  Implicit rule search has been done.
@@ -2697,6 +2731,7 @@ check: first
 ../3rdparty/spdlog/details/os-inl.h:
 #  Implicit rule search has been done.
 #  Last modified 2021-12-12 09:01:34
+ 
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -2710,7 +2745,8 @@ check: first
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-timer.o: timer.cpp timer.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h
+timer.o: timer.cpp timer.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/common.h ../3rdparty/spdlog/tweakme.h ../3rdparty/spdlog/details/null_mutex.h ../3rdparty/spdlog/fmt/fmt.h ../3rdparty/spdlog/fmt/bundled/core.h ../3rdparty/spdlog/fmt/bundled/format.h ../3rdparty/spdlog/fmt/bundled/xchar.h ../3rdparty/spdlog/fmt/bundled/format-inl.h ../3rdparty/spdlog/fmt/xchar.h ../3rdparty/spdlog/common-inl.h ../3rdparty/spdlog/details/registry.h ../3rdparty/spdlog/details/registry-inl.h ../3rdparty/spdlog/details/periodic_worker.h ../3rdparty/spdlog/details/periodic_worker-inl.h ../3rdparty/spdlog/logger.h ../3rdparty/spdlog/details/log_msg.h ../3rdparty/spdlog/details/log_msg-inl.h ../3rdparty/spdlog/details/os.h ../3rdparty/spdlog/details/os-inl.h ../3rdparty/spdlog/details/windows_include.h ../3rdparty/spdlog/details/backtracer.h ../3rdparty/spdlog/details/log_msg_buffer.h ../3rdparty/spdlog/details/log_msg_buffer-inl.h ../3rdparty/spdlog/details/circular_q.h ../3rdparty/spdlog/details/backtracer-inl.h ../3 
+rdparty/spdlog/logger-inl.h ../3rdparty/spdlog/sinks/sink.h ../3rdparty/spdlog/formatter.h ../3rdparty/spdlog/sinks/sink-inl.h ../3rdparty/spdlog/pattern_formatter.h ../3rdparty/spdlog/pattern_formatter-inl.h ../3rdparty/spdlog/details/fmt_helper.h ../3rdparty/spdlog/sinks/wincolor_sink.h ../3rdparty/spdlog/details/console_globals.h ../3rdparty/spdlog/sinks/wincolor_sink-inl.h ../3rdparty/spdlog/sinks/ansicolor_sink.h ../3rdparty/spdlog/sinks/ansicolor_sink-inl.h ../3rdparty/spdlog/version.h ../3rdparty/spdlog/details/synchronous_factory.h ../3rdparty/spdlog/spdlog-inl.h ../3rdparty/spdlog/sinks/stdout_color_sinks.h ../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h ../3rdparty/spdlog/sinks/basic_file_sink.h ../3rdparty/spdlog/details/file_helper.h ../3rdparty/spdlog/details/file_helper-inl.h ../3rdparty/spdlog/sinks/base_sink.h ../3rdparty/spdlog/sinks/base_sink-inl.h ../3rdparty/spdlog/sinks/basic_file_sink-inl.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -2718,6 +2754,7 @@ timer.o: timer.cpp timer.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o timer.o timer.cpp
 	
 
+ 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_qmlmodels.pri:
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:40:08
@@ -2735,7 +2772,6 @@ timer.o: timer.cpp timer.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 ../../../HAN/5.15.0/clang_64/mkspecs/modules/qt_lib_purchasing.pri:
- 
 #  Implicit rule search has been done.
 #  Last modified 2020-09-02 23:48:21
 #  File has been updated.
@@ -2770,6 +2806,7 @@ timer.o: timer.cpp timer.h log.h ../3rdparty/spdlog/spdlog.h ../3rdparty/spdlog/
 # Not a target:
 ../3rdparty/spdlog/version.h:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
@@ -2812,6 +2849,7 @@ distdir: FORCE
 # Not a target:
 ../3rdparty/spdlog/sinks/base_sink-inl.h:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2021-12-12 09:01:34
 #  File has been updated.
 #  Successfully updated.
@@ -2819,7 +2857,6 @@ distdir: FORCE
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
- 
 ../3rdparty/spdlog/details/log_msg.h:
 #  Implicit rule search has been done.
 #  Last modified 2021-12-12 09:01:34
@@ -2944,19 +2981,19 @@ sensor.o: sensor.cpp sensor.h sensebehaviour.h ../display/devconsole.h log.h ../
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # files hash-table stats:
- 
 # Load=328/1024=32%, Rehash=0, Collisions=337/1455=23%
 # VPATH Search Paths
 
 # No `vpath' search paths.
 
 # No general (`VPATH' variable) search path.
+ 
 
 # # of strings in strcache: 2
 # # of strcache buffers: 1
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4021 / max = 4021 / min = 4021 / avg = 4021
 
-# Finished Make data base on Tue Dec 14 21:33:10 2021
+# Finished Make data base on Sat Dec 18 09:53:03 2021
 
  

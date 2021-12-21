@@ -7,7 +7,7 @@ InitFanState::~InitFanState()
 
 void InitFanState::E_CONFIG()
 {
-    Devconsole::DCSinitialise();
+ //   Devconsole::DCSinitialise();
 
     STATE_TRACE("InitFanstate recieved e_start command");
 

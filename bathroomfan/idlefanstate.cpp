@@ -24,7 +24,7 @@ void IdleFanState::E_START()
     tempSensor_->sense(tempSensor_->getSensBehaviour());
     humSensor_->sense(humSensor_->getSensBehaviour());
 
-    if (*tempSensor_->getCalculatedValue() >= 174)
+    if (*tempSensor_->getCalculatedValue() >= 1433)
     {
         STATE_INFO(" SIMULATION The temperature value is higher so I will go to running state");
         this->fanContext_->TransitionTo(new RunFanState(tempSensor_->getName(), *tempSensor_->getCalculatedValue()));

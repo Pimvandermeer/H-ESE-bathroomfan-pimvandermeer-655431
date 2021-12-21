@@ -6,18 +6,39 @@ double senseBehaviour::sense(sense_e *enumValue)
 
     switch (*enumValue) {
         case SENSE_TEMP:
-        num = Devconsole::DCSsimulationSystemInputDouble("How high is the temp put something in between -20 and 80?", -20, 80);
-       // BATH_INFO("THE SENSOR BEHAVIOUR IS {} SHOWN", SENSE_TEMP);
+        num = createRandomNumber(lowTemp, highTemp);
         break;
     case SENSE_HUM:
-        num = Devconsole::DCSsimulationSystemInputDouble("What is the Humidity?", 0, 100);
+        num = createRandomNumber(lowHum, highHum);
         break;
     case SENSE_PROX:
-        num = Devconsole::DCSsimulationSystemInputDouble("What is the Proximity?", 0, 100);
+        num = createRandomNumber(lowProx, highProx);
         break;
     case SENSE_DEFAULT:
         std::cout << "Something went wrong!" << std::endl;
         break;
     }
     return num;
+}
+
+double senseBehaviour::createRandomNumber(double lowerBound, double higherBound)
+{
+    std::random_device rd;
+    std::default_random_engine eng(rd());
+    std::uniform_real_distribution<double> distr(lowerBound, higherBound);
+
+    double number = distr(eng);
+
+    return number;
+}
+
+int senseBehaviour::createRandomNumber(int lowerBound, int higherBound)
+{
+    std::random_device rd;
+    std::default_random_engine eng(rd());
+    std::uniform_real_distribution<int> distr(lowerBound, higherBound);
+
+    int number = distr(eng);
+
+    return number;
 }

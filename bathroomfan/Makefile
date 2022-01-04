@@ -854,7 +854,7 @@ errorfanstate.o: errorfanstate.cpp errorfanstate.h \
 		fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		../display/devconsole.h \
+		logmanager.h \
 		log.h \
 		../3rdparty/spdlog/spdlog.h \
 		../3rdparty/spdlog/common.h \
@@ -905,8 +905,6 @@ errorfanstate.o: errorfanstate.cpp errorfanstate.h \
 		../3rdparty/spdlog/sinks/base_sink.h \
 		../3rdparty/spdlog/sinks/base_sink-inl.h \
 		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
-		../display/keyboard.h \
-		logmanager.h \
 		calcbehaviour.h \
 		initfanstate.h \
 		idlefanstate.h \
@@ -919,7 +917,7 @@ fancontext.o: fancontext.cpp fancontext.h \
 		fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		../display/devconsole.h \
+		logmanager.h \
 		log.h \
 		../3rdparty/spdlog/spdlog.h \
 		../3rdparty/spdlog/common.h \
@@ -970,8 +968,6 @@ fancontext.o: fancontext.cpp fancontext.h \
 		../3rdparty/spdlog/sinks/base_sink.h \
 		../3rdparty/spdlog/sinks/base_sink-inl.h \
 		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
-		../display/keyboard.h \
-		logmanager.h \
 		calcbehaviour.h \
 		initfanstate.h \
 		idlefanstate.h \
@@ -984,7 +980,7 @@ fancontext.o: fancontext.cpp fancontext.h \
 fanstate.o: fanstate.cpp fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		../display/devconsole.h \
+		logmanager.h \
 		log.h \
 		../3rdparty/spdlog/spdlog.h \
 		../3rdparty/spdlog/common.h \
@@ -1035,8 +1031,6 @@ fanstate.o: fanstate.cpp fanstate.h \
 		../3rdparty/spdlog/sinks/base_sink.h \
 		../3rdparty/spdlog/sinks/base_sink-inl.h \
 		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
-		../display/keyboard.h \
-		logmanager.h \
 		calcbehaviour.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fanstate.o fanstate.cpp
 
@@ -1045,7 +1039,7 @@ idlefanstate.o: idlefanstate.cpp idlefanstate.h \
 		fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		../display/devconsole.h \
+		logmanager.h \
 		log.h \
 		../3rdparty/spdlog/spdlog.h \
 		../3rdparty/spdlog/common.h \
@@ -1096,8 +1090,6 @@ idlefanstate.o: idlefanstate.cpp idlefanstate.h \
 		../3rdparty/spdlog/sinks/base_sink.h \
 		../3rdparty/spdlog/sinks/base_sink-inl.h \
 		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
-		../display/keyboard.h \
-		logmanager.h \
 		calcbehaviour.h \
 		initfanstate.h \
 		runfanstate.h \
@@ -1111,7 +1103,7 @@ initfanstate.o: initfanstate.cpp initfanstate.h \
 		fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		../display/devconsole.h \
+		logmanager.h \
 		log.h \
 		../3rdparty/spdlog/spdlog.h \
 		../3rdparty/spdlog/common.h \
@@ -1162,8 +1154,6 @@ initfanstate.o: initfanstate.cpp initfanstate.h \
 		../3rdparty/spdlog/sinks/base_sink.h \
 		../3rdparty/spdlog/sinks/base_sink-inl.h \
 		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
-		../display/keyboard.h \
-		logmanager.h \
 		calcbehaviour.h \
 		idlefanstate.h \
 		runfanstate.h \
@@ -1229,7 +1219,7 @@ main.o: main.cpp fancontext.h \
 		fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		../display/devconsole.h \
+		logmanager.h \
 		log.h \
 		../3rdparty/spdlog/spdlog.h \
 		../3rdparty/spdlog/common.h \
@@ -1280,8 +1270,6 @@ main.o: main.cpp fancontext.h \
 		../3rdparty/spdlog/sinks/base_sink.h \
 		../3rdparty/spdlog/sinks/base_sink-inl.h \
 		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
-		../display/keyboard.h \
-		logmanager.h \
 		calcbehaviour.h \
 		initfanstate.h \
 		idlefanstate.h \
@@ -1350,7 +1338,7 @@ runfanstate.o: runfanstate.cpp runfanstate.h \
 		fanstate.h \
 		sensor.h \
 		sensebehaviour.h \
-		../display/devconsole.h \
+		logmanager.h \
 		log.h \
 		../3rdparty/spdlog/spdlog.h \
 		../3rdparty/spdlog/common.h \
@@ -1401,8 +1389,6 @@ runfanstate.o: runfanstate.cpp runfanstate.h \
 		../3rdparty/spdlog/sinks/base_sink.h \
 		../3rdparty/spdlog/sinks/base_sink-inl.h \
 		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
-		../display/keyboard.h \
-		logmanager.h \
 		calcbehaviour.h \
 		initfanstate.h \
 		idlefanstate.h \
@@ -1412,7 +1398,7 @@ runfanstate.o: runfanstate.cpp runfanstate.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o runfanstate.o runfanstate.cpp
 
 sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h \
-		../display/devconsole.h \
+		logmanager.h \
 		log.h \
 		../3rdparty/spdlog/spdlog.h \
 		../3rdparty/spdlog/common.h \
@@ -1462,14 +1448,12 @@ sensebehaviour.o: sensebehaviour.cpp sensebehaviour.h \
 		../3rdparty/spdlog/details/file_helper-inl.h \
 		../3rdparty/spdlog/sinks/base_sink.h \
 		../3rdparty/spdlog/sinks/base_sink-inl.h \
-		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
-		../display/keyboard.h \
-		logmanager.h
+		../3rdparty/spdlog/sinks/basic_file_sink-inl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sensebehaviour.o sensebehaviour.cpp
 
 sensor.o: sensor.cpp sensor.h \
 		sensebehaviour.h \
-		../display/devconsole.h \
+		logmanager.h \
 		log.h \
 		../3rdparty/spdlog/spdlog.h \
 		../3rdparty/spdlog/common.h \
@@ -1520,8 +1504,6 @@ sensor.o: sensor.cpp sensor.h \
 		../3rdparty/spdlog/sinks/base_sink.h \
 		../3rdparty/spdlog/sinks/base_sink-inl.h \
 		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
-		../display/keyboard.h \
-		logmanager.h \
 		calcbehaviour.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sensor.o sensor.cpp
 

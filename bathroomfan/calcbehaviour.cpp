@@ -7,7 +7,7 @@ double calcBehaviour::calculate(calc_e *enumValue, double *value)
     switch (*enumValue)
     {
     case CALCULATE_TEMP:
-        calculatedValue = round(*value * 40.96);   //-20  till 80 celsius is 100celsius range.  4096 / 100 = 40.96
+        calculatedValue = round((*value + 20) * 40.96);   //want to get above 0 so + 20 then  ->  4096 / 100 = 40.96
         SENS_INFO("SIMULATION -- I recieved a temperature value: {} Celsius and calculated the value to {}", round_up(*value, 2), calculatedValue);
         break;
     case CALCULATE_HUM:

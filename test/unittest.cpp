@@ -6,6 +6,7 @@
 #include <iostream>
 
 
+
 //Met deze test wil ik kijken of de Sensor juist meten en vervolgens de waarde goed wordt omgerekend
 TEST_CASE("SensorTest", "indicator")
 {
@@ -50,6 +51,45 @@ TEST_CASE("SensorTest", "indicator")
                    }
                }
         delete  humSensor;
+        }
+    }
+
+    SECTION("Prox sensor"){
+        GIVEN(" Prox Sensor is initialised") {
+               Sensor *proxSensor = new Sensor("Prox Sensor", senseBehaviour::SENSE_PROX , calcBehaviour::CALCULATE_PROX);
+
+               THEN(" The sensed value should be 0") {
+                   REQUIRE(*proxSensor->getSensedValue() == 0);
+               }
+               WHEN(" The sensor has meeting done"){
+                   proxSensor->sense(proxSensor->getSensBehaviour());
+                   THEN(" The sensed value should not be  0 and between 0-4096") {
+                       REQUIRE(*proxSensor->getSensedValue() > 0);
+                       REQUIRE(*proxSensor->getSensedValue() < 4096);
+                   }
+                   AND_THEN("The calculated value should be") {
+                       REQUIRE(*proxSensor->getCalculatedValue() > 0);
+                       REQUIRE(*proxSensor->getCalculatedValue() < 4096);
+                   }
+               }
+        delete  proxSensor;
+        }
+    }
+}
+
+//Met deze test wil ik de verschille states de juiste objecten aanmaakt
+TEST_CASE("State test", "test")
+{
+
+    SECTION("Init fan state"){
+        GIVEN ("init state is initialised") {
+            InitFanState *state = new InitFanState();
+            Sensor *temp = state->getTempSensor();
+
+            REQUIRE(temp->getName().empty());
+
+            delete temp;
+            delete state;
         }
     }
 }

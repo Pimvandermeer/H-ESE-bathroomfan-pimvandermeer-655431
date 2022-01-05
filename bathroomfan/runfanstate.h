@@ -10,7 +10,6 @@ class RunFanState : public FanState
 private:
     std::string exceedSensorName_ = "None";
     double *exceedValue_ = NULL;
-    bool enteredAfterToiler_;
 
     Timer *timer_ = new Timer(3000);
     Relay *relay_ = new Relay(false);

@@ -13,7 +13,6 @@ public:
 
     void initialize();
     void shutdown();
-
 };
 
 #endif // LOGGER_H

@@ -1,13 +1,16 @@
 #include "idlefanstate.h"
 
-IdleFanState::IdleFanState(Sensor &tempSensor, Sensor &humSensor)
-    : tempSensor_{&tempSensor}, humSensor_{&humSensor}
+IdleFanState::IdleFanState(Sensor &tempSensor, Sensor &humSensor, Sensor &proxSensor)
+    : tempSensor_{&tempSensor}, humSensor_{&humSensor}, proxSensor_{&proxSensor}
 {
-    STATE_INFO("Idle Fan State has been initialised and recieved the following objects: {}, {}", tempSensor_->getName(), humSensor_->getName());
+    STATE_INFO("Idle Fan State has been initialised and recieved the following objects: {}, {}, {}", tempSensor_->getName(), humSensor_->getName(), proxSensor_->getName());
 }
 
 IdleFanState::~IdleFanState()
 {
+    delete tempSensor_;
+    delete humSensor_;
+    delete proxSensor_;
     STATE_TRACE("IdleFanstate has been destructed");
 }
 
@@ -23,19 +26,22 @@ void IdleFanState::E_START()
 
     tempSensor_->sense(tempSensor_->getSensBehaviour());
     humSensor_->sense(humSensor_->getSensBehaviour());
+    proxSensor_->sense(proxSensor_->getSensBehaviour());
 
     if (*tempSensor_->getCalculatedValue() >= 1433)
     {
-        STATE_INFO(" SIMULATION The temperature value is higher so I will go to running state");
+        STATE_INFO(" SIMULATION The temperature value is too high so I will go to running state");
         this->fanContext_->TransitionTo(new RunFanState(tempSensor_->getName(), *tempSensor_->getCalculatedValue()));
        // fanContext_->Stop();
-    };
-
-    if(*humSensor_->getCalculatedValue() >= 397)
+    }else if(*humSensor_->getCalculatedValue() >= 397)
     {
-        STATE_INFO(" SIMULATION The humidity value is higher so I will go to running state");
-        this->fanContext_->TransitionTo(new RunFanState(tempSensor_->getName(), *tempSensor_->getCalculatedValue()));
+        STATE_INFO(" SIMULATION The humidity value is too high so I will go to running state");
+        this->fanContext_->TransitionTo(new RunFanState(humSensor_->getName(), *humSensor_->getCalculatedValue()));
        // fanContext_->Stop();
+    } else if(*proxSensor_->getCalculatedValue() >= 2000)
+    {
+        STATE_INFO("SIMULATION The proximity value is high so someone enterd the toilet and fan needs to go running");
+        this->fanContext_->TransitionTo(new RunFanState(proxSensor_->getName(), *proxSensor_->getCalculatedValue()));
     };
 }
 

@@ -12,11 +12,11 @@ double calcBehaviour::calculate(calc_e *enumValue, double *value)
         break;
     case CALCULATE_HUM:
         calculatedValue = round(*value * 42.6);  //0 - 96 %  4096/96 = 42.6
-        SENS_INFO("SIMULATION -- I recieved a humidity value: {}  percentage and calculated the value to {}", *value, calculatedValue);
+        SENS_INFO("SIMULATION -- I recieved a humidity value: {}  percentage and calculated the value to {}", round_up(*value, 2), calculatedValue);
         break;
     case CALCULATE_PROX:
         calculatedValue = *value;
-        SENS_INFO("SIMULATION -- I recieved a Proximity value: {} and calculated the value to {}", *value, calculatedValue);
+        SENS_INFO("SIMULATION -- I recieved a Proximity value: {} and the calculated value is also {}", *value, calculatedValue);
         break;
     default:
         SENS_ERROR("This should not have happend");

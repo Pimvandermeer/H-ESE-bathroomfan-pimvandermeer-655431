@@ -34,11 +34,9 @@ double senseBehaviour::createRandomNumber(double lowerBound, double higherBound)
 
 int senseBehaviour::createRandomNumber(int lowerBound, int higherBound)
 {
-    std::random_device rd;
-    std::default_random_engine eng(rd());
-    std::uniform_real_distribution<int> distr(lowerBound, higherBound);
+    srand((unsigned) time(0));
+    int randomNumber;
 
-    int number = distr(eng);
-
-    return number;
+    randomNumber = (rand() % higherBound) + lowerBound;
+    return randomNumber;
 }

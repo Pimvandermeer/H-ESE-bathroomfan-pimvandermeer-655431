@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.2, 2021-12-21T14:38:38. -->
+<!-- Written by QtCreator 4.13.2, 2022-01-05T20:02:04. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -66,7 +66,7 @@
    </valuemap>
    <valuemap type="QVariantMap" key="AutoTest.CheckStates">
     <value type="Qt::CheckState" key="/Volumes/compiled/SE-2/bathroom_fan/test/unittest.cpp:/Volumes/compiled/SE-2/bathroom_fan/test/unittest.cpp">Checked</value>
-    <value type="Qt::CheckState" key="/Volumes/compiled/SE-2/bathroom_fan/test/unittest.cpp:test">Checked</value>
+    <value type="Qt::CheckState" key="/Volumes/compiled/SE-2/bathroom_fan/test/unittest.cpp:SensorTest">Checked</value>
    </valuemap>
    <value type="int" key="AutoTest.RunAfterBuild">0</value>
    <value type="bool" key="AutoTest.UseGlobal">true</value>

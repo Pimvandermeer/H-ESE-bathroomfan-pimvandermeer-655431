@@ -6,10 +6,16 @@ CONFIG -= qt
 INCLUDEPATH = ../3rdparty/ \
 
 SOURCES += \
-    unittest.cpp \
+    main.cpp \
     ../bathroomfan/sensor.cpp \
     ../bathroomfan/sensebehaviour.cpp \
-    ../bathroomfan/calcbehaviour.cpp
+    ../bathroomfan/calcbehaviour.cpp \
+    ../bathroomfan/relay.cpp \
+    ../bathroomfan/timer.cpp \
+    relay_test.cpp \
+    sensor_test.cpp \
+    state_test.cpp \
+    timer_test.cpp
 
 HEADERS += \
     ../3rdparty/catch/catch.hpp \

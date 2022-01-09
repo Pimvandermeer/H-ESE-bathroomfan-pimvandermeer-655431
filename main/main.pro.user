@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.2, 2022-01-05T20:02:04. -->
+<!-- Written by QtCreator 4.13.2, 2022-01-08T12:23:24. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -67,6 +67,7 @@
    <valuemap type="QVariantMap" key="AutoTest.CheckStates">
     <value type="Qt::CheckState" key="/Volumes/compiled/SE-2/bathroom_fan/test/unittest.cpp:/Volumes/compiled/SE-2/bathroom_fan/test/unittest.cpp">Checked</value>
     <value type="Qt::CheckState" key="/Volumes/compiled/SE-2/bathroom_fan/test/unittest.cpp:SensorTest">Checked</value>
+    <value type="Qt::CheckState" key="/Volumes/compiled/SE-2/bathroom_fan/test/unittest.cpp:State test">Checked</value>
    </valuemap>
    <value type="int" key="AutoTest.RunAfterBuild">0</value>
    <value type="bool" key="AutoTest.UseGlobal">true</value>
@@ -328,7 +329,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Volumes/compiled/SE-2/bathroom_fan/test/test.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Volumes/compiled/SE-2/bathroom_fan/test/test.pro</value>
-    <value type="QString" key="RunConfiguration.Arguments"></value>
+    <value type="QString" key="RunConfiguration.Arguments">-s</value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>

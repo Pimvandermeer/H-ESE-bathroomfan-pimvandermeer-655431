@@ -1,7 +1,7 @@
 #ifndef DEVCONSOLE_H
 #define DEVCONSOLE_H
 
-#include "log.h"
+#include "../bathroomfan/log.h"
 #include "keyboard.h"
 
 namespace Devconsole

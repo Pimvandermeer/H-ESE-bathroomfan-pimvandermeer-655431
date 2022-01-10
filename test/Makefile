@@ -52,25 +52,47 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = main.cpp \
-		../bathroomfan/sensor.cpp \
+SOURCES       = ../bathroomfan/sensor.cpp \
 		../bathroomfan/sensebehaviour.cpp \
 		../bathroomfan/calcbehaviour.cpp \
 		../bathroomfan/relay.cpp \
 		../bathroomfan/timer.cpp \
+		../bathroomfan/logmanager.cpp \
+		../bathroomfan/fancontext.cpp \
+		../bathroomfan/fanstate.cpp \
+		../bathroomfan/initfanstate.cpp \
+		../bathroomfan/idlefanstate.cpp \
+		../bathroomfan/runfanstate.cpp \
+		../bathroomfan/errorfanstate.cpp \
+		../display/keyboard.cpp \
+		../display/devconsole.cpp \
+		context_test.cpp \
+		state_test.cpp \
 		relay_test.cpp \
 		sensor_test.cpp \
-		state_test.cpp \
+		log_test.cpp \
+		main.cpp \
 		timer_test.cpp 
-OBJECTS       = main.o \
-		sensor.o \
+OBJECTS       = sensor.o \
 		sensebehaviour.o \
 		calcbehaviour.o \
 		relay.o \
 		timer.o \
+		logmanager.o \
+		fancontext.o \
+		fanstate.o \
+		initfanstate.o \
+		idlefanstate.o \
+		runfanstate.o \
+		errorfanstate.o \
+		keyboard.o \
+		devconsole.o \
+		context_test.o \
+		state_test.o \
 		relay_test.o \
 		sensor_test.o \
-		state_test.o \
+		log_test.o \
+		main.o \
 		timer_test.o
 DIST          = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf \
 		../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri \
@@ -292,15 +314,26 @@ DIST          = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf \
 		../display/appinfo.h \
 		../display/keyboard.h \
 		../display/devconsole.h \
-		../bathoomfan/timer.h main.cpp \
-		../bathroomfan/sensor.cpp \
+		../bathoomfan/timer.h ../bathroomfan/sensor.cpp \
 		../bathroomfan/sensebehaviour.cpp \
 		../bathroomfan/calcbehaviour.cpp \
 		../bathroomfan/relay.cpp \
 		../bathroomfan/timer.cpp \
+		../bathroomfan/logmanager.cpp \
+		../bathroomfan/fancontext.cpp \
+		../bathroomfan/fanstate.cpp \
+		../bathroomfan/initfanstate.cpp \
+		../bathroomfan/idlefanstate.cpp \
+		../bathroomfan/runfanstate.cpp \
+		../bathroomfan/errorfanstate.cpp \
+		../display/keyboard.cpp \
+		../display/devconsole.cpp \
+		context_test.cpp \
+		state_test.cpp \
 		relay_test.cpp \
 		sensor_test.cpp \
-		state_test.cpp \
+		log_test.cpp \
+		main.cpp \
 		timer_test.cpp
 QMAKE_TARGET  = test
 DESTDIR       = 
@@ -782,9 +815,6 @@ compiler_clean:
 
 ####### Compile
 
-main.o: main.cpp ../3rdparty/catch/catch.hpp
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
-
 sensor.o: ../bathroomfan/sensor.cpp ../bathroomfan/sensor.h \
 		../bathroomfan/sensebehaviour.h \
 		../bathroomfan/logmanager.h \
@@ -1054,6 +1084,674 @@ timer.o: ../bathroomfan/timer.cpp ../bathroomfan/timer.h \
 		../3rdparty/spdlog/sinks/basic_file_sink-inl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o timer.o ../bathroomfan/timer.cpp
 
+logmanager.o: ../bathroomfan/logmanager.cpp ../bathroomfan/logmanager.h \
+		../bathroomfan/log.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink-inl.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o logmanager.o ../bathroomfan/logmanager.cpp
+
+fancontext.o: ../bathroomfan/fancontext.cpp ../bathroomfan/fancontext.h \
+		../bathroomfan/fanstate.h \
+		../bathroomfan/sensor.h \
+		../bathroomfan/sensebehaviour.h \
+		../bathroomfan/logmanager.h \
+		../bathroomfan/log.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
+		../bathroomfan/calcbehaviour.h \
+		../bathroomfan/initfanstate.h \
+		../bathroomfan/idlefanstate.h \
+		../bathroomfan/runfanstate.h \
+		../bathroomfan/relay.h \
+		../bathroomfan/timer.h \
+		../bathroomfan/errorfanstate.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fancontext.o ../bathroomfan/fancontext.cpp
+
+fanstate.o: ../bathroomfan/fanstate.cpp ../bathroomfan/fanstate.h \
+		../bathroomfan/sensor.h \
+		../bathroomfan/sensebehaviour.h \
+		../bathroomfan/logmanager.h \
+		../bathroomfan/log.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
+		../bathroomfan/calcbehaviour.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o fanstate.o ../bathroomfan/fanstate.cpp
+
+initfanstate.o: ../bathroomfan/initfanstate.cpp ../bathroomfan/initfanstate.h \
+		../bathroomfan/fancontext.h \
+		../bathroomfan/fanstate.h \
+		../bathroomfan/sensor.h \
+		../bathroomfan/sensebehaviour.h \
+		../bathroomfan/logmanager.h \
+		../bathroomfan/log.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
+		../bathroomfan/calcbehaviour.h \
+		../bathroomfan/idlefanstate.h \
+		../bathroomfan/runfanstate.h \
+		../bathroomfan/relay.h \
+		../bathroomfan/timer.h \
+		../bathroomfan/errorfanstate.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o initfanstate.o ../bathroomfan/initfanstate.cpp
+
+idlefanstate.o: ../bathroomfan/idlefanstate.cpp ../bathroomfan/idlefanstate.h \
+		../bathroomfan/fancontext.h \
+		../bathroomfan/fanstate.h \
+		../bathroomfan/sensor.h \
+		../bathroomfan/sensebehaviour.h \
+		../bathroomfan/logmanager.h \
+		../bathroomfan/log.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
+		../bathroomfan/calcbehaviour.h \
+		../bathroomfan/initfanstate.h \
+		../bathroomfan/runfanstate.h \
+		../bathroomfan/relay.h \
+		../bathroomfan/timer.h \
+		../bathroomfan/errorfanstate.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o idlefanstate.o ../bathroomfan/idlefanstate.cpp
+
+runfanstate.o: ../bathroomfan/runfanstate.cpp ../bathroomfan/runfanstate.h \
+		../bathroomfan/fancontext.h \
+		../bathroomfan/fanstate.h \
+		../bathroomfan/sensor.h \
+		../bathroomfan/sensebehaviour.h \
+		../bathroomfan/logmanager.h \
+		../bathroomfan/log.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
+		../bathroomfan/calcbehaviour.h \
+		../bathroomfan/initfanstate.h \
+		../bathroomfan/idlefanstate.h \
+		../bathroomfan/errorfanstate.h \
+		../bathroomfan/relay.h \
+		../bathroomfan/timer.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o runfanstate.o ../bathroomfan/runfanstate.cpp
+
+errorfanstate.o: ../bathroomfan/errorfanstate.cpp ../bathroomfan/errorfanstate.h \
+		../bathroomfan/fancontext.h \
+		../bathroomfan/fanstate.h \
+		../bathroomfan/sensor.h \
+		../bathroomfan/sensebehaviour.h \
+		../bathroomfan/logmanager.h \
+		../bathroomfan/log.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
+		../bathroomfan/calcbehaviour.h \
+		../bathroomfan/initfanstate.h \
+		../bathroomfan/idlefanstate.h \
+		../bathroomfan/runfanstate.h \
+		../bathroomfan/relay.h \
+		../bathroomfan/timer.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o errorfanstate.o ../bathroomfan/errorfanstate.cpp
+
+keyboard.o: ../display/keyboard.cpp ../display/keyboard.h \
+		../display/devconsole.h \
+		../bathroomfan/log.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink-inl.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o keyboard.o ../display/keyboard.cpp
+
+devconsole.o: ../display/devconsole.cpp ../display/devconsole.h \
+		../bathroomfan/log.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
+		../display/keyboard.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o devconsole.o ../display/devconsole.cpp
+
+context_test.o: context_test.cpp ../3rdparty/catch/catch.hpp \
+		../bathroomfan/fancontext.h \
+		../bathroomfan/fanstate.h \
+		../bathroomfan/sensor.h \
+		../bathroomfan/sensebehaviour.h \
+		../bathroomfan/logmanager.h \
+		../bathroomfan/log.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
+		../bathroomfan/calcbehaviour.h \
+		../bathroomfan/initfanstate.h \
+		../bathroomfan/idlefanstate.h \
+		../bathroomfan/runfanstate.h \
+		../bathroomfan/relay.h \
+		../bathroomfan/timer.h \
+		../bathroomfan/errorfanstate.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o context_test.o context_test.cpp
+
+state_test.o: state_test.cpp ../3rdparty/catch/catch.hpp \
+		../bathroomfan/fancontext.h \
+		../bathroomfan/fanstate.h \
+		../bathroomfan/sensor.h \
+		../bathroomfan/sensebehaviour.h \
+		../bathroomfan/logmanager.h \
+		../bathroomfan/log.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
+		../bathroomfan/calcbehaviour.h \
+		../bathroomfan/initfanstate.h \
+		../bathroomfan/idlefanstate.h \
+		../bathroomfan/runfanstate.h \
+		../bathroomfan/relay.h \
+		../bathroomfan/timer.h \
+		../bathroomfan/errorfanstate.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o state_test.o state_test.cpp
+
 relay_test.o: relay_test.cpp ../3rdparty/catch/catch.hpp \
 		../bathroomfan/relay.h \
 		../bathroomfan/log.h \
@@ -1174,8 +1872,62 @@ sensor_test.o: sensor_test.cpp ../3rdparty/catch/catch.hpp \
 		../display/appinfo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sensor_test.o sensor_test.cpp
 
-state_test.o: state_test.cpp ../3rdparty/catch/catch.hpp
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o state_test.o state_test.cpp
+log_test.o: log_test.cpp ../3rdparty/catch/catch.hpp \
+		../bathroomfan/logmanager.h \
+		../bathroomfan/log.h \
+		../3rdparty/spdlog/spdlog.h \
+		../3rdparty/spdlog/common.h \
+		../3rdparty/spdlog/tweakme.h \
+		../3rdparty/spdlog/details/null_mutex.h \
+		../3rdparty/spdlog/fmt/fmt.h \
+		../3rdparty/spdlog/fmt/bundled/core.h \
+		../3rdparty/spdlog/fmt/bundled/format.h \
+		../3rdparty/spdlog/fmt/bundled/xchar.h \
+		../3rdparty/spdlog/fmt/bundled/format-inl.h \
+		../3rdparty/spdlog/fmt/xchar.h \
+		../3rdparty/spdlog/common-inl.h \
+		../3rdparty/spdlog/details/registry.h \
+		../3rdparty/spdlog/details/registry-inl.h \
+		../3rdparty/spdlog/details/periodic_worker.h \
+		../3rdparty/spdlog/details/periodic_worker-inl.h \
+		../3rdparty/spdlog/logger.h \
+		../3rdparty/spdlog/details/log_msg.h \
+		../3rdparty/spdlog/details/log_msg-inl.h \
+		../3rdparty/spdlog/details/os.h \
+		../3rdparty/spdlog/details/os-inl.h \
+		../3rdparty/spdlog/details/windows_include.h \
+		../3rdparty/spdlog/details/backtracer.h \
+		../3rdparty/spdlog/details/log_msg_buffer.h \
+		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
+		../3rdparty/spdlog/details/circular_q.h \
+		../3rdparty/spdlog/details/backtracer-inl.h \
+		../3rdparty/spdlog/logger-inl.h \
+		../3rdparty/spdlog/sinks/sink.h \
+		../3rdparty/spdlog/formatter.h \
+		../3rdparty/spdlog/sinks/sink-inl.h \
+		../3rdparty/spdlog/pattern_formatter.h \
+		../3rdparty/spdlog/pattern_formatter-inl.h \
+		../3rdparty/spdlog/details/fmt_helper.h \
+		../3rdparty/spdlog/sinks/wincolor_sink.h \
+		../3rdparty/spdlog/details/console_globals.h \
+		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink.h \
+		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
+		../3rdparty/spdlog/version.h \
+		../3rdparty/spdlog/details/synchronous_factory.h \
+		../3rdparty/spdlog/spdlog-inl.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
+		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink.h \
+		../3rdparty/spdlog/details/file_helper.h \
+		../3rdparty/spdlog/details/file_helper-inl.h \
+		../3rdparty/spdlog/sinks/base_sink.h \
+		../3rdparty/spdlog/sinks/base_sink-inl.h \
+		../3rdparty/spdlog/sinks/basic_file_sink-inl.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o log_test.o log_test.cpp
+
+main.o: main.cpp ../3rdparty/catch/catch.hpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 timer_test.o: timer_test.cpp ../3rdparty/catch/catch.hpp \
 		../bathroomfan/timer.h \

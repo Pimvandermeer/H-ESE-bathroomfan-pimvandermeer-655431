@@ -9,13 +9,13 @@ TEST_CASE("Timer-class-test")
         Timer *timer = new Timer(0);
         THEN("Timer should have a delay")
         {
-            //PRIVATE VARIABLE
+            // PRIVATE VARIABLE
             REQUIRE(timer->setDelay_ == 0);
-            REQUIRE(std::is_same<decltype (timer->setDelay_), int>::value);
+            REQUIRE(std::is_same<decltype(timer->setDelay_), int>::value);
         }
-        WHEN ("timer delay is set to 2000")
+        WHEN("timer delay is set to 2000")
         {
-           timer->displayDelay(2000);
+            timer->displayDelay(2000);
             REQUIRE(timer->setDelay_ == 0);
         }
         delete timer;

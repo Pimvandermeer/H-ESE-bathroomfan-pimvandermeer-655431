@@ -20,13 +20,18 @@ int main()
   LogManager logger;
   logger.initialize();
 
-  int Minutes = 10;
+  int minutes = 0;
+
+  std::cout << "Enter the amount of minutes qou want the Fan to Run" << std::endl;
+  std::cin >> minutes;
+
+
 
   STATE_INFO("We started the {} and are now at version {}\n\n", APP, VERSION);
 
   while (1)
   {
-    FanClientCode(&Minutes);
+    FanClientCode(&minutes);
   };
 
   logger.shutdown();

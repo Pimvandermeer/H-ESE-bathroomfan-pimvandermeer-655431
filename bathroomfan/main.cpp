@@ -1,13 +1,12 @@
 #include <iostream>
-
 #include "fancontext.h"
 #include "log.h"
 #include "../display/appinfo.h"
-#include "../3rdparty/simpleini/SimpleIni.h"
+#include "simpleini/SimpleIni.h"
 
-//All explanations about the different classes can be read in the headerfiles
+// All explanations about the different classes can be read in the headerfiles
 
-//Forward declerations
+// Forward declerations
 void FanClientCode(int *minutes);
 int initSettingsFile();
 
@@ -32,23 +31,27 @@ int main()
 
 int initSettingsFile()
 {
-    //Iniobject is made to be able to read settings from the init.ini file
-    CSimpleIniA ini;
-    ini.SetUnicode();
-    SI_Error rc = ini.LoadFile("../initfile/init.ini");
-    if (rc < 0)
-    {
-        STATE_ERROR("There is now value in the ini file!")
-    };
-
-    const char* minute;
+  // Ini object is made to be able to read settings from the init.ini file and used as the potentio meter
+  // this way a engineer can set easily the time the bathroomfan needs to run
+  CSimpleIniA ini;
+  ini.SetUnicode();
+  SI_Error rc = ini.LoadFile("../initfile/init.ini");
+  const char *minute;
+  if (rc < 0)
+  {
+    STATE_ERROR("There is no value in the ini file or we cannot read it!\n\n");
+    STATE_ERROR("We are going to load a static value");
+    minute = "10";
+  }
+  else
+  {
     minute = ini.GetValue("potentio-meter", "minutes");
-
     STATE_INFO("We have initialised the potentio-meter from the setting file with value {}\n\n", minute)
+  }
 
-    int minutes = atoi(minute);
+  int minutes = atoi(minute);
 
-    return minutes;
+  return minutes;
 }
 
 void FanClientCode(int *minutes)

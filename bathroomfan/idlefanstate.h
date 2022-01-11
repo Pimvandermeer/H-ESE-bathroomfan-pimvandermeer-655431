@@ -8,7 +8,6 @@
  * in that case the state will transfer to running state.
  */
 
-
 class IdleFanState : public FanState
 {
 private:
@@ -22,6 +21,7 @@ private:
 
 public:
     IdleFanState(Sensor &tempSensor, Sensor &humSensor, Sensor &proxSensor);
+    virtual ~IdleFanState();
 
     virtual bool checkIfLimitReached(calcBehaviour::calc_e *calcBehaviour, double *limit);
 
@@ -31,9 +31,6 @@ public:
     virtual void E_STOP() override;
     virtual void E_ERROR() override;
     virtual void E_FIXED() override;
-
-
-    virtual ~IdleFanState();
 };
 
 #endif // IDLEFANSTATE_H

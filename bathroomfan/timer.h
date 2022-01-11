@@ -8,7 +8,7 @@
 /*
  * This class is made to have delay in the terminal visualization
  * so it is only used for user ecperience
-*/
+ */
 
 class Timer
 {
@@ -19,6 +19,8 @@ public:
     Timer(int delay = 0);
     ~Timer();
     void displayDelay(int number_of_seconds);
+
+    int getDelay();
 };
 
 #endif // TIMER_H

@@ -65,7 +65,7 @@ void IdleFanState::E_START()
 
     bool tempCheck = checkIfLimitReached(tempSensor_->getCalcBehaviour(), tempSensor_->getCalculatedValue());
     bool humCheck = checkIfLimitReached(humSensor_->getCalcBehaviour(), humSensor_->getCalculatedValue());
-    bool proxCheck =  checkIfLimitReached(proxSensor_->getCalcBehaviour(), proxSensor_->getCalculatedValue());
+    bool proxCheck = checkIfLimitReached(proxSensor_->getCalcBehaviour(), proxSensor_->getCalculatedValue());
 
     if (tempCheck || humCheck || proxCheck)
     {

@@ -18,8 +18,6 @@ SOURCES += \
     ../bathroomfan/idlefanstate.cpp \
     ../bathroomfan/runfanstate.cpp \
     ../bathroomfan/errorfanstate.cpp \
-    ../display/keyboard.cpp \
-    ../display/devconsole.cpp \
     context_test.cpp \
     state_test.cpp \
     relay_test.cpp \
@@ -43,8 +41,6 @@ HEADERS += \
     ../bathoomfan/sensebehaviour.h \
     ../bathoomfan/sensor.h \
     ../display/appinfo.h \
-    ../display/keyboard.h \
-    ../display/devconsole.h \
     ../bathoomfan/timer.h
 
 

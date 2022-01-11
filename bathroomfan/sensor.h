@@ -28,11 +28,9 @@ private:
     double sensedValue_ = 0.0;
 
 public:
-
     Sensor(std::string nameVal = "None",
            senseBehaviour::sense_e sensBehaviour = senseBehaviour::SENSE_DEFAULT,
-           calcBehaviour::calc_e calcBehaviour = calcBehaviour::CALULATE_DEFAULT
-           );
+           calcBehaviour::calc_e calcBehaviour = calcBehaviour::CALULATE_DEFAULT);
 
     std::string getName();
 

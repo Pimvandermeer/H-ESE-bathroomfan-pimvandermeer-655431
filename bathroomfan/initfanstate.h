@@ -8,11 +8,10 @@
  *  when inititialisef the state transfers to idelfanstate
  */
 
-
 class InitFanState : public FanState
 {
 private:
-    Sensor *tempSensor_ = new Sensor("Temperature Sensor", senseBehaviour::SENSE_TEMP , calcBehaviour::CALCULATE_TEMP);
+    Sensor *tempSensor_ = new Sensor("Temperature Sensor", senseBehaviour::SENSE_TEMP, calcBehaviour::CALCULATE_TEMP);
     Sensor *humSensor_ = new Sensor("Humidity Sensor", senseBehaviour::SENSE_HUM, calcBehaviour::CALCULATE_HUM);
     Sensor *proxSensor_ = new Sensor("Proximity Sensor", senseBehaviour::SENSE_PROX, calcBehaviour::CALCULATE_PROX);
 

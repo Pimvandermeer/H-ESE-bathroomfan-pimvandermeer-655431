@@ -3,8 +3,9 @@ CONFIG += console c++11
 CONFIG -= app_bundle
 CONFIG -= qt
 
-INCLUDEPATH = ../3rdparty/ \
+INCLUDEPATH = ../3rdparty/
 
+DISTFILES = ../initfile/init.ini
 
 SOURCES += \
         calcbehaviour.cpp \
@@ -19,8 +20,6 @@ SOURCES += \
         runfanstate.cpp \
         sensebehaviour.cpp \
         sensor.cpp \
-        ../display/keyboard.cpp \
-        ../display/devconsole.cpp \
         timer.cpp
 
 HEADERS += \
@@ -37,8 +36,7 @@ HEADERS += \
     sensebehaviour.h \
     sensor.h \
     ../display/appinfo.h \
-    ../display/keyboard.h \
-    ../display/devconsole.h \
     timer.h
+
 
 

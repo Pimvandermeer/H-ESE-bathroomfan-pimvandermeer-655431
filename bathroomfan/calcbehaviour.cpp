@@ -7,11 +7,11 @@ double calcBehaviour::calculate(calc_e *enumValue, double *value)
     switch (*enumValue)
     {
     case CALCULATE_TEMP:
-        calculatedValue = round((*value + 20) * 40.96);   //want to get above 0 so + 20 then  ->  4096 / 100 = 40.96
+        calculatedValue = round((*value + 20) * 40.96); // want to get above 0 so + 20 then  ->  4096 / 100 = 40.96
         SENS_INFO("SIMULATION -- I recieved a temperature value: {} Celsius and calculated the value to {}", round_up(*value, 2), calculatedValue);
         break;
     case CALCULATE_HUM:
-        calculatedValue = round(*value * 42.6);  //0 - 96 %  4096/96 = 42.6
+        calculatedValue = round(*value * 42.6); // 0 - 96 %  4096/96 = 42.6
         SENS_INFO("SIMULATION -- I recieved a humidity value: {}  percentage and calculated the value to {}", round_up(*value, 2), calculatedValue);
         break;
     case CALCULATE_PROX:

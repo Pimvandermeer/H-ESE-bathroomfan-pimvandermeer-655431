@@ -4,8 +4,9 @@ double senseBehaviour::sense(sense_e *enumValue)
 {
     double num = 0.0;
 
-    switch (*enumValue) {
-        case SENSE_TEMP:
+    switch (*enumValue)
+    {
+    case SENSE_TEMP:
         num = createRandomNumber(lowTemp, highTemp);
         break;
     case SENSE_HUM:
@@ -34,7 +35,7 @@ double senseBehaviour::createRandomNumber(double lowerBound, double higherBound)
 
 int senseBehaviour::createRandomNumber(int lowerBound, int higherBound)
 {
-    srand((unsigned) time(0));
+    srand((unsigned)time(0));
     int randomNumber;
 
     randomNumber = (rand() % higherBound) + lowerBound;

@@ -1,7 +1,7 @@
 #define private public   // Makes private functions available
 #define protected public // Makes protected variables available
 #include "../3rdparty/catch/catch.hpp"
-#include "../bathroomfan/fancontext.h"
+#include "../bathroomfancmake/fancontext.h"
 
 template <class DstType, class SrcType>
 bool IsType(const SrcType *src)

@@ -1,5 +1,5 @@
 #include "../3rdparty/catch/catch.hpp"
-#include "../bathroomfan/logmanager.h"
+#include "../bathroomfancmake/logmanager.h"
 #include <sys/stat.h>
 
 #define BATHROOM_STATE "bathroom_state"

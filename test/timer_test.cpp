@@ -1,6 +1,6 @@
 #define private public
 #include "../3rdparty/catch/catch.hpp"
-#include "../bathroomfan/timer.h"
+#include "../bathroomfancmake/timer.h"
 
 TEST_CASE("Timer-class-test")
 {

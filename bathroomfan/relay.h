@@ -4,6 +4,11 @@
 #include <iostream>
 #include "log.h"
 
+/*This class is the class which finally turns the bathroomfan on
+ * for now it only displays "i am turned on or off"
+ * it is used in the runfanstate
+ */
+
 class Relay
 {
 private:

@@ -6,6 +6,14 @@
 #include "calcbehaviour.h"
 #include "logmanager.h"
 
+/*Sensors are made in a strattegy patteren
+ * this way a sensor can have a certain sense- and calulatebehaviour
+ * but it doesn't have too.
+ * It keeps the inhertance at a low level and uses polymorphism
+ *
+ * a enum is used to keep nice and clean function within the different behaviours
+ */
+
 class Sensor
 {
 private:

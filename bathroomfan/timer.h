@@ -5,6 +5,10 @@
 #include <stdio.h>
 #include "log.h"
 
+/*
+ * This class is made to have delay in the terminal visualization
+ * so it is only used for user ecperience
+*/
 
 class Timer
 {

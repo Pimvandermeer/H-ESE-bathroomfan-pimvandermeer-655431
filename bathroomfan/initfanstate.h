@@ -3,6 +3,12 @@
 
 #include "fancontext.h"
 
+/* This is state is used to initialise the different Sensors
+ *  the sensors use strategy-pattern to have different function in the sensors
+ *  when inititialisef the state transfers to idelfanstate
+ */
+
+
 class InitFanState : public FanState
 {
 private:

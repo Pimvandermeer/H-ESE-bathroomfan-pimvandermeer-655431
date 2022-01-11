@@ -33,6 +33,9 @@ void ErrorFanState::E_ERROR()
 {
     // Error because errorstate should not recieve this
     STATE_INFO("ErrorFanState recieved e_start command");
+    //At this moment there is no known error which should be taken care of but it is possible in this event
+    //after the event the concext should change again to init state
+    this->fanContext_->TransitionTo(new InitFanState());
 }
 
 void ErrorFanState::E_FIXED()

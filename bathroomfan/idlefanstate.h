@@ -3,6 +3,11 @@
 
 #include "fancontext.h"
 
+/*  The constructor copies the sensors initiales by initstate
+ * This State will be the state which will check every moment if a value has overreached its limit
+ * in that case the state will transfer to running state.
+ */
+
 
 class IdleFanState : public FanState
 {

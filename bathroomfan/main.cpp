@@ -3,29 +3,20 @@
 #include "fancontext.h"
 #include "log.h"
 #include "../display/appinfo.h"
+#include "../3rdparty/simpleini/SimpleIni.h"
 
-void FanClientCode(int *minutes)
-{
-  FanContext *fancontext = new FanContext(new InitFanState, *minutes);
-  fancontext->Config();
-  fancontext->Start();
-  fancontext->Run();
-  fancontext->Error();
+//All explanations about the different classes can be read in the headerfiles
 
-  delete fancontext;
-}
+//Forward declerations
+void FanClientCode(int *minutes);
+int initSettingsFile();
 
 int main()
 {
   LogManager logger;
   logger.initialize();
 
-  int minutes = 0;
-
-  std::cout << "Enter the amount of minutes qou want the Fan to Run" << std::endl;
-  std::cin >> minutes;
-
-
+  int minutes = initSettingsFile();
 
   STATE_INFO("We started the {} and are now at version {}\n\n", APP, VERSION);
 
@@ -37,4 +28,34 @@ int main()
   logger.shutdown();
 
   return 0;
+}
+
+int initSettingsFile()
+{
+    //Iniobject is made to be able to read settings from the init.ini file
+    CSimpleIniA ini;
+    ini.SetUnicode();
+    SI_Error rc = ini.LoadFile("../initfile/init.ini");
+    if (rc < 0)
+    {
+        STATE_ERROR("There is now value in the ini file!")
+    };
+
+    const char* minute;
+    minute = ini.GetValue("potentio-meter", "minutes");
+
+    STATE_INFO("We have initialised the potentio-meter from the setting file with value {}\n\n", minute)
+
+    int minutes = atoi(minute);
+
+    return minutes;
+}
+
+void FanClientCode(int *minutes)
+{
+  FanContext *fancontext = new FanContext(new InitFanState, *minutes);
+  fancontext->Config();
+  fancontext->Start();
+  fancontext->Run();
+  delete fancontext;
 }

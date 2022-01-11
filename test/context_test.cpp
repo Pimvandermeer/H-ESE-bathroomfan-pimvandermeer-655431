@@ -22,25 +22,10 @@ TEST_CASE("Fan Context")
             REQUIRE(fancontext == fancontext->fanState_->fanContext_);
             REQUIRE(IsType<InitFanState>(fancontext->fanState_));
         }
-        WHEN("Context recieves start Command")
         fancontext->Config();
+        THEN("fancontext recieves config command state should be Change state to Idle")
         {
             REQUIRE(IsType<IdleFanState>(fancontext->fanState_));
-        }
-        WHEN("Context transitions to RunFanState")
-        {
-            fancontext->TransitionTo(new RunFanState);
-            THEN("The state should be at runFanState")
-            {
-                REQUIRE(fancontext == fancontext->fanState_->fanContext_);
-                REQUIRE(IsType<RunFanState>(fancontext->fanState_));
-            }
-        }
-        WHEN("Contect recieves a error message state must be ErrorState")
-        fancontext->Stop();
-        {
-
-            //  REQUIRE(IsType<IdleFanState>(fancontext->fanState_));
         }
         delete fancontext;
     }

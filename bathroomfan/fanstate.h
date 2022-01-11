@@ -6,6 +6,12 @@
 
 class FanContext;
 
+/*The fanstate is functioning as a Interface at the different classes
+ * this way every state will use this functions but will overide them with there own function
+ * and so will properly react to the written event
+*/
+
+
 class FanState
 {
 protected:

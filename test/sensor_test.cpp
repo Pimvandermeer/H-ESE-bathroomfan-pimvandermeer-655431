@@ -1,7 +1,7 @@
 #define private public    //Makes private functions available
 #include "../3rdparty/catch/catch.hpp"
-#include "../bathroomfan/fancontext.h"
-#include "../bathroomfan/log.h"
+#include "../bathroomfancmake/fancontext.h"
+#include "../bathroomfancmake/log.h"
 #include "../display/appinfo.h"
 
 //Met deze test wil ik kijken of de Sensor juist meten en vervolgens de waarde goed wordt omgerekend

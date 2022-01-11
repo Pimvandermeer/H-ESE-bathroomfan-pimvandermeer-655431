@@ -2,7 +2,7 @@
 #include "fancontext.h"
 #include "log.h"
 #include "../display/appinfo.h"
-#include "simpleini/SimpleIni.h"
+#include "../3rdparty/simpleini/SimpleIni.h"
 
 // All explanations about the different classes can be read in the headerfiles
 
@@ -35,7 +35,7 @@ int initSettingsFile()
   // this way a engineer can set easily the time the bathroomfan needs to run
   CSimpleIniA ini;
   ini.SetUnicode();
-  SI_Error rc = ini.LoadFile("../initfile/init.ini");
+  SI_Error rc = ini.LoadFile("../BathRoomFan/initfile/init.ini");
   const char *minute;
   if (rc < 0)
   {
@@ -48,6 +48,7 @@ int initSettingsFile()
     minute = ini.GetValue("potentio-meter", "minutes");
     STATE_INFO("We have initialised the potentio-meter from the setting file with value {}\n\n", minute)
   }
+
 
   int minutes = atoi(minute);
 

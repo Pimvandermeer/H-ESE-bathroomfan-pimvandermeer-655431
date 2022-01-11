@@ -1,8 +1,8 @@
 #pragma once
 
-#include "spdlog/spdlog.h"
-#include "spdlog/sinks/stdout_color_sinks.h"
-#include "spdlog/sinks/basic_file_sink.h"
+#include "../3rdparty/spdlog/spdlog.h"
+#include "../3rdparty/spdlog/sinks/stdout_color_sinks.h"
+#include "../3rdparty/spdlog/sinks/basic_file_sink.h"
 
 /*the log.h is used as a macro for all the object
  * this way we have nice and easy clean code to write to the terminal

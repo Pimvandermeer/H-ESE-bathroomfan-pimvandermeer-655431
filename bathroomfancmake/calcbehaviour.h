@@ -3,6 +3,15 @@
 
 #include "log.h"
 
+/*Sensors are made in a strattegy patteren
+ * this way a sensor can have a certain calculatebehaviour
+ * but it doesn't have too.
+ * It keeps the inhertance at a low level and uses polymorphism
+ *
+ * at the moment there are 3 behaviours
+ * temp, hum, proximity
+ */
+
 class calcBehaviour
 {
 public:

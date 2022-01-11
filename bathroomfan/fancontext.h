@@ -9,6 +9,11 @@
 #include "errorfanstate.h"
 #include "logmanager.h"
 
+/*The Fancontaxt is the object the client speaks to. Via
+ *the contaxt the state will change. This way  when we add more and more states
+ *we won't have gigantic conditionals but it's kept clean.
+ */
+
 class FanContext
 {
 private:

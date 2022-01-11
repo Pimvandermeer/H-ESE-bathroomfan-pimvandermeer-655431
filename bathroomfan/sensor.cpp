@@ -8,7 +8,7 @@ Sensor::Sensor(std::string nameVal, senseBehaviour::sense_e sensBehaviour, calcB
 
 Sensor::~Sensor()
 {
-     SENS_TRACE("Sensor has been detructed");
+    SENS_TRACE("Sensor has been detructed");
 }
 
 void Sensor::sense(senseBehaviour::sense_e *enumValue)
@@ -46,4 +46,3 @@ std::string Sensor::getName()
 {
     return sensorName_;
 }
-

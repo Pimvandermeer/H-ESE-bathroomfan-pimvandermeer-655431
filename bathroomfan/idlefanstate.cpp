@@ -1,13 +1,16 @@
 #include "idlefanstate.h"
 
-IdleFanState::IdleFanState(Sensor &tempSensor, Sensor &humSensor)
-    : tempSensor_{&tempSensor}, humSensor_{&humSensor}
+IdleFanState::IdleFanState(Sensor &tempSensor, Sensor &humSensor, Sensor &proxSensor)
+    : tempSensor_{&tempSensor}, humSensor_{&humSensor}, proxSensor_{&proxSensor}
 {
-    STATE_INFO("Idle Fan State has been initialised and recieved the following objects: {}, {}", tempSensor_->getName(), humSensor_->getName());
+    STATE_INFO("Idle Fan State has been initialised and recieved the following objects: {}, {}, {}", tempSensor_->getName(), humSensor_->getName(), proxSensor_->getName());
 }
 
 IdleFanState::~IdleFanState()
 {
+    delete tempSensor_;
+    delete humSensor_;
+    delete proxSensor_;
     STATE_TRACE("IdleFanstate has been destructed");
 }
 
@@ -17,25 +20,56 @@ void IdleFanState::E_CONFIG()
     STATE_ERROR("IdleFanState recieved e_config command");
 }
 
+bool IdleFanState::checkIfLimitReached(calcBehaviour::calc_e *calcBehaviour, double *limit)
+{
+    switch (*calcBehaviour)
+    {
+    case calcBehaviour::CALCULATE_TEMP:
+        if (*limit >= tempLimit_)
+        {
+            STATE_INFO(" SIMULATION The temperature value is too high so I will go to running state");
+            return true;
+        }
+        return false;
+        break;
+    case calcBehaviour::CALCULATE_HUM:
+        if (*limit >= humLimit_)
+        {
+            STATE_INFO(" SIMULATION The humidity value is too high so I will go to running state");
+            return true;
+        }
+        return false;
+        break;
+    case calcBehaviour::CALCULATE_PROX:
+        if (*limit >= proxLimit_)
+        {
+            STATE_INFO("SIMULATION The proximity value is high so someone enterd the toilet and fan needs to go running");
+            return true;
+        }
+        return false;
+        break;
+    default:
+        SENS_ERROR("This should not have happend");
+        break;
+    }
+    return false;
+}
+
 void IdleFanState::E_START()
 {
     STATE_TRACE("IdleFanState recieved e_run command");
 
     tempSensor_->sense(tempSensor_->getSensBehaviour());
     humSensor_->sense(humSensor_->getSensBehaviour());
+    proxSensor_->sense(proxSensor_->getSensBehaviour());
 
-    if (*tempSensor_->getCalculatedValue() >= 1433)
-    {
-        STATE_INFO(" SIMULATION The temperature value is higher so I will go to running state");
-        this->fanContext_->TransitionTo(new RunFanState(tempSensor_->getName(), *tempSensor_->getCalculatedValue()));
-       // fanContext_->Stop();
-    };
+    bool tempCheck = checkIfLimitReached(tempSensor_->getCalcBehaviour(), tempSensor_->getCalculatedValue());
+    bool humCheck = checkIfLimitReached(humSensor_->getCalcBehaviour(), humSensor_->getCalculatedValue());
+    bool proxCheck = checkIfLimitReached(proxSensor_->getCalcBehaviour(), proxSensor_->getCalculatedValue());
 
-    if(*humSensor_->getCalculatedValue() >= 397)
+    if (tempCheck || humCheck || proxCheck)
     {
-        STATE_INFO(" SIMULATION The humidity value is higher so I will go to running state");
-        this->fanContext_->TransitionTo(new RunFanState(tempSensor_->getName(), *tempSensor_->getCalculatedValue()));
-       // fanContext_->Stop();
+        this->fanContext_->TransitionTo(new RunFanState());
     };
 }
 

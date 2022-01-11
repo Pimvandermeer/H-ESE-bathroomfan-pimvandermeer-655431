@@ -5,15 +5,18 @@ InitFanState::~InitFanState()
     STATE_TRACE("Initfanstate has been destructed");
 }
 
+Sensor *InitFanState::getTempSensor()
+{
+    return tempSensor_;
+}
+
 void InitFanState::E_CONFIG()
 {
- //   Devconsole::DCSinitialise();
-
     STATE_TRACE("InitFanstate recieved e_start command");
 
-    STATE_INFO("InitFanstate has now 2 senors initialised with the name {}, {}", this->tempSensor_->getName(), this->humSensor_->getName());
+    STATE_INFO("InitFanstate has now 3 senors initialised with the name {}, {}, {}", this->tempSensor_->getName(), this->humSensor_->getName(), this->proxSensor_->getName());
 
-    this->fanContext_->TransitionTo(new IdleFanState(*tempSensor_, *humSensor_));
+    this->fanContext_->TransitionTo(new IdleFanState(*tempSensor_, *humSensor_, *proxSensor_));
 }
 
 void InitFanState::E_START()

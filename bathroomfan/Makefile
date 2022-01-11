@@ -64,8 +64,6 @@ SOURCES       = calcbehaviour.cpp \
 		runfanstate.cpp \
 		sensebehaviour.cpp \
 		sensor.cpp \
-		../display/keyboard.cpp \
-		../display/devconsole.cpp \
 		timer.cpp 
 OBJECTS       = calcbehaviour.o \
 		errorfanstate.o \
@@ -79,10 +77,9 @@ OBJECTS       = calcbehaviour.o \
 		runfanstate.o \
 		sensebehaviour.o \
 		sensor.o \
-		keyboard.o \
-		devconsole.o \
 		timer.o
-DIST          = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf \
+DIST          = ../initfile/init.ini \
+		../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf \
 		../../../HAN/5.15.0/clang_64/mkspecs/qdevice.pri \
 		../../../HAN/5.15.0/clang_64/mkspecs/features/device_config.prf \
 		../../../HAN/5.15.0/clang_64/mkspecs/common/unix.conf \
@@ -299,8 +296,6 @@ DIST          = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf \
 		sensebehaviour.h \
 		sensor.h \
 		../display/appinfo.h \
-		../display/keyboard.h \
-		../display/devconsole.h \
 		timer.h calcbehaviour.cpp \
 		errorfanstate.cpp \
 		fancontext.cpp \
@@ -313,8 +308,6 @@ DIST          = ../../../HAN/5.15.0/clang_64/mkspecs/features/spec_pre.prf \
 		runfanstate.cpp \
 		sensebehaviour.cpp \
 		sensor.cpp \
-		../display/keyboard.cpp \
-		../display/devconsole.cpp \
 		timer.cpp
 QMAKE_TARGET  = bathroomfan
 DESTDIR       = 
@@ -1277,7 +1270,9 @@ main.o: main.cpp fancontext.h \
 		relay.h \
 		timer.h \
 		errorfanstate.h \
-		../display/appinfo.h
+		../display/appinfo.h \
+		../3rdparty/simpleini/SimpleIni.h \
+		../3rdparty/simpleini/ConvertUTF.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 relay.o: relay.cpp relay.h \
@@ -1506,114 +1501,6 @@ sensor.o: sensor.cpp sensor.h \
 		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
 		calcbehaviour.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sensor.o sensor.cpp
-
-keyboard.o: ../display/keyboard.cpp ../display/keyboard.h \
-		../display/devconsole.h \
-		log.h \
-		../3rdparty/spdlog/spdlog.h \
-		../3rdparty/spdlog/common.h \
-		../3rdparty/spdlog/tweakme.h \
-		../3rdparty/spdlog/details/null_mutex.h \
-		../3rdparty/spdlog/fmt/fmt.h \
-		../3rdparty/spdlog/fmt/bundled/core.h \
-		../3rdparty/spdlog/fmt/bundled/format.h \
-		../3rdparty/spdlog/fmt/bundled/xchar.h \
-		../3rdparty/spdlog/fmt/bundled/format-inl.h \
-		../3rdparty/spdlog/fmt/xchar.h \
-		../3rdparty/spdlog/common-inl.h \
-		../3rdparty/spdlog/details/registry.h \
-		../3rdparty/spdlog/details/registry-inl.h \
-		../3rdparty/spdlog/details/periodic_worker.h \
-		../3rdparty/spdlog/details/periodic_worker-inl.h \
-		../3rdparty/spdlog/logger.h \
-		../3rdparty/spdlog/details/log_msg.h \
-		../3rdparty/spdlog/details/log_msg-inl.h \
-		../3rdparty/spdlog/details/os.h \
-		../3rdparty/spdlog/details/os-inl.h \
-		../3rdparty/spdlog/details/windows_include.h \
-		../3rdparty/spdlog/details/backtracer.h \
-		../3rdparty/spdlog/details/log_msg_buffer.h \
-		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
-		../3rdparty/spdlog/details/circular_q.h \
-		../3rdparty/spdlog/details/backtracer-inl.h \
-		../3rdparty/spdlog/logger-inl.h \
-		../3rdparty/spdlog/sinks/sink.h \
-		../3rdparty/spdlog/formatter.h \
-		../3rdparty/spdlog/sinks/sink-inl.h \
-		../3rdparty/spdlog/pattern_formatter.h \
-		../3rdparty/spdlog/pattern_formatter-inl.h \
-		../3rdparty/spdlog/details/fmt_helper.h \
-		../3rdparty/spdlog/sinks/wincolor_sink.h \
-		../3rdparty/spdlog/details/console_globals.h \
-		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
-		../3rdparty/spdlog/sinks/ansicolor_sink.h \
-		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
-		../3rdparty/spdlog/version.h \
-		../3rdparty/spdlog/details/synchronous_factory.h \
-		../3rdparty/spdlog/spdlog-inl.h \
-		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
-		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
-		../3rdparty/spdlog/sinks/basic_file_sink.h \
-		../3rdparty/spdlog/details/file_helper.h \
-		../3rdparty/spdlog/details/file_helper-inl.h \
-		../3rdparty/spdlog/sinks/base_sink.h \
-		../3rdparty/spdlog/sinks/base_sink-inl.h \
-		../3rdparty/spdlog/sinks/basic_file_sink-inl.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o keyboard.o ../display/keyboard.cpp
-
-devconsole.o: ../display/devconsole.cpp ../display/devconsole.h \
-		log.h \
-		../3rdparty/spdlog/spdlog.h \
-		../3rdparty/spdlog/common.h \
-		../3rdparty/spdlog/tweakme.h \
-		../3rdparty/spdlog/details/null_mutex.h \
-		../3rdparty/spdlog/fmt/fmt.h \
-		../3rdparty/spdlog/fmt/bundled/core.h \
-		../3rdparty/spdlog/fmt/bundled/format.h \
-		../3rdparty/spdlog/fmt/bundled/xchar.h \
-		../3rdparty/spdlog/fmt/bundled/format-inl.h \
-		../3rdparty/spdlog/fmt/xchar.h \
-		../3rdparty/spdlog/common-inl.h \
-		../3rdparty/spdlog/details/registry.h \
-		../3rdparty/spdlog/details/registry-inl.h \
-		../3rdparty/spdlog/details/periodic_worker.h \
-		../3rdparty/spdlog/details/periodic_worker-inl.h \
-		../3rdparty/spdlog/logger.h \
-		../3rdparty/spdlog/details/log_msg.h \
-		../3rdparty/spdlog/details/log_msg-inl.h \
-		../3rdparty/spdlog/details/os.h \
-		../3rdparty/spdlog/details/os-inl.h \
-		../3rdparty/spdlog/details/windows_include.h \
-		../3rdparty/spdlog/details/backtracer.h \
-		../3rdparty/spdlog/details/log_msg_buffer.h \
-		../3rdparty/spdlog/details/log_msg_buffer-inl.h \
-		../3rdparty/spdlog/details/circular_q.h \
-		../3rdparty/spdlog/details/backtracer-inl.h \
-		../3rdparty/spdlog/logger-inl.h \
-		../3rdparty/spdlog/sinks/sink.h \
-		../3rdparty/spdlog/formatter.h \
-		../3rdparty/spdlog/sinks/sink-inl.h \
-		../3rdparty/spdlog/pattern_formatter.h \
-		../3rdparty/spdlog/pattern_formatter-inl.h \
-		../3rdparty/spdlog/details/fmt_helper.h \
-		../3rdparty/spdlog/sinks/wincolor_sink.h \
-		../3rdparty/spdlog/details/console_globals.h \
-		../3rdparty/spdlog/sinks/wincolor_sink-inl.h \
-		../3rdparty/spdlog/sinks/ansicolor_sink.h \
-		../3rdparty/spdlog/sinks/ansicolor_sink-inl.h \
-		../3rdparty/spdlog/version.h \
-		../3rdparty/spdlog/details/synchronous_factory.h \
-		../3rdparty/spdlog/spdlog-inl.h \
-		../3rdparty/spdlog/sinks/stdout_color_sinks.h \
-		../3rdparty/spdlog/sinks/stdout_color_sinks-inl.h \
-		../3rdparty/spdlog/sinks/basic_file_sink.h \
-		../3rdparty/spdlog/details/file_helper.h \
-		../3rdparty/spdlog/details/file_helper-inl.h \
-		../3rdparty/spdlog/sinks/base_sink.h \
-		../3rdparty/spdlog/sinks/base_sink-inl.h \
-		../3rdparty/spdlog/sinks/basic_file_sink-inl.h \
-		../display/keyboard.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o devconsole.o ../display/devconsole.cpp
 
 timer.o: timer.cpp timer.h \
 		log.h \

@@ -1,8 +1,8 @@
 #include "runfanstate.h"
 
-RunFanState::RunFanState(std::string exceedSensorName, double &exceedValue)
-    : exceedSensorName_{exceedSensorName}, exceedValue_{&exceedValue}
+RunFanState::RunFanState()
 {
+    STATE_TRACE("RunFanState has been constructed");
 }
 
 RunFanState::~RunFanState()
@@ -27,7 +27,7 @@ void RunFanState::E_START()
 void RunFanState::E_RUN()
 {
     STATE_TRACE("RunFanState recieved e_run command");
-    STATE_INFO("--SIMULATION RunFanState needs to run for {}", *fanContext_->getMinutesToRun());
+    STATE_INFO("--SIMULATION RunFanState needs to run for {} minutes", *fanContext_->getMinutesToRun());
 
     this->timer_->displayDelay(1000);
     this->relay_->turnOn();

@@ -4,6 +4,14 @@
 #include "spdlog/sinks/stdout_color_sinks.h"
 #include "spdlog/sinks/basic_file_sink.h"
 
+/*the log.h is used as a macro for all the object
+ * this way we have nice and easy clean code to write to the terminal
+ * there are 2 different macro's
+ * 1 is used within the states
+ * the other is used within the sensors
+ */
+
+
 #define BATHROOM_STATE "bathroom_state"
 #define BATHROOM_SENSOR "bathroom_sensor"
 

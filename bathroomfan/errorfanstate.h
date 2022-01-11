@@ -3,6 +3,9 @@
 
 #include "fancontext.h"
 
+// At this moment there is no known error which should be taken care of but it is possible in this event
+// after the event the concext should change again to init state
+
 class ErrorFanState : public FanState
 {
 public:

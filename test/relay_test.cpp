@@ -1,6 +1,6 @@
 #define private public
 #include "../3rdparty/catch/catch.hpp"
-#include "../bathroomfancmake/relay.h"
+#include "../bathroomfan/relay.h"
 
 
 //HIer in ga ik het object relay testen

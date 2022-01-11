@@ -35,7 +35,7 @@ int initSettingsFile()
   // this way a engineer can set easily the time the bathroomfan needs to run
   CSimpleIniA ini;
   ini.SetUnicode();
-  SI_Error rc = ini.LoadFile("../BathRoomFan/initfile/init.ini");
+  SI_Error rc = ini.LoadFile("../initfile/init.ini");
   const char *minute;
   if (rc < 0)
   {

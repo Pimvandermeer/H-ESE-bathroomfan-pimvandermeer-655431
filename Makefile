@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/BathRoomFan/bathroomfancmake
+CMAKE_SOURCE_DIR = /home/student/H-ESE-bathroomfan-pimvandermeer-655431
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/BathRoomFan
+CMAKE_BINARY_DIR = /home/student/H-ESE-bathroomfan-pimvandermeer-655431
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/BathRoomFan/CMakeFiles /home/student/BathRoomFan/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/H-ESE-bathroomfan-pimvandermeer-655431/CMakeFiles /home/student/H-ESE-bathroomfan-pimvandermeer-655431/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/BathRoomFan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/H-ESE-bathroomfan-pimvandermeer-655431/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,374 +124,404 @@ UnitTest/fast:
 .PHONY : UnitTest/fast
 
 #=============================================================================
-# Target rules for targets named bathroomfan
+# Target rules for targets named bathroomfanprogram
 
 # Build rule for target.
-bathroomfan: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bathroomfan
-.PHONY : bathroomfan
+bathroomfanprogram: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bathroomfanprogram
+.PHONY : bathroomfanprogram
 
 # fast build rule for target.
-bathroomfan/fast:
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/build
-.PHONY : bathroomfan/fast
+bathroomfanprogram/fast:
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/build
+.PHONY : bathroomfanprogram/fast
 
-calcbehaviour.o: calcbehaviour.cpp.o
+bathroomfan/calcbehaviour.o: bathroomfan/calcbehaviour.cpp.o
 
-.PHONY : calcbehaviour.o
-
-# target to build an object file
-calcbehaviour.cpp.o:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/calcbehaviour.cpp.o
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/calcbehaviour.cpp.o
-.PHONY : calcbehaviour.cpp.o
-
-calcbehaviour.i: calcbehaviour.cpp.i
-
-.PHONY : calcbehaviour.i
-
-# target to preprocess a source file
-calcbehaviour.cpp.i:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/calcbehaviour.cpp.i
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/calcbehaviour.cpp.i
-.PHONY : calcbehaviour.cpp.i
-
-calcbehaviour.s: calcbehaviour.cpp.s
-
-.PHONY : calcbehaviour.s
-
-# target to generate assembly for a file
-calcbehaviour.cpp.s:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/calcbehaviour.cpp.s
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/calcbehaviour.cpp.s
-.PHONY : calcbehaviour.cpp.s
-
-errorfanstate.o: errorfanstate.cpp.o
-
-.PHONY : errorfanstate.o
+.PHONY : bathroomfan/calcbehaviour.o
 
 # target to build an object file
-errorfanstate.cpp.o:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/errorfanstate.cpp.o
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/errorfanstate.cpp.o
-.PHONY : errorfanstate.cpp.o
+bathroomfan/calcbehaviour.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/calcbehaviour.cpp.o
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/calcbehaviour.cpp.o
+.PHONY : bathroomfan/calcbehaviour.cpp.o
 
-errorfanstate.i: errorfanstate.cpp.i
+bathroomfan/calcbehaviour.i: bathroomfan/calcbehaviour.cpp.i
 
-.PHONY : errorfanstate.i
+.PHONY : bathroomfan/calcbehaviour.i
 
 # target to preprocess a source file
-errorfanstate.cpp.i:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/errorfanstate.cpp.i
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/errorfanstate.cpp.i
-.PHONY : errorfanstate.cpp.i
+bathroomfan/calcbehaviour.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/calcbehaviour.cpp.i
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/calcbehaviour.cpp.i
+.PHONY : bathroomfan/calcbehaviour.cpp.i
 
-errorfanstate.s: errorfanstate.cpp.s
+bathroomfan/calcbehaviour.s: bathroomfan/calcbehaviour.cpp.s
 
-.PHONY : errorfanstate.s
+.PHONY : bathroomfan/calcbehaviour.s
 
 # target to generate assembly for a file
-errorfanstate.cpp.s:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/errorfanstate.cpp.s
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/errorfanstate.cpp.s
-.PHONY : errorfanstate.cpp.s
+bathroomfan/calcbehaviour.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/calcbehaviour.cpp.s
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/calcbehaviour.cpp.s
+.PHONY : bathroomfan/calcbehaviour.cpp.s
 
-fancontext.o: fancontext.cpp.o
+bathroomfan/errorfanstate.o: bathroomfan/errorfanstate.cpp.o
 
-.PHONY : fancontext.o
+.PHONY : bathroomfan/errorfanstate.o
 
 # target to build an object file
-fancontext.cpp.o:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/fancontext.cpp.o
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/fancontext.cpp.o
-.PHONY : fancontext.cpp.o
+bathroomfan/errorfanstate.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/errorfanstate.cpp.o
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/errorfanstate.cpp.o
+.PHONY : bathroomfan/errorfanstate.cpp.o
 
-fancontext.i: fancontext.cpp.i
+bathroomfan/errorfanstate.i: bathroomfan/errorfanstate.cpp.i
 
-.PHONY : fancontext.i
+.PHONY : bathroomfan/errorfanstate.i
 
 # target to preprocess a source file
-fancontext.cpp.i:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/fancontext.cpp.i
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/fancontext.cpp.i
-.PHONY : fancontext.cpp.i
+bathroomfan/errorfanstate.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/errorfanstate.cpp.i
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/errorfanstate.cpp.i
+.PHONY : bathroomfan/errorfanstate.cpp.i
 
-fancontext.s: fancontext.cpp.s
+bathroomfan/errorfanstate.s: bathroomfan/errorfanstate.cpp.s
 
-.PHONY : fancontext.s
+.PHONY : bathroomfan/errorfanstate.s
 
 # target to generate assembly for a file
-fancontext.cpp.s:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/fancontext.cpp.s
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/fancontext.cpp.s
-.PHONY : fancontext.cpp.s
+bathroomfan/errorfanstate.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/errorfanstate.cpp.s
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/errorfanstate.cpp.s
+.PHONY : bathroomfan/errorfanstate.cpp.s
 
-fanstate.o: fanstate.cpp.o
+bathroomfan/fancontext.o: bathroomfan/fancontext.cpp.o
 
-.PHONY : fanstate.o
+.PHONY : bathroomfan/fancontext.o
 
 # target to build an object file
-fanstate.cpp.o:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/fanstate.cpp.o
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/fanstate.cpp.o
-.PHONY : fanstate.cpp.o
+bathroomfan/fancontext.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/fancontext.cpp.o
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/fancontext.cpp.o
+.PHONY : bathroomfan/fancontext.cpp.o
 
-fanstate.i: fanstate.cpp.i
+bathroomfan/fancontext.i: bathroomfan/fancontext.cpp.i
 
-.PHONY : fanstate.i
+.PHONY : bathroomfan/fancontext.i
 
 # target to preprocess a source file
-fanstate.cpp.i:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/fanstate.cpp.i
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/fanstate.cpp.i
-.PHONY : fanstate.cpp.i
+bathroomfan/fancontext.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/fancontext.cpp.i
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/fancontext.cpp.i
+.PHONY : bathroomfan/fancontext.cpp.i
 
-fanstate.s: fanstate.cpp.s
+bathroomfan/fancontext.s: bathroomfan/fancontext.cpp.s
 
-.PHONY : fanstate.s
+.PHONY : bathroomfan/fancontext.s
 
 # target to generate assembly for a file
-fanstate.cpp.s:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/fanstate.cpp.s
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/fanstate.cpp.s
-.PHONY : fanstate.cpp.s
+bathroomfan/fancontext.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/fancontext.cpp.s
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/fancontext.cpp.s
+.PHONY : bathroomfan/fancontext.cpp.s
 
-idlefanstate.o: idlefanstate.cpp.o
+bathroomfan/fanstate.o: bathroomfan/fanstate.cpp.o
 
-.PHONY : idlefanstate.o
+.PHONY : bathroomfan/fanstate.o
 
 # target to build an object file
-idlefanstate.cpp.o:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/idlefanstate.cpp.o
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/idlefanstate.cpp.o
-.PHONY : idlefanstate.cpp.o
+bathroomfan/fanstate.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/fanstate.cpp.o
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/fanstate.cpp.o
+.PHONY : bathroomfan/fanstate.cpp.o
 
-idlefanstate.i: idlefanstate.cpp.i
+bathroomfan/fanstate.i: bathroomfan/fanstate.cpp.i
 
-.PHONY : idlefanstate.i
+.PHONY : bathroomfan/fanstate.i
 
 # target to preprocess a source file
-idlefanstate.cpp.i:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/idlefanstate.cpp.i
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/idlefanstate.cpp.i
-.PHONY : idlefanstate.cpp.i
+bathroomfan/fanstate.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/fanstate.cpp.i
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/fanstate.cpp.i
+.PHONY : bathroomfan/fanstate.cpp.i
 
-idlefanstate.s: idlefanstate.cpp.s
+bathroomfan/fanstate.s: bathroomfan/fanstate.cpp.s
 
-.PHONY : idlefanstate.s
+.PHONY : bathroomfan/fanstate.s
 
 # target to generate assembly for a file
-idlefanstate.cpp.s:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/idlefanstate.cpp.s
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/idlefanstate.cpp.s
-.PHONY : idlefanstate.cpp.s
+bathroomfan/fanstate.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/fanstate.cpp.s
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/fanstate.cpp.s
+.PHONY : bathroomfan/fanstate.cpp.s
 
-initfanstate.o: initfanstate.cpp.o
+bathroomfan/idlefanstate.o: bathroomfan/idlefanstate.cpp.o
 
-.PHONY : initfanstate.o
+.PHONY : bathroomfan/idlefanstate.o
 
 # target to build an object file
-initfanstate.cpp.o:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/initfanstate.cpp.o
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/initfanstate.cpp.o
-.PHONY : initfanstate.cpp.o
+bathroomfan/idlefanstate.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/idlefanstate.cpp.o
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/idlefanstate.cpp.o
+.PHONY : bathroomfan/idlefanstate.cpp.o
 
-initfanstate.i: initfanstate.cpp.i
+bathroomfan/idlefanstate.i: bathroomfan/idlefanstate.cpp.i
 
-.PHONY : initfanstate.i
+.PHONY : bathroomfan/idlefanstate.i
 
 # target to preprocess a source file
-initfanstate.cpp.i:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/initfanstate.cpp.i
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/initfanstate.cpp.i
-.PHONY : initfanstate.cpp.i
+bathroomfan/idlefanstate.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/idlefanstate.cpp.i
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/idlefanstate.cpp.i
+.PHONY : bathroomfan/idlefanstate.cpp.i
 
-initfanstate.s: initfanstate.cpp.s
+bathroomfan/idlefanstate.s: bathroomfan/idlefanstate.cpp.s
 
-.PHONY : initfanstate.s
+.PHONY : bathroomfan/idlefanstate.s
 
 # target to generate assembly for a file
-initfanstate.cpp.s:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/initfanstate.cpp.s
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/initfanstate.cpp.s
-.PHONY : initfanstate.cpp.s
+bathroomfan/idlefanstate.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/idlefanstate.cpp.s
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/idlefanstate.cpp.s
+.PHONY : bathroomfan/idlefanstate.cpp.s
 
-logmanager.o: logmanager.cpp.o
+bathroomfan/initfanstate.o: bathroomfan/initfanstate.cpp.o
 
-.PHONY : logmanager.o
+.PHONY : bathroomfan/initfanstate.o
 
 # target to build an object file
-logmanager.cpp.o:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/logmanager.cpp.o
-.PHONY : logmanager.cpp.o
+bathroomfan/initfanstate.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/initfanstate.cpp.o
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/initfanstate.cpp.o
+.PHONY : bathroomfan/initfanstate.cpp.o
 
-logmanager.i: logmanager.cpp.i
+bathroomfan/initfanstate.i: bathroomfan/initfanstate.cpp.i
 
-.PHONY : logmanager.i
+.PHONY : bathroomfan/initfanstate.i
 
 # target to preprocess a source file
-logmanager.cpp.i:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/logmanager.cpp.i
-.PHONY : logmanager.cpp.i
+bathroomfan/initfanstate.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/initfanstate.cpp.i
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/initfanstate.cpp.i
+.PHONY : bathroomfan/initfanstate.cpp.i
 
-logmanager.s: logmanager.cpp.s
+bathroomfan/initfanstate.s: bathroomfan/initfanstate.cpp.s
 
-.PHONY : logmanager.s
+.PHONY : bathroomfan/initfanstate.s
 
 # target to generate assembly for a file
-logmanager.cpp.s:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/logmanager.cpp.s
-.PHONY : logmanager.cpp.s
+bathroomfan/initfanstate.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/initfanstate.cpp.s
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/initfanstate.cpp.s
+.PHONY : bathroomfan/initfanstate.cpp.s
 
-main.o: main.cpp.o
+bathroomfan/logmanager.o: bathroomfan/logmanager.cpp.o
 
-.PHONY : main.o
+.PHONY : bathroomfan/logmanager.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/main.cpp.o
-.PHONY : main.cpp.o
+bathroomfan/logmanager.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/logmanager.cpp.o
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/logmanager.cpp.o
+.PHONY : bathroomfan/logmanager.cpp.o
 
-main.i: main.cpp.i
+bathroomfan/logmanager.i: bathroomfan/logmanager.cpp.i
 
-.PHONY : main.i
+.PHONY : bathroomfan/logmanager.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/main.cpp.i
-.PHONY : main.cpp.i
+bathroomfan/logmanager.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/logmanager.cpp.i
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/logmanager.cpp.i
+.PHONY : bathroomfan/logmanager.cpp.i
 
-main.s: main.cpp.s
+bathroomfan/logmanager.s: bathroomfan/logmanager.cpp.s
 
-.PHONY : main.s
+.PHONY : bathroomfan/logmanager.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/main.cpp.s
-.PHONY : main.cpp.s
+bathroomfan/logmanager.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/logmanager.cpp.s
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/logmanager.cpp.s
+.PHONY : bathroomfan/logmanager.cpp.s
 
-relay.o: relay.cpp.o
+bathroomfan/main.o: bathroomfan/main.cpp.o
 
-.PHONY : relay.o
+.PHONY : bathroomfan/main.o
 
 # target to build an object file
-relay.cpp.o:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/relay.cpp.o
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/relay.cpp.o
-.PHONY : relay.cpp.o
+bathroomfan/main.cpp.o:
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/main.cpp.o
+.PHONY : bathroomfan/main.cpp.o
 
-relay.i: relay.cpp.i
+bathroomfan/main.i: bathroomfan/main.cpp.i
 
-.PHONY : relay.i
+.PHONY : bathroomfan/main.i
 
 # target to preprocess a source file
-relay.cpp.i:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/relay.cpp.i
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/relay.cpp.i
-.PHONY : relay.cpp.i
+bathroomfan/main.cpp.i:
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/main.cpp.i
+.PHONY : bathroomfan/main.cpp.i
 
-relay.s: relay.cpp.s
+bathroomfan/main.s: bathroomfan/main.cpp.s
 
-.PHONY : relay.s
+.PHONY : bathroomfan/main.s
 
 # target to generate assembly for a file
-relay.cpp.s:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/relay.cpp.s
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/relay.cpp.s
-.PHONY : relay.cpp.s
+bathroomfan/main.cpp.s:
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/main.cpp.s
+.PHONY : bathroomfan/main.cpp.s
 
-runfanstate.o: runfanstate.cpp.o
+bathroomfan/relay.o: bathroomfan/relay.cpp.o
 
-.PHONY : runfanstate.o
+.PHONY : bathroomfan/relay.o
 
 # target to build an object file
-runfanstate.cpp.o:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/runfanstate.cpp.o
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/runfanstate.cpp.o
-.PHONY : runfanstate.cpp.o
+bathroomfan/relay.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/relay.cpp.o
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/relay.cpp.o
+.PHONY : bathroomfan/relay.cpp.o
 
-runfanstate.i: runfanstate.cpp.i
+bathroomfan/relay.i: bathroomfan/relay.cpp.i
 
-.PHONY : runfanstate.i
+.PHONY : bathroomfan/relay.i
 
 # target to preprocess a source file
-runfanstate.cpp.i:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/runfanstate.cpp.i
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/runfanstate.cpp.i
-.PHONY : runfanstate.cpp.i
+bathroomfan/relay.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/relay.cpp.i
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/relay.cpp.i
+.PHONY : bathroomfan/relay.cpp.i
 
-runfanstate.s: runfanstate.cpp.s
+bathroomfan/relay.s: bathroomfan/relay.cpp.s
 
-.PHONY : runfanstate.s
+.PHONY : bathroomfan/relay.s
 
 # target to generate assembly for a file
-runfanstate.cpp.s:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/runfanstate.cpp.s
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/runfanstate.cpp.s
-.PHONY : runfanstate.cpp.s
+bathroomfan/relay.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/relay.cpp.s
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/relay.cpp.s
+.PHONY : bathroomfan/relay.cpp.s
 
-sensebehaviour.o: sensebehaviour.cpp.o
+bathroomfan/runfanstate.o: bathroomfan/runfanstate.cpp.o
 
-.PHONY : sensebehaviour.o
+.PHONY : bathroomfan/runfanstate.o
 
 # target to build an object file
-sensebehaviour.cpp.o:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/sensebehaviour.cpp.o
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/sensebehaviour.cpp.o
-.PHONY : sensebehaviour.cpp.o
+bathroomfan/runfanstate.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/runfanstate.cpp.o
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/runfanstate.cpp.o
+.PHONY : bathroomfan/runfanstate.cpp.o
 
-sensebehaviour.i: sensebehaviour.cpp.i
+bathroomfan/runfanstate.i: bathroomfan/runfanstate.cpp.i
 
-.PHONY : sensebehaviour.i
+.PHONY : bathroomfan/runfanstate.i
 
 # target to preprocess a source file
-sensebehaviour.cpp.i:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/sensebehaviour.cpp.i
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/sensebehaviour.cpp.i
-.PHONY : sensebehaviour.cpp.i
+bathroomfan/runfanstate.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/runfanstate.cpp.i
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/runfanstate.cpp.i
+.PHONY : bathroomfan/runfanstate.cpp.i
 
-sensebehaviour.s: sensebehaviour.cpp.s
+bathroomfan/runfanstate.s: bathroomfan/runfanstate.cpp.s
 
-.PHONY : sensebehaviour.s
+.PHONY : bathroomfan/runfanstate.s
 
 # target to generate assembly for a file
-sensebehaviour.cpp.s:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/sensebehaviour.cpp.s
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/sensebehaviour.cpp.s
-.PHONY : sensebehaviour.cpp.s
+bathroomfan/runfanstate.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/runfanstate.cpp.s
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/runfanstate.cpp.s
+.PHONY : bathroomfan/runfanstate.cpp.s
 
-sensor.o: sensor.cpp.o
+bathroomfan/sensebehaviour.o: bathroomfan/sensebehaviour.cpp.o
 
-.PHONY : sensor.o
+.PHONY : bathroomfan/sensebehaviour.o
 
 # target to build an object file
-sensor.cpp.o:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/sensor.cpp.o
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/sensor.cpp.o
-.PHONY : sensor.cpp.o
+bathroomfan/sensebehaviour.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/sensebehaviour.cpp.o
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/sensebehaviour.cpp.o
+.PHONY : bathroomfan/sensebehaviour.cpp.o
 
-sensor.i: sensor.cpp.i
+bathroomfan/sensebehaviour.i: bathroomfan/sensebehaviour.cpp.i
 
-.PHONY : sensor.i
+.PHONY : bathroomfan/sensebehaviour.i
 
 # target to preprocess a source file
-sensor.cpp.i:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/sensor.cpp.i
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/sensor.cpp.i
-.PHONY : sensor.cpp.i
+bathroomfan/sensebehaviour.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/sensebehaviour.cpp.i
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/sensebehaviour.cpp.i
+.PHONY : bathroomfan/sensebehaviour.cpp.i
 
-sensor.s: sensor.cpp.s
+bathroomfan/sensebehaviour.s: bathroomfan/sensebehaviour.cpp.s
 
-.PHONY : sensor.s
+.PHONY : bathroomfan/sensebehaviour.s
 
 # target to generate assembly for a file
-sensor.cpp.s:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/sensor.cpp.s
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/sensor.cpp.s
-.PHONY : sensor.cpp.s
+bathroomfan/sensebehaviour.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/sensebehaviour.cpp.s
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/sensebehaviour.cpp.s
+.PHONY : bathroomfan/sensebehaviour.cpp.s
+
+bathroomfan/sensor.o: bathroomfan/sensor.cpp.o
+
+.PHONY : bathroomfan/sensor.o
+
+# target to build an object file
+bathroomfan/sensor.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/sensor.cpp.o
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/sensor.cpp.o
+.PHONY : bathroomfan/sensor.cpp.o
+
+bathroomfan/sensor.i: bathroomfan/sensor.cpp.i
+
+.PHONY : bathroomfan/sensor.i
+
+# target to preprocess a source file
+bathroomfan/sensor.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/sensor.cpp.i
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/sensor.cpp.i
+.PHONY : bathroomfan/sensor.cpp.i
+
+bathroomfan/sensor.s: bathroomfan/sensor.cpp.s
+
+.PHONY : bathroomfan/sensor.s
+
+# target to generate assembly for a file
+bathroomfan/sensor.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/sensor.cpp.s
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/sensor.cpp.s
+.PHONY : bathroomfan/sensor.cpp.s
+
+bathroomfan/timer.o: bathroomfan/timer.cpp.o
+
+.PHONY : bathroomfan/timer.o
+
+# target to build an object file
+bathroomfan/timer.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/timer.cpp.o
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/timer.cpp.o
+.PHONY : bathroomfan/timer.cpp.o
+
+bathroomfan/timer.i: bathroomfan/timer.cpp.i
+
+.PHONY : bathroomfan/timer.i
+
+# target to preprocess a source file
+bathroomfan/timer.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/timer.cpp.i
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/timer.cpp.i
+.PHONY : bathroomfan/timer.cpp.i
+
+bathroomfan/timer.s: bathroomfan/timer.cpp.s
+
+.PHONY : bathroomfan/timer.s
+
+# target to generate assembly for a file
+bathroomfan/timer.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/bathroomfan/timer.cpp.s
+	$(MAKE) -f CMakeFiles/bathroomfanprogram.dir/build.make CMakeFiles/bathroomfanprogram.dir/bathroomfan/timer.cpp.s
+.PHONY : bathroomfan/timer.cpp.s
 
 test/context_test.o: test/context_test.cpp.o
 
@@ -682,36 +712,6 @@ test/timer_test.cpp.s:
 	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/test/timer_test.cpp.s
 .PHONY : test/timer_test.cpp.s
 
-timer.o: timer.cpp.o
-
-.PHONY : timer.o
-
-# target to build an object file
-timer.cpp.o:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/timer.cpp.o
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/timer.cpp.o
-.PHONY : timer.cpp.o
-
-timer.i: timer.cpp.i
-
-.PHONY : timer.i
-
-# target to preprocess a source file
-timer.cpp.i:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/timer.cpp.i
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/timer.cpp.i
-.PHONY : timer.cpp.i
-
-timer.s: timer.cpp.s
-
-.PHONY : timer.s
-
-# target to generate assembly for a file
-timer.cpp.s:
-	$(MAKE) -f CMakeFiles/UnitTest.dir/build.make CMakeFiles/UnitTest.dir/timer.cpp.s
-	$(MAKE) -f CMakeFiles/bathroomfan.dir/build.make CMakeFiles/bathroomfan.dir/timer.cpp.s
-.PHONY : timer.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -721,43 +721,46 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... UnitTest"
-	@echo "... bathroomfan"
-	@echo "... calcbehaviour.o"
-	@echo "... calcbehaviour.i"
-	@echo "... calcbehaviour.s"
-	@echo "... errorfanstate.o"
-	@echo "... errorfanstate.i"
-	@echo "... errorfanstate.s"
-	@echo "... fancontext.o"
-	@echo "... fancontext.i"
-	@echo "... fancontext.s"
-	@echo "... fanstate.o"
-	@echo "... fanstate.i"
-	@echo "... fanstate.s"
-	@echo "... idlefanstate.o"
-	@echo "... idlefanstate.i"
-	@echo "... idlefanstate.s"
-	@echo "... initfanstate.o"
-	@echo "... initfanstate.i"
-	@echo "... initfanstate.s"
-	@echo "... logmanager.o"
-	@echo "... logmanager.i"
-	@echo "... logmanager.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... relay.o"
-	@echo "... relay.i"
-	@echo "... relay.s"
-	@echo "... runfanstate.o"
-	@echo "... runfanstate.i"
-	@echo "... runfanstate.s"
-	@echo "... sensebehaviour.o"
-	@echo "... sensebehaviour.i"
-	@echo "... sensebehaviour.s"
-	@echo "... sensor.o"
-	@echo "... sensor.i"
-	@echo "... sensor.s"
+	@echo "... bathroomfanprogram"
+	@echo "... bathroomfan/calcbehaviour.o"
+	@echo "... bathroomfan/calcbehaviour.i"
+	@echo "... bathroomfan/calcbehaviour.s"
+	@echo "... bathroomfan/errorfanstate.o"
+	@echo "... bathroomfan/errorfanstate.i"
+	@echo "... bathroomfan/errorfanstate.s"
+	@echo "... bathroomfan/fancontext.o"
+	@echo "... bathroomfan/fancontext.i"
+	@echo "... bathroomfan/fancontext.s"
+	@echo "... bathroomfan/fanstate.o"
+	@echo "... bathroomfan/fanstate.i"
+	@echo "... bathroomfan/fanstate.s"
+	@echo "... bathroomfan/idlefanstate.o"
+	@echo "... bathroomfan/idlefanstate.i"
+	@echo "... bathroomfan/idlefanstate.s"
+	@echo "... bathroomfan/initfanstate.o"
+	@echo "... bathroomfan/initfanstate.i"
+	@echo "... bathroomfan/initfanstate.s"
+	@echo "... bathroomfan/logmanager.o"
+	@echo "... bathroomfan/logmanager.i"
+	@echo "... bathroomfan/logmanager.s"
+	@echo "... bathroomfan/main.o"
+	@echo "... bathroomfan/main.i"
+	@echo "... bathroomfan/main.s"
+	@echo "... bathroomfan/relay.o"
+	@echo "... bathroomfan/relay.i"
+	@echo "... bathroomfan/relay.s"
+	@echo "... bathroomfan/runfanstate.o"
+	@echo "... bathroomfan/runfanstate.i"
+	@echo "... bathroomfan/runfanstate.s"
+	@echo "... bathroomfan/sensebehaviour.o"
+	@echo "... bathroomfan/sensebehaviour.i"
+	@echo "... bathroomfan/sensebehaviour.s"
+	@echo "... bathroomfan/sensor.o"
+	@echo "... bathroomfan/sensor.i"
+	@echo "... bathroomfan/sensor.s"
+	@echo "... bathroomfan/timer.o"
+	@echo "... bathroomfan/timer.i"
+	@echo "... bathroomfan/timer.s"
 	@echo "... test/context_test.o"
 	@echo "... test/context_test.i"
 	@echo "... test/context_test.s"
@@ -779,9 +782,6 @@ help:
 	@echo "... test/timer_test.o"
 	@echo "... test/timer_test.i"
 	@echo "... test/timer_test.s"
-	@echo "... timer.o"
-	@echo "... timer.i"
-	@echo "... timer.s"
 .PHONY : help
 
 

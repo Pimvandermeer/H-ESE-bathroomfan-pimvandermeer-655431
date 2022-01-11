@@ -1,6 +1,6 @@
 #define private public    //Makes private functions available
 #include "../3rdparty/catch/catch.hpp"
-#include "../bathroomfancmake/fancontext.h"
+#include "../bathroomfan/fancontext.h"
 
 ////Met deze test wil ik de verschille states de juiste objecten aanmaakt
 ///
